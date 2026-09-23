@@ -89,7 +89,7 @@
 
 ### 2.3 下游层（派生量物理合理）
 
-泡点 y 会放大到分离设计。参照 `docs/paper-thermoformer-agent-experiment.zh-CN.md` 的对照实验
+泡点 y 会放大到分离设计。以乙醇-水萃取精馏的一次对照实验为例
 （UNIFAC α_avg≈2.82、N=19、R=2.536 vs ThermoFormer α_avg≈0.42、N=4、R=0.07），
 **α<1 / R→0 / N 取整退化即是“物理上不合理”的信号**。
 
