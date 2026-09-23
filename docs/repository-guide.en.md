@@ -165,7 +165,6 @@ Documents are written in English, using an `.en.md` suffix.
 | `model_applicability` | Model scope, catalog status, and candidate filtering rules. |
 | `model_routing` | Model filtering, scoring, and hard-exclusion logic. |
 | `parameter_evidence` | Parameter evidence, traceability, and test fixture isolation. |
-| `heptane-nonane-case` | Worked end-to-end example: three-source comparison, design, DWSIM export. |
 | `repository-guide` | This file; repository map and retention policy. |
 | `roadmap` | Upcoming phases and unfinished capabilities. |
 | `thermodynamic_scope` | Scientific scope supported by v0.1 and explicitly rejected. |
@@ -181,6 +180,7 @@ Documents are written in English, using an `.en.md` suffix.
 
 | Path | Purpose |
 |---|---|
+| `examples/heptane-nonane/README.md` | Worked end-to-end example: three-source comparison, column design, DWSIM export and the recorded walkthrough. |
 | `examples/benzene_toluene_isobaric.json` | Example isobaric benzene–toluene VLE input that the CLI can run directly. |
 | `tests/fixtures/synthetic_nrtl.json` | Synthetic NRTL parameters for testing only; production code must never import them. |
 | `tests/test_api.py` | HTTP, OpenAPI, chat, DeepSeek correction, run persistence, and export tests. |

@@ -107,7 +107,7 @@ file.
 
 A screen recording of the whole run — typing the prompt, the agent response, the design
 output and opening the exported file in DWSIM — is at
-[`demo_video/heptane-nonane-dwsim-demo.mp4`](../demo_video/heptane-nonane-dwsim-demo.mp4)
+[`demo_video/heptane-nonane-dwsim-demo.mp4`](../../demo_video/heptane-nonane-dwsim-demo.mp4)
 (3.8 MB, MP4).
 
 ### Why both parts matter

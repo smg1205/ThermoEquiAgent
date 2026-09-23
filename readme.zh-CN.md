@@ -98,7 +98,7 @@ LLM 解释：**图谱提供事实，LLM 只负责措辞**。
 ## 完整案例
 
 一个端到端的完整案例单独成文：
-**[docs/heptane-nonane-case.en.md](docs/heptane-nonane-case.en.md)**。
+**[examples/heptane-nonane/README.md](examples/heptane-nonane/README.md)**。
 
 该案例覆盖正庚烷 / 正壬烷直接二元精馏参考体系：对照 NIST ThermoML 数据的三源泡点比较、
 塔设计、DWSIM 导出，以及从工作台复现该案例的准确输入语句。它是**推荐的首次运行对象**，
@@ -123,9 +123,10 @@ LLM 解释：**图谱提供事实，LLM 只负责措辞**。
 | `database/` | 持久化模型与会话 |
 | `lab_models/` | ThermoFormer 源码、配置、数据集与权值 |
 | `scripts/` | 复现入口脚本 |
+| `examples/` | 端到端完整案例 |
 | `demo_video/` | 工作台操作录屏 |
 | `tests/`、`evals/` | 行为测试与 Agent 评测 |
-| `docs/` | 中英双语的架构、DWSIM 与方法学文档 |
+| `docs/` | 架构、DWSIM 与方法学文档 |
 
 ## 科学规则
 
@@ -258,7 +259,7 @@ pnpm --dir apps/web build             # 前端生产构建
 
 | 文档 | 内容 |
 |---|---|
-| `docs/heptane-nonane-case.en.md` | 端到端完整案例 |
+| `examples/heptane-nonane/README.md` | 端到端完整案例 |
 | `docs/repository-guide.en.md` | 目录与文件说明 |
 | `docs/agent-architecture.en.md` | Agent 编排细节 |
 | `docs/model_applicability.en.md` | 模型适用范围与筛选规则 |

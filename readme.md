@@ -117,7 +117,7 @@ YAML model cards under `knowledge/`.
 ## Worked example
 
 A complete end-to-end case is documented separately:
-**[docs/heptane-nonane-case.en.md](docs/heptane-nonane-case.en.md)**.
+**[examples/heptane-nonane/README.md](examples/heptane-nonane/README.md)**.
 
 It covers the n-heptane / n-nonane direct binary distillation reference system, the
 three-source bubble-point comparison against NIST ThermoML data, the column design, the
@@ -143,6 +143,7 @@ A screen recording of the full run is in
 | `database/` | Persistence models and sessions |
 | `lab_models/` | ThermoFormer source, configs, datasets, weights |
 | `scripts/` | Reproduction entry points |
+| `examples/` | Worked end-to-end examples |
 | `demo_video/` | Screen recordings of the workbench |
 | `tests/`, `evals/` | Behavioural tests and agent evaluations |
 | `docs/` | Architecture, DWSIM and methodology documentation |
@@ -290,7 +291,7 @@ Notable entry points:
 
 | Document | Contents |
 |---|---|
-| `docs/heptane-nonane-case.en.md` | The worked end-to-end example |
+| `examples/heptane-nonane/README.md` | The worked end-to-end example |
 | `docs/repository-guide.en.md` | Directory and file guide |
 | `docs/agent-architecture.en.md` | Agent orchestration in detail |
 | `docs/model_applicability.en.md` | Model scope and filtering rules |
