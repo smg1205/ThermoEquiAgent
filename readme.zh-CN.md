@@ -98,8 +98,7 @@ LLM 解释：**图谱提供事实，LLM 只负责措辞**。
 ## 完整案例
 
 一个端到端的完整案例单独成文：
-**[docs/heptane-nonane-case.zh-CN.md](docs/heptane-nonane-case.zh-CN.md)**（英文版：
-[docs/heptane-nonane-case.en.md](docs/heptane-nonane-case.en.md)）。
+**[docs/heptane-nonane-case.en.md](docs/heptane-nonane-case.en.md)**。
 
 该案例覆盖正庚烷 / 正壬烷直接二元精馏参考体系：对照 NIST ThermoML 数据的三源泡点比较、
 塔设计、DWSIM 导出，以及从工作台复现该案例的准确输入语句。它是**推荐的首次运行对象**，
@@ -143,16 +142,16 @@ docker compose up --build             # 完整栈
 
 ## 文档
 
-全部文档在 `docs/` 下以中英双语维护，文件后缀为 `.zh-CN.md` 或 `.en.md`，每个文档都有另一
-语种的对应版本。
+`docs/` 下的技术文档以英文维护，文件后缀为 `.en.md`；本 README 另提供中文版
+（[readme.zh-CN.md](readme.zh-CN.md)）。
 
 常用入口：
 
 | 文档 | 内容 |
 |---|---|
-| `docs/heptane-nonane-case.zh-CN.md` | 端到端完整案例 |
-| `docs/repository-guide.zh-CN.md` | 目录与文件说明 |
-| `docs/agent-architecture.zh-CN.md` | Agent 编排细节 |
-| `docs/model_applicability.zh-CN.md` | 模型适用范围与筛选规则 |
-| `docs/dwsim-dwxmz-export-guide.zh-CN.md` | DWSIM 文件生成与格式 |
-| `docs/ThermoFormer.zh-CN.md` | ThermoFormer 模型与其结果 |
+| `docs/heptane-nonane-case.en.md` | 端到端完整案例 |
+| `docs/repository-guide.en.md` | 目录与文件说明 |
+| `docs/agent-architecture.en.md` | Agent 编排细节 |
+| `docs/model_applicability.en.md` | 模型适用范围与筛选规则 |
+| `docs/dwsim-dwxmz-export-guide.en.md` | DWSIM 文件生成与格式 |
+| `docs/ThermoFormer.en.md` | ThermoFormer 模型与其结果 |

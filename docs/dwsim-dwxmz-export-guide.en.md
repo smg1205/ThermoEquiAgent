@@ -227,4 +227,4 @@ This project **does not compute LLE numbers, nor does it construct binary intera
 
 ## References
 
-`thermo_engine/dwsim_export.py` (flowsheet construction, mapping, and saving), `agent/extractive_distillation.py` (request recognition and orchestration), `schemas/column_design.py` (input structures), `apps/api/main.py` (HTTP endpoints); companion documents `docs/dwsim-automation-api.zh-CN.md`, `docs/dwsim-extraction-export.zh-CN.md`; tests `tests/test_dwsim_export.py`, `test_binary_vle_dwsim.py`, `test_binary_lle_dwsim.py`, `test_lle_extraction_export.py`, `test_dwsim_extractive_export.py`.
+`thermo_engine/dwsim_export.py` (flowsheet construction, mapping, and saving), `agent/extractive_distillation.py` (request recognition and orchestration), `schemas/column_design.py` (input structures), `apps/api/main.py` (HTTP endpoints); companion documents `docs/dwsim-automation-api.en.md`, `docs/dwsim-extraction-export.en.md`; tests `tests/test_dwsim_export.py`, `test_binary_vle_dwsim.py`, `test_binary_lle_dwsim.py`, `test_lle_extraction_export.py`, `test_dwsim_extractive_export.py`.

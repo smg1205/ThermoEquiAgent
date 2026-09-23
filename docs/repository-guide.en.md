@@ -150,7 +150,7 @@ production runs but should be kept in the repository.
 
 ## Documentation: `docs/`
 
-Every document exists in both languages, as `<name>.en.md` and `<name>.zh-CN.md`.
+Documents are written in English, using an `.en.md` suffix.
 
 | Document | Purpose |
 |---|---|

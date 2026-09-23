@@ -117,8 +117,7 @@ YAML model cards under `knowledge/`.
 ## Worked example
 
 A complete end-to-end case is documented separately:
-**[docs/heptane-nonane-case.en.md](docs/heptane-nonane-case.en.md)** (Chinese:
-[docs/heptane-nonane-case.zh-CN.md](docs/heptane-nonane-case.zh-CN.md)).
+**[docs/heptane-nonane-case.en.md](docs/heptane-nonane-case.en.md)**.
 
 It covers the n-heptane / n-nonane direct binary distillation reference system, the
 three-source bubble-point comparison against NIST ThermoML data, the column design, the
@@ -166,9 +165,9 @@ docker compose up --build             # full stack
 
 ## Documentation
 
-All documentation is maintained in both Chinese and English under `docs/`. Files use a
-`.zh-CN.md` or `.en.md` suffix, and every document has a counterpart in the other
-language.
+Technical documentation lives under `docs/` and is written in English, using an `.en.md`
+suffix. A Chinese version of this readme is available at
+[readme.zh-CN.md](readme.zh-CN.md).
 
 Notable entry points:
 
