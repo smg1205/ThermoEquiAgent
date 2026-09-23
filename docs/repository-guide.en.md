@@ -150,23 +150,32 @@ production runs but should be kept in the repository.
 
 ## Documentation: `docs/`
 
-| Path | Purpose |
+Every document exists in both languages, as `<name>.en.md` and `<name>.zh-CN.md`.
+
+| Document | Purpose |
 |---|---|
-| `docs/architecture.md` | System layering, data flow, and safety boundaries. |
-| `docs/agent-thinking-execution.zh-CN.md` | Chinese summary of the current "thinking + execution" implementation status. |
-| `docs/api.md` | FastAPI routes, request/response, and error contracts. |
-| `docs/deployment.md` | Local and container deployment instructions. |
-| `docs/frontend.md` | Frontend layout, state, and interface behavior. |
-| `docs/github-collaboration.zh-CN.md` | GitHub team, branch protection, issue, PR, secret, and release setup. |
-| `docs/integrations.md` | Real integration matrix for the CAi_copilot approach, LangGraph, thermo, Phasepy, and Clapeyron. |
-| `docs/methodology.md` | Engineering method, assumptions, and computation flow. |
-| `docs/model_routing.md` | Model filtering, scoring, and hard-exclusion logic. |
-| `docs/parameter_evidence.md` | Parameter evidence, traceability, and test fixture isolation. |
-| `docs/repository-guide.zh-CN.md` | This file; repository map and retention policy. |
-| `docs/roadmap.md` | Upcoming phases and unfinished capabilities. |
-| `docs/team-responsibilities.zh-CN.md` | Team role responsibilities, issue breakdown, deliverables, acceptance criteria, and future domain expansion. |
-| `docs/thermodynamic_scope.md` | Scientific scope supported by v0.1 and explicitly rejected. |
-| `docs/validation.md` | Independent physical validation rules and status interpretation. |
+| `architecture` | System layering, data flow, and safety boundaries. |
+| `agent-architecture` | Agent orchestration, intent routing, and the bounded execution graph. |
+| `agent-thinking-execution` | Summary of the "thinking + execution" implementation status. |
+| `api` | FastAPI routes, request/response, and error contracts. |
+| `deployment` | Local and container deployment instructions. |
+| `frontend` | Frontend layout, state, and interface behavior. |
+| `integrations` | Integration matrix for the CAi_copilot approach, LangGraph, thermo, Phasepy, and Clapeyron. |
+| `methodology` | Engineering method, assumptions, and computation flow. |
+| `model_applicability` | Model scope, catalog status, and candidate filtering rules. |
+| `model_routing` | Model filtering, scoring, and hard-exclusion logic. |
+| `parameter_evidence` | Parameter evidence, traceability, and test fixture isolation. |
+| `heptane-nonane-case` | Worked end-to-end example: three-source comparison, design, DWSIM export. |
+| `repository-guide` | This file; repository map and retention policy. |
+| `roadmap` | Upcoming phases and unfinished capabilities. |
+| `thermodynamic_scope` | Scientific scope supported by v0.1 and explicitly rejected. |
+| `validation` | Independent physical validation rules and status interpretation. |
+| `pgssi_checkpoint` | Configuring private PGSSI weights without committing them. |
+| `dwsim-automation-api` | DWSIM Automation bubble-point solving API. |
+| `dwsim-dwxmz-export-guide` | Generation and format of `.dwxmz` project files. |
+| `dwsim-extraction-export` | Phase-equilibrium and extraction export guide. |
+| `extractive-dwsim-usage` | Using exported extractive-distillation files in the DWSIM GUI. |
+| `ThermoFormer` | The ThermoFormer model, its formulation and its results. |
 
 ## Examples, tests, and evaluations
 

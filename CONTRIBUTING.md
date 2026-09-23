@@ -117,6 +117,4 @@ Review in this order:
 4. Maintainability, tests and documentation;
 5. UI presentation and engineering ergonomics.
 
-For the full directory guide see [docs/repository-guide.en.md](docs/repository-guide.en.md),
-and for GitHub repository setup see
-[docs/github-collaboration.en.md](docs/github-collaboration.en.md).
+For the full directory guide see [docs/repository-guide.en.md](docs/repository-guide.en.md).

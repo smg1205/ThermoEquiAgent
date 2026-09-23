@@ -146,23 +146,32 @@
 
 ## 文档：`docs/`
 
-| 路径 | 作用 |
+每个文档都有中英两份，命名为 `<名称>.en.md` 与 `<名称>.zh-CN.md`。
+
+| 文档 | 作用 |
 |---|---|
-| `docs/architecture.md` | 系统分层、数据流和安全边界。 |
-| `docs/agent-thinking-execution.zh-CN.md` | 当前“思考 + 执行”落地状态的中文简述。 |
-| `docs/api.md` | FastAPI 路由、请求响应和错误契约。 |
-| `docs/deployment.md` | 本地和容器部署说明。 |
-| `docs/frontend.md` | 前端布局、状态和接口行为。 |
-| `docs/github-collaboration.zh-CN.md` | GitHub 团队、分支保护、Issue、PR、密钥和发布设置。 |
-| `docs/integrations.md` | CAi_copilot 思路、LangGraph、thermo、Phasepy、Clapeyron 的真实集成矩阵。 |
-| `docs/methodology.md` | 工程方法、假设和计算流程。 |
-| `docs/model_routing.md` | 模型筛选、评分和硬排除逻辑。 |
-| `docs/parameter_evidence.md` | 参数证据、可追溯性和测试夹具隔离。 |
-| `docs/repository-guide.zh-CN.md` | 本文件；仓库地图和保留策略。 |
-| `docs/roadmap.md` | 后续阶段与未完成能力。 |
-| `docs/team-responsibilities.zh-CN.md` | 团队岗位职责、Issue 拆分、交付物、验收标准和后续领域扩展。 |
-| `docs/thermodynamic_scope.md` | v0.1 支持与明确拒绝的科学范围。 |
-| `docs/validation.md` | 独立物理验证规则和状态解释。 |
+| `architecture` | 系统分层、数据流和安全边界。 |
+| `agent-architecture` | Agent 编排、意图分流与有界执行图。 |
+| `agent-thinking-execution` | "思考 + 执行"落地状态简述。 |
+| `api` | FastAPI 路由、请求响应和错误契约。 |
+| `deployment` | 本地和容器部署说明。 |
+| `frontend` | 前端布局、状态和接口行为。 |
+| `integrations` | CAi_copilot 思路、LangGraph、thermo、Phasepy、Clapeyron 的真实集成矩阵。 |
+| `methodology` | 工程方法、假设和计算流程。 |
+| `model_applicability` | 模型适用范围、目录状态与候选筛选规则。 |
+| `model_routing` | 模型筛选、评分和硬排除逻辑。 |
+| `parameter_evidence` | 参数证据、可追溯性和测试夹具隔离。 |
+| `heptane-nonane-case` | 端到端实例：三源对比、塔设计与 DWSIM 导出。 |
+| `repository-guide` | 本文件；仓库地图和保留策略。 |
+| `roadmap` | 后续阶段与未完成能力。 |
+| `thermodynamic_scope` | v0.1 支持与明确拒绝的科学范围。 |
+| `validation` | 独立物理验证规则和状态解释。 |
+| `pgssi_checkpoint` | 如何配置 PGSSI 私有权值而不提交到仓库。 |
+| `dwsim-automation-api` | DWSIM 自动化泡点求解 API。 |
+| `dwsim-dwxmz-export-guide` | `.dwxmz` 工程文件的生成与格式。 |
+| `dwsim-extraction-export` | 相平衡与萃取文件导出指南。 |
+| `extractive-dwsim-usage` | 在 DWSIM 界面中使用导出的萃取精馏文件。 |
+| `ThermoFormer` | ThermoFormer 模型、公式与结果。 |
 
 ## 示例、测试与评测
 
