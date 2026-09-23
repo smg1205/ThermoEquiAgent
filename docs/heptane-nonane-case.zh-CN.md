@@ -34,7 +34,8 @@
 三个来源的温度一致性在约 2 °C 以内，两个模型也都一致地复现了汽相中正庚烷的富集。
 该体系接近理想，这正说明它是很好的首个案例：能把"工程链路"与"热力学难度"分离开来考察。
 
-数据文件：`report/success/正庚烷-正壬烷/heptane_nonane_three_source_bubble.csv`
+数据来源：NIST ThermoML，DOI `10.1016/j.fluid.2013.05.016`。上表由
+`scripts/generate_heptane_nonane_comparison.py` 重新生成。
 
 ---
 
@@ -67,7 +68,7 @@
 
 DWSIM 计算得到的沸点温度：进料 390.81 K、塔顶 371.43 K、塔釜 422.40 K。
 
-设计记录：`report/success/正庚烷-正壬烷/heptane_nonane_binary_distillation_x0p466_design.json`
+设计记录由 `scripts/generate_heptane_nonane_binary_column.py` 写出。
 
 ---
 
@@ -134,7 +135,8 @@ python scripts\generate_heptane_nonane_binary_column.py  # 短节法设计 + 严
 
 ### 生成的文件
 
-以下文件均位于 `report/success/正庚烷-正壬烷/`：
+脚本会写入 `report/success/正庚烷-正壬烷/`，该目录**不纳入 Git 跟踪**——请先运行上述命令生成。
+文件及其内容如下：
 
 | 文件 | 内容 |
 |---|---|

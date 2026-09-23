@@ -139,7 +139,6 @@ recommended first case to run, because it needs no entrainer selection.
 | `lab_models/` | ThermoFormer source, configs, datasets, weights |
 | `scripts/` | Reproduction entry points |
 | `tests/`, `evals/` | Behavioural tests and agent evaluations |
-| `report/` | Validation reports and archived case artifacts |
 | `docs/` | Bilingual architecture, DWSIM and methodology documentation |
 
 ## Scientific rules
@@ -179,5 +178,3 @@ Notable entry points:
 | `docs/model_applicability.en.md` | Model scope and filtering rules |
 | `docs/dwsim-dwxmz-export-guide.en.md` | DWSIM file generation and format |
 | `docs/ThermoFormer.en.md` | The ThermoFormer model and its results |
-
-The full three-source validation report is archived under `report/`.

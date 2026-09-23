@@ -1,5 +1,0 @@
-purity,recovery,entrainer_ratio,alpha_source,light,heavy,entrainer,alpha_base,alpha_ext,selectivity,alpha_avg,theoretical_stages,minimum_stages,reflux_ratio,minimum_reflux_ratio,feed_stage,entrainer_stage,condenser_temperature_K,reboiler_temperature_K,feed_temperature_K,distillate_flow_mol_s,bottoms_flow_mol_s
-0.95,0.9,2.0,unifac,water,ethanol,ethylene glycol,0.5264,0.3924,0.7454,0.4545,4,0.5,0.07,0.05,2,1,362.59,394.07,353.05,0.473684,2.526316
-0.95,0.9,2.0,thermoformer,water,ethanol,ethylene glycol,0.5622,3.2686,5.8138,1.3556,39,22.504,6.946,4.962,18,2,395.49,388.16,379.19,0.473684,2.526316
-0.995,0.98,2.0,unifac,water,ethanol,ethylene glycol,0.5264,0.3924,0.7454,0.4545,4,0.5,0.07,0.05,2,1,371.34,393.5,353.05,0.492462,2.507538
-0.995,0.98,2.0,thermoformer,water,ethanol,ethylene glycol,0.5622,3.2686,5.8138,1.3556,61,35.542,7.781,5.558,27,2,402.44,392.18,379.19,0.492462,2.507538

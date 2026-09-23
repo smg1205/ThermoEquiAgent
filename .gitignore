@@ -59,6 +59,10 @@ weights/
 .thermoformer-cache/
 data/vector_store.npz
 
+# Generated analysis artifacts. The reproduction scripts under scripts/ write
+# here, so the directory is rebuilt on demand rather than tracked.
+report/
+
 # ── lab_models: published research artifacts (plain Git files) ───────────
 # Re-included here so the negation applies to the *.pth / *.ckpt rules above.
 !lab_models/**

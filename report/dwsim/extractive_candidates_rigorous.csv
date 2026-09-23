@@ -1,8 +1,0 @@
-system,n_exp_points,doi,light,heavy,entrainer,nbp_light,nbp_heavy,nbp_ent,alpha_base_u,alpha_base_t,alpha_ext_u,alpha_ext_t,sel_u,sel_t,N_u,N_t,N_ratio,R_u,R_t,C4_ent_highest,C5_alpha_gt1,C6_sel_gt1,C7_design_close,ALL_PASS
-1-丁醇 / 水 / 甲苯,43,10.1016/j.fluid.2014.10.038,water,toluene,1-butanol,319.6,374.1,390.7,1.9237,1.1676,1.4364,2.5506,0.7467,2.1845,25,23,0.92,3.665,3.332,True,True,False,True,False
-乙腈 / 甲苯 / 四氢呋喃,17,10.1016/j.jct.2012.01.020,tetrahydrofuran,acetonitrile,toluene,339.1,354.6,374.1,1.6322,1.2726,0.7463,0.5424,0.4572,0.4262,115,4,0.035,24.161,0.07,True,True,False,False,False
-甲醇 / 乙酸甲酯 / 二甲基亚砜,16,10.1016/j.fluid.2015.08.014,methyl acetate,methanol,dimethyl sulfoxide,330.1,337.9,463.7,1.4263,1.8317,4.9514,0.9697,3.4716,0.5294,15,41,2.733,1.38,7.433,True,True,False,False,False
-乙酸 / 水 / 二甲基亚砜,17,10.1016/j.fluid.2008.09.010,water,acetic acid,dimethyl sulfoxide,319.6,390.9,463.7,2.0728,0.7309,13.384,1.9839,6.4569,2.7145,11,62,5.636,0.451,12.204,True,False,True,False,False
-乙醇 / 水 / glycerol,36,10.1016/j.fluid.2012.12.022,water,ethanol,glycerol,319.6,351.5,558.0,0.5264,0.5622,0.4078,3.651,0.7747,6.4938,4,34,8.5,0.07,5.684,True,False,False,False,False
-乙醇 / 水 / 乙二醇,38,10.1016/j.fluid.2012.12.022,water,ethanol,ethylene glycol,319.6,351.5,469.9,0.5264,0.5622,0.3924,3.2686,0.7454,5.8138,4,39,9.75,0.07,6.946,True,False,False,False,False
-乙酸乙酯 / 乙酸正丙酯 / 二甲基亚砜,36,10.1016/j.jct.2019.03.036,ethyl acetate,propyl acetate,dimethyl sulfoxide,350.2,374.4,463.7,2.1872,1.3446,1.7611,0.8223,0.8052,0.6116,20,223,11.15,2.478,48.792,True,True,False,False,False

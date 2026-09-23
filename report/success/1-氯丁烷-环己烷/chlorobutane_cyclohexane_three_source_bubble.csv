@@ -1,6 +1,0 @@
-﻿pressure_kPa,x_1_chlorobutane,T_experiment_C,T_thermoformer_C,T_dwsim_C,y_1_chlorobutane_experiment,y_1_chlorobutane_thermoformer,y_1_chlorobutane_dwsim,vapor_flow_mol_s,file
-101.3,0.1005,79.39,79.3117,79.1485,0.1413,0.1367,0.137399,0,chlorobutane_x0p1005_2comp_bubble_79.1C.dwxmz
-101.3,0.2796,77.86,77.6805,77.8204,0.3277,0.3253,0.31177,0,chlorobutane_x0p2796_2comp_bubble_77.8C.dwxmz
-101.3,0.4705,77.04,76.8734,77.3802,0.4904,0.4920,0.47612,0,chlorobutane_x0p4705_2comp_bubble_77.4C.dwxmz
-101.3,0.6967,77.07,76.8110,77.5782,0.6819,0.6830,0.681212,0,chlorobutane_x0p6967_2comp_bubble_77.6C.dwxmz
-101.3,0.896,77.80,77.5849,78.224,0.8777,0.8762,0.883878,0,chlorobutane_x0p8960_2comp_bubble_78.2C.dwxmz
