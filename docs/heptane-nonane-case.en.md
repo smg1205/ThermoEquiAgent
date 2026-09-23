@@ -1,0 +1,186 @@
+# Worked example: n-heptane / n-nonane direct binary distillation
+
+This case is the recommended first run of ThermoAgent. It is a **direct binary
+distillation with no solvent**, so it exercises the entire chain — experimental data,
+ThermoFormer prediction, DWSIM calculation, column design and file export — without any
+entrainer-selection steps in the way.
+
+- **System**: n-heptane (light, overhead) / n-nonane (heavy, bottoms)
+- **Pressure**: 101.325 kPa, isobaric
+- **Experimental source**: NIST ThermoML, DOI `10.1016/j.fluid.2013.05.016`
+- **ThermoFormer checkpoint**: `vle_overall_binary`, `seed_2`
+- **DWSIM property package**: UNIQUAC
+
+---
+
+## 1. Three-source bubble-point comparison
+
+Five representative liquid compositions at 101.325 kPa. `x` and `y` are the n-heptane
+mole fractions in the liquid and vapour phases respectively.
+
+| x (n-heptane) | T exp (°C) | T ThermoFormer (°C) | T DWSIM (°C) | y exp | y ThermoFormer | y DWSIM |
+|---|---|---|---|---|---|---|
+| 0.117 | 140.75 | 138.93 | 139.97 | 0.3250 | 0.3830 | 0.3403 |
+| 0.359 | 123.05 | 121.67 | 123.28 | 0.7260 | 0.7384 | 0.7006 |
+| 0.466 | 117.15 | 116.28 | 117.66 | 0.8240 | 0.8163 | 0.7890 |
+| 0.633 | 109.15 | 109.55 | 110.30 | 0.9160 | 0.8970 | 0.8844 |
+| 0.837 | 102.55 | 103.10 | 103.01 | 0.9730 | 0.9613 | 0.9593 |
+
+Over all 16 locked test points the ThermoFormer accuracy is:
+
+| Metric | Value |
+|---|---|
+| Bubble temperature MAE | **0.985 °C** |
+| Vapour n-heptane MAE | **0.0246** |
+
+All three sources agree within roughly 2 °C on temperature, and both models reproduce the
+vapour-phase enrichment of n-heptane consistently. This pair is close to ideal, which is
+precisely why it is a good first case: it isolates the plumbing from the thermodynamics.
+
+Data file: `report/success/正庚烷-正壬烷/heptane_nonane_three_source_bubble.csv`
+
+---
+
+## 2. Distillation design
+
+Short-cut Fenske / Underwood / Gilliland sizing. Relative volatility is **taken from the
+DWSIM UNIQUAC bubble-point calculation rather than assumed**, which is what keeps the
+design and the simulation on the same footing.
+
+| Specification | Value |
+|---|---|
+| Feed composition, x (n-heptane) | 0.466 |
+| Feed flow | 1.0 mol/s |
+| Pressure | 101.325 kPa |
+| Distillate purity, x (n-heptane) | 0.995 |
+| n-heptane recovery | 0.98 |
+| Relative volatility at feed | 4.2859 |
+
+Resulting column:
+
+| Quantity | Value |
+|---|---|
+| Theoretical stages | 15 |
+| Minimum stages | 6.42 |
+| Feed stage | 7 |
+| Minimum reflux ratio | 0.638 |
+| Operating reflux ratio | 0.893 (1.4 × minimum) |
+| Distillate flow | 0.459 mol/s |
+| Bottoms flow | 0.541 mol/s |
+| Condenser type | Total |
+
+Bubble temperatures from the DWSIM calculation: feed 390.81 K, distillate 371.43 K,
+bottoms 422.40 K.
+
+Design record: `report/success/正庚烷-正壬烷/heptane_nonane_binary_distillation_x0p466_design.json`
+
+---
+
+## 3. Running it from the workbench
+
+Start the stack:
+
+```powershell
+python -m uvicorn apps.api.main:app --reload --port 8000   # backend
+pnpm --dir apps/web dev                                     # frontend
+```
+
+Then paste either prompt into the input box.
+
+**English:**
+
+```text
+heptane 0.466, nonane 0.534, export the DWSIM distillation file
+```
+
+**Chinese:**
+
+```text
+正庚烷 0.466，正壬烷 0.534，导出 DWSIM 精馏塔文件
+```
+
+Both prompts produce the same result: a short-cut design plus a downloadable `.dwxmz`
+file.
+
+### Why both parts matter
+
+The router requires **two independent things** to fire the DWSIM export path:
+
+1. a recognised component pair — `heptane`/`正庚烷` together with `nonane`/`正壬烷`
+   (`_DISTILLATION_BINARY_ALIASES`), and
+2. an explicit export word — one of `dwsim`, `dwism`, `dwxmz`, `export`, `download`,
+   `导出`, `下载` (`_DWSIM_FILE_MARKERS`).
+
+A feed composition is also needed. The observable behaviour when something is missing:
+
+| Prompt | Result |
+|---|---|
+| `heptane 0.466, nonane 0.534, export the DWSIM distillation file` | Full design plus file |
+| `正庚烷 0.466，正壬烷 0.534，导出 DWSIM 精馏塔文件` | Full design plus file |
+| `n-heptane / n-nonane distillation design` (no export word) | Design numbers only, no file |
+| Export word but no composition | Structured `missing_parameters` failure |
+
+Note the last two rows: the system does not guess a 50/50 feed, and it does not silently
+produce a file when only numbers were requested.
+
+---
+
+## 4. Reproducing the case files
+
+```powershell
+python scripts\generate_heptane_nonane_comparison.py     # ThermoFormer vs experiment
+python scripts\generate_heptane_nonane_dwsim.py          # five near-bubble flashes
+python scripts\generate_heptane_nonane_binary_column.py  # short-cut design + column
+```
+
+| Script | What it writes |
+|---|---|
+| `generate_heptane_nonane_comparison.py` | ThermoFormer-vs-experiment table from the locked `seed_2` test predictions |
+| `generate_heptane_nonane_dwsim.py` | Five near-bubble TP-flash `.dwxmz` files; DWSIM computes the temperature and vapour composition |
+| `generate_heptane_nonane_binary_column.py` | The short-cut design record and the rigorous binary column flowsheet |
+
+### Generated artifacts
+
+All of these live in `report/success/正庚烷-正壬烷/`:
+
+| File | Contents |
+|---|---|
+| `heptane_nonane_three_source_bubble.csv` | Three-source comparison at five compositions |
+| `heptane_nonane_binary_distillation_x0p466_design.json` | Design record and DWSIM VLE values |
+| `heptane_nonane_binary_distillation_x0p466.dwxmz` | Rigorous binary distillation column |
+| `heptane_x0p117_2comp_bubble_140.0C.dwxmz` | Near-bubble TP flash at x = 0.117 |
+| `heptane_x0p359_2comp_bubble_123.3C.dwxmz` | Near-bubble TP flash at x = 0.359 |
+| `heptane_x0p466_2comp_bubble_117.7C.dwxmz` | Near-bubble TP flash at x = 0.466 |
+| `heptane_x0p633_2comp_bubble_110.3C.dwxmz` | Near-bubble TP flash at x = 0.633 |
+| `heptane_x0p837_2comp_bubble_103.0C.dwxmz` | Near-bubble TP flash at x = 0.837 |
+
+---
+
+## 5. Opening the files in DWSIM
+
+Opening the `.dwxmz` files requires DWSIM plus pythonnet, and **pythonnet needs a full
+process** — it will not run inside a restricted sandbox. Set `DWSIM_HOME` in `.env` to
+the directory containing `DWSIM.Automation.dll`.
+
+One behavioural caveat is worth knowing before you open them: **condenser and reboiler
+specifications are not reliably settable through the DWSIM Automation API.** The exported
+column is structurally complete (stages, feeds, product streams and reflux ratio are all
+written), but the first rigorous calculation is finished in the DWSIM GUI, where the
+condenser and reboiler specifications are supplied and the column is recalculated. This
+is a limitation of DWSIM automation rather than of the export, and the same caveat
+applies to every distillation export in this repository.
+
+The five TP-flash files need no such intervention: they are equilibrium flashes and
+calculate directly.
+
+---
+
+## 6. What to look for when verifying
+
+- Bubble temperature should rise monotonically as n-heptane is removed, from about
+  140.75 °C at x = 0.117 to 102.55 °C at x = 0.837.
+- Vapour n-heptane should always exceed liquid n-heptane at the same composition, since
+  n-heptane is the more volatile component.
+- Distillate and bottoms flows should sum to the feed flow (0.459 + 0.541 = 1.000 mol/s).
+- The bottoms temperature (422.40 K) should sit near the n-nonane boiling point, since
+  the bottoms are n-nonane-rich.

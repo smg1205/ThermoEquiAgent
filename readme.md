@@ -1,8 +1,8 @@
 # ThermoAgent
 
 ThermoAgent is a conversational thermodynamic engineering workbench. It turns a
-natural-language problem statement into a reproducible VLE / LLE calculation and,
-when asked, into a flowsheet file that opens in DWSIM.
+natural-language problem statement into a reproducible VLE / LLE calculation and, when
+asked, into a flowsheet file that opens in DWSIM.
 
 The design goal is traceability: every number in the output is attributable to an
 experimental source, a ThermoFormer prediction, or a DWSIM calculation. The language
@@ -17,6 +17,10 @@ model routes and explains — it never invents an equilibrium value.
   reflux ratio, feed stage, product temperatures) for binary and extractive columns.
 - **DWSIM export** — generates `.dwxmz` flowsheets for TP flash, binary distillation,
   extractive distillation, and liquid-liquid extraction.
+- **Knowledge graph reasoning** — a thermodynamics knowledge graph over models, tasks,
+  parameters and system types, supporting multi-hop queries with exclusion reasoning.
+- **Retrieval-augmented answering** — concept and process questions are answered from
+  versioned knowledge documents with source attribution.
 - **Three-source validation** — experimental data, ThermoFormer prediction, and DWSIM
   are compared side by side so a model's reliability can be judged rather than assumed.
 
@@ -53,98 +57,90 @@ Model selection is deterministic and happens outside the language model:
 When required information is missing, the system returns a structured
 `missing_parameters` failure instead of filling the gap with an assumption.
 
-## Worked example: n-heptane / n-nonane
+## Knowledge graph
 
-This is the recommended first case to run. It is a **direct binary distillation** with
-no solvent, so it exercises the whole chain — experiment, ThermoFormer, DWSIM — without
-any entrainer-selection steps. Experimental labels come from NIST ThermoML
-(DOI `10.1016/j.fluid.2013.05.016`).
+`knowledge_graph/` holds a thermodynamics knowledge graph used for model-applicability
+reasoning. It is built from the same reviewed model cards that drive routing, and it is
+persisted to `data/knowledge_graph.json`.
 
-Three-source bubble-point comparison at 101.325 kPa:
+**Entities** are extracted from text by `ThermoEntityExtractor`, which resolves
+thermodynamic terms into typed nodes: `model`, `task`, `component`, `system_type`,
+`parameter` and `property`. Entity resolution is exact, so `propane` never matches the
+node for `propanol`.
 
-| x (n-heptane) | T exp (°C) | T ThermoFormer (°C) | T DWSIM (°C) | y exp | y ThermoFormer | y DWSIM |
-|---|---|---|---|---|---|---|
-| 0.117 | 140.75 | 138.93 | 139.97 | 0.3250 | 0.3830 | 0.3403 |
-| 0.359 | 123.05 | 121.67 | 123.28 | 0.7260 | 0.7384 | 0.7006 |
-| 0.466 | 117.15 | 116.28 | 117.66 | 0.8240 | 0.8163 | 0.7890 |
-| 0.633 | 109.15 | 109.55 | 110.30 | 0.9160 | 0.8970 | 0.8844 |
-| 0.837 | 102.55 | 103.10 | 103.01 | 0.9730 | 0.9613 | 0.9593 |
+**Relationships** connect those nodes with a fixed vocabulary
+(`RelationshipType` in `knowledge_graph/graph.py`):
 
-Across all 16 locked test points the ThermoFormer temperature MAE is **0.985 °C** and
-the vapour n-heptane MAE is **0.0246**. All three sources agree within roughly 2 °C.
-
-The distillation design uses feed `x(heptane) = 0.466` at 101.325 kPa, 1.0 mol/s, with
-0.995 distillate mole fraction and 0.98 recovery of n-heptane. Relative volatility is
-taken from the DWSIM UNIQUAC bubble-point calculation rather than assumed:
-
-| Quantity | Value |
+| Relationship | Meaning |
 |---|---|
-| Theoretical stages | 15 |
-| Minimum stages | 6.42 |
-| Feed stage | 7 |
-| Minimum reflux ratio | 0.638 |
-| Operating reflux ratio | 0.893 (1.4 × minimum) |
-| Distillate flow | 0.459 mol/s |
-| Bottoms flow | 0.541 mol/s |
-| Condenser type | Total |
+| `supports_task` | A model can perform a task (VLE, FLASH, LLE) |
+| `excludes` | A model is explicitly not applicable to a system type |
+| `requires_parameter` | A model needs a binary parameter set to execute |
+| `uses_model` | A task or report is backed by a given model |
+| `has_property` | A component or model carries a property |
+| `has_relationship` | Two nodes are associated without a more specific type |
+| `belongs_to` | A node belongs to a family or group |
+| `describes` | A document or card describes a node |
+| `applies_to` | A parameter or rule applies to a system type |
 
-### Run it from the workbench
+Two design points are worth noting. Node identifiers carry a type prefix
+(`model:peng-robinson` versus `task:pr`), so identical short names in different
+namespaces cannot collide. Exclusion is modelled as an explicit `excludes` edge rather
+than the absence of a `belongs_to` edge, which is what makes negative questions
+answerable.
 
-Start the stack:
+**Querying** goes through `GraphQueryEngine`, which extracts entities from a question,
+finds the matching nodes, and walks one hop to collect their relationships. This
+supports multi-hop questions such as "which systems does NRTL not apply to?", where the
+answer comes from following `excludes` edges rather than from pattern-matching text.
+`GraphQuerySkill` wraps the engine for the agent, adding an optional LLM explanation
+layer on top of the graph result — the graph supplies the facts, the LLM only phrases
+them.
 
-```powershell
-python -m uvicorn apps.api.main:app --reload --port 8000   # backend
-pnpm --dir apps/web dev                                     # frontend
-```
+The graph can be exported to GraphML with `KnowledgeGraph.export_graphml()` for
+inspection in standard graph viewers, and `build_graph_from_kb()` rebuilds it from the
+YAML model cards under `knowledge/`.
 
-Then paste either of these into the input box:
+## Retrieval and skills
 
-```text
-正庚烷 0.466，正壬烷 0.534，导出 DWSIM 精馏塔文件
-```
+- `rag/` — document loading, splitting, embedding and vector-store retrieval over the
+  knowledge base.
+- `skills/` — typed capabilities the agent may invoke: thermodynamic calculation, model
+  routing, validation, knowledge-base Q&A, graph query, and phase-equilibrium
+  architecture and evaluation skills. Each skill declares its inputs, outputs and
+  failure behaviour.
+- `evals/` — agent behaviour evaluations covering fabrication, ambiguity, prompt
+  injection, omission and scope overreach.
 
-```text
-heptane 0.466, nonane 0.534, export the DWSIM distillation file
-```
+## Worked example
 
-Both the feed composition and an export word are required. Without a composition the
-system reports a missing parameter; `正庚烷-正壬烷精馏塔设计` (no export word) returns
-design numbers only, with no file.
+A complete end-to-end case is documented separately:
+**[docs/heptane-nonane-case.en.md](docs/heptane-nonane-case.en.md)** (Chinese:
+[docs/heptane-nonane-case.zh-CN.md](docs/heptane-nonane-case.zh-CN.md)).
 
-### Reproducing the case files
-
-```powershell
-python scripts\generate_heptane_nonane_comparison.py     # ThermoFormer vs experiment
-python scripts\generate_heptane_nonane_dwsim.py          # five near-bubble flashes
-python scripts\generate_heptane_nonane_binary_column.py  # short-cut design + column
-```
-
-Artifacts land in `report/success/正庚烷-正壬烷/`:
-
-| File | Contents |
-|---|---|
-| `heptane_nonane_three_source_bubble.csv` | Three-source comparison at five compositions |
-| `heptane_nonane_binary_distillation_x0p466_design.json` | Design record and DWSIM VLE values |
-| `heptane_nonane_binary_distillation_x0p466.dwxmz` | Rigorous binary distillation column |
-| `heptane_x0p*_2comp_bubble_*.dwxmz` | Five near-bubble TP-flash files |
-
-Opening them requires DWSIM plus pythonnet, and pythonnet needs a full process — it
-will not run inside a restricted sandbox. Condenser and reboiler specifications are not
-reliably settable through the DWSIM Automation API, so the exported columns are
-completed and recalculated in the DWSIM GUI.
+It covers the n-heptane / n-nonane direct binary distillation reference system, the
+three-source bubble-point comparison against NIST ThermoML data, the column design, the
+DWSIM export, and the exact prompts to reproduce it from the workbench. It is the
+recommended first case to run, because it needs no entrainer selection.
 
 ## Layout
 
 | Path | Contents |
 |---|---|
-| `agent/` | Intent routing, orchestration, response assembly |
+| `agent/` | Intent routing, orchestration, bounded execution graph |
 | `thermo_engine/` | Classical models, column design, DWSIM export |
+| `knowledge_graph/` | Thermodynamic knowledge graph and query engine |
+| `knowledge/` | Model cards, parameter data, validation benchmarks |
+| `rag/` | Retrieval-augmented generation pipeline |
+| `skills/` | Agent skills and their contracts |
 | `apps/` | FastAPI backend and React workbench |
 | `schemas/` | Pydantic domain models and API contracts |
+| `database/` | Persistence models and sessions |
 | `lab_models/` | ThermoFormer source, configs, datasets, weights |
 | `scripts/` | Reproduction entry points |
+| `tests/`, `evals/` | Behavioural tests and agent evaluations |
 | `report/` | Validation reports and archived case artifacts |
-| `docs/` | Architecture, DWSIM guides, methodology notes |
+| `docs/` | Bilingual architecture, DWSIM and methodology documentation |
 
 ## Scientific rules
 
@@ -167,4 +163,21 @@ pnpm --dir apps/web test              # frontend tests
 docker compose up --build             # full stack
 ```
 
-The full three-source validation report is `report/Agent整合ThermoFormer进度与三源验证报告v5.md`.
+## Documentation
+
+All documentation is maintained in both Chinese and English under `docs/`. Files use a
+`.zh-CN.md` or `.en.md` suffix, and every document has a counterpart in the other
+language.
+
+Notable entry points:
+
+| Document | Contents |
+|---|---|
+| `docs/heptane-nonane-case.en.md` | The worked end-to-end example |
+| `docs/repository-guide.en.md` | Directory and file guide |
+| `docs/agent-architecture.en.md` | Agent orchestration in detail |
+| `docs/model_applicability.en.md` | Model scope and filtering rules |
+| `docs/dwsim-dwxmz-export-guide.en.md` | DWSIM file generation and format |
+| `docs/ThermoFormer.en.md` | The ThermoFormer model and its results |
+
+The full three-source validation report is archived under `report/`.
