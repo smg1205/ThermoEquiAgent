@@ -140,7 +140,7 @@ recommended first case to run, because it needs no entrainer selection.
 | `lab_models/` | ThermoFormer source, configs, datasets, weights |
 | `scripts/` | Reproduction entry points |
 | `tests/`, `evals/` | Behavioural tests and agent evaluations |
-| `docs/` | Bilingual architecture, DWSIM and methodology documentation |
+| `docs/` | Architecture, DWSIM and methodology documentation |
 
 ## Scientific rules
 
@@ -154,14 +154,126 @@ These are enforced in the code, not just documented:
 4. Missing parameters produce a structured `missing_parameters` failure. Binary
    parameters, experimental data, and citations are never fabricated.
 
+## Installation
+
+### Requirements
+
+| Tool | Version | Notes |
+|---|---|---|
+| Python | 3.11 or newer (3.12 recommended) | Phasepy has no Windows wheel for 3.13 yet |
+| Node.js | 22 or newer | The frontend runs on Next.js 16 |
+| pnpm | 11.9.0 | Declared by `packageManager`; activate it with Corepack |
+| DWSIM | 9.x, Windows only | Needed only to open exported `.dwxmz` files |
+
+### 1. Backend
+
+Create a virtual environment and install the Python dependencies:
+
+```powershell
+python -m venv .venv312
+.\.venv312\Scripts\Activate.ps1
+
+# Option A — install the pinned dependency list
+python -m pip install -r requirements.txt
+```
+
+Prefer installing the project itself, which also registers the `thermoequi` and
+`thermoequi-seed` console scripts and lets you select dependency groups:
+
+```powershell
+# Option B — core runtime only
+python -m pip install -e .
+
+# ...plus every optional group
+python -m pip install -e ".[dev,phase-engines,thermoformer,dwsim]"
+```
+
+The optional groups map to the sections of `requirements.txt`:
+
+| Group | Adds | Needed for |
+|---|---|---|
+| `dev` | pytest, mypy, ruff | Running the test and lint suites |
+| `phase-engines` | Phasepy, pyclapeyron | The Phasepy and Clapeyron backends |
+| `thermoformer` | torch, rdkit, unimol-tools, scikit-learn | The ThermoFormer neural backend |
+| `dwsim` | pythonnet | DWSIM automation (Windows, needs a .NET runtime) |
+| `skills` | sentence-transformers | Retrieval over the knowledge base |
+
+Then create your local environment file and seed the reviewed parameter store:
+
+```powershell
+Copy-Item .env.example .env
+thermoequi-seed          # loads knowledge/parameters/*.yaml into the database
+```
+
+`.env` stays on your machine — it is git-ignored. Leave the checkpoint variables
+blank if you do not have the private model weights; the corresponding backends
+stay registered and return a structured `missing_parameters` failure instead of
+fabricating numbers.
+
+### 2. Frontend
+
+The frontend is a pnpm workspace member under `apps/web`. Install pnpm through
+Corepack if it is not already available, then install the dependencies:
+
+```powershell
+corepack enable          # makes the pinned pnpm 11.9.0 available
+corepack prepare pnpm@11.9.0 --activate
+
+pnpm --dir apps/web install --frozen-lockfile
+```
+
+`--frozen-lockfile` installs exactly the versions in `apps/web/pnpm-lock.yaml`,
+which is what CI uses. Drop the flag only when you intend to change a dependency.
+
+Alternatively, from the repository root:
+
+```powershell
+pnpm install --frozen-lockfile
+```
+
+### 3. Run it
+
+Two processes, two terminals:
+
+```powershell
+# Terminal 1 — backend on http://localhost:8000
+python -m uvicorn apps.api.main:app --reload --port 8000
+
+# Terminal 2 — frontend on http://localhost:3000
+pnpm --dir apps/web dev
+```
+
+Open `http://localhost:3000` for the workbench and `http://localhost:8000/docs`
+for the OpenAPI browser. Confirm the service and provider status at
+`http://localhost:8000/health`.
+
+The default `LLM_PROVIDER=deterministic` needs no API key: intent routing, model
+selection and calculation then run entirely on local rules. Set
+`LLM_PROVIDER=deepseek` together with `DEEPSEEK_API_KEY` in `.env` to let the
+model handle phrasing and explanation as well.
+
+### 4. Containerised alternative
+
+```powershell
+docker compose up --build     # backend on 8000, frontend on 3000
+```
+
+SQLite is the default database. For a migration-ready deployment, set a
+PostgreSQL SQLAlchemy URL in `.env`.
+
 ## Development
 
 ```powershell
 python -m pytest                      # backend tests
-ruff check . && mypy .                # lint and types
+ruff check . && ruff format --check . # lint and formatting
+mypy .                                # strict type checking
 pnpm --dir apps/web test              # frontend tests
-docker compose up --build             # full stack
+pnpm --dir apps/web lint              # frontend lint
+pnpm --dir apps/web build             # frontend production build
 ```
+
+`python -m pytest` reads its configuration from `pyproject.toml` and runs both
+`tests/` and `evals/`.
 
 ## Documentation
 

@@ -131,14 +131,118 @@ LLM 解释：**图谱提供事实，LLM 只负责措辞**。
 3. 求解器状态**不等于**物理校验：组成、物料衡算、相平衡残差、收敛性与参数适用性都会被检查。
 4. 参数缺失时产生结构化的 `missing_parameters` 失败。二元参数、实验数据与文献引用**绝不编造**。
 
+## 安装
+
+### 环境要求
+
+| 工具 | 版本 | 说明 |
+|---|---|---|
+| Python | 3.11 以上（推荐 3.12） | Phasepy 目前尚无 Python 3.13 的 Windows wheel |
+| Node.js | 22 以上 | 前端基于 Next.js 16 |
+| pnpm | 11.9.0 | 由 `packageManager` 字段声明，可用 Corepack 激活 |
+| DWSIM | 9.x，仅 Windows | 仅在打开导出的 `.dwxmz` 文件时需要 |
+
+### 1. 后端
+
+创建虚拟环境并安装 Python 依赖：
+
+```powershell
+python -m venv .venv312
+.\.venv312\Scripts\Activate.ps1
+
+# 方式 A —— 安装固定版本的依赖清单
+python -m pip install -r requirements.txt
+```
+
+更推荐把项目本身装上，这样会同时注册 `thermoequi` 与 `thermoequi-seed` 两个命令行入口，
+并且可以按需选择依赖组：
+
+```powershell
+# 方式 B —— 仅核心运行时
+python -m pip install -e .
+
+# ……再加上全部可选组
+python -m pip install -e ".[dev,phase-engines,thermoformer,dwsim]"
+```
+
+各可选组与 `requirements.txt` 中的分段一一对应：
+
+| 依赖组 | 追加安装 | 用途 |
+|---|---|---|
+| `dev` | pytest、mypy、ruff | 运行测试与静态检查 |
+| `phase-engines` | Phasepy、pyclapeyron | Phasepy 与 Clapeyron 后端 |
+| `thermoformer` | torch、rdkit、unimol-tools、scikit-learn | ThermoFormer 神经网络后端 |
+| `dwsim` | pythonnet | DWSIM 自动化（Windows，需 .NET 运行时） |
+| `skills` | sentence-transformers | 知识库检索 |
+
+随后生成本地环境文件并初始化参数库：
+
+```powershell
+Copy-Item .env.example .env
+thermoequi-seed          # 把 knowledge/parameters/*.yaml 载入数据库
+```
+
+`.env` 只保留在本机（已被 git 忽略）。若没有私有模型权值，把对应的 checkpoint 变量留空即可：
+相关后端仍保持注册状态，会返回结构化的 `missing_parameters` 失败，而不会编造数值。
+
+### 2. 前端
+
+前端是 `apps/web` 下的 pnpm 工作区成员。如果本机没有 pnpm，先用 Corepack 启用，再安装依赖：
+
+```powershell
+corepack enable          # 使 packageManager 声明的 pnpm 11.9.0 可用
+corepack prepare pnpm@11.9.0 --activate
+
+pnpm --dir apps/web install --frozen-lockfile
+```
+
+`--frozen-lockfile` 会严格按 `apps/web/pnpm-lock.yaml` 安装，与 CI 一致。只有在确实要修改依赖时
+才去掉该参数。
+
+也可以在仓库根目录执行：
+
+```powershell
+pnpm install --frozen-lockfile
+```
+
+### 3. 启动
+
+需要两个进程，各自一个终端：
+
+```powershell
+# 终端 1 —— 后端，http://localhost:8000
+python -m uvicorn apps.api.main:app --reload --port 8000
+
+# 终端 2 —— 前端，http://localhost:3000
+pnpm --dir apps/web dev
+```
+
+浏览器打开 `http://localhost:3000` 进入工作台，`http://localhost:8000/docs` 查看 OpenAPI，
+`http://localhost:8000/health` 确认服务与 Provider 状态。
+
+默认 `LLM_PROVIDER=deterministic`，**不需要任何 API Key**：意图分流、模型选择与计算完全由本地
+规则完成。如需让模型参与措辞与解释，在 `.env` 中设置 `LLM_PROVIDER=deepseek` 与 `DEEPSEEK_API_KEY`。
+
+### 4. 容器化方式
+
+```powershell
+docker compose up --build     # 后端 8000，前端 3000
+```
+
+默认数据库为 SQLite。如需具备迁移能力的部署，在 `.env` 中设置 PostgreSQL 的 SQLAlchemy URL。
+
 ## 开发
 
 ```powershell
 python -m pytest                      # 后端测试
-ruff check . && mypy .                # 静态检查与类型检查
+ruff check . && ruff format --check . # 静态检查与格式检查
+mypy .                                # 严格类型检查
 pnpm --dir apps/web test              # 前端测试
-docker compose up --build             # 完整栈
+pnpm --dir apps/web lint              # 前端 lint
+pnpm --dir apps/web build             # 前端生产构建
 ```
+
+`python -m pytest` 从 `pyproject.toml` 读取配置，会同时运行 `tests/` 与 `evals/`。
 
 ## 文档
 

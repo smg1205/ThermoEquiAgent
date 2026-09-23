@@ -1,13 +1,22 @@
-# ThermoEqui Agent / ThermoFormer integration (Python >= 3.11)
+# ThermoEqui Agent / ThermoFormer integration
 #
-# Install with:
+# Requires Python 3.11 or newer (3.12 recommended).
+#
+# Install everything:
 #   python -m pip install -r requirements.txt
 #
+# Or install the application as a package, which is preferable because it also
+# registers the `thermoequi` and `thermoequi-seed` console scripts:
+#   python -m pip install -e ".[dev,phase-engines,thermoformer,dwsim]"
+#
 # This file mirrors the runtime dependencies and optional feature groups declared
-# in pyproject.toml. DWSIM itself and a compatible .NET runtime must be installed
-# separately on Windows; pythonnet is only the Python bridge.
+# in pyproject.toml. Versions are pinned to the combination this project was
+# developed and tested against.
+#
+# DWSIM itself and a compatible .NET runtime must be installed separately on
+# Windows; pythonnet is only the Python bridge to it.
 
-# Core API and thermodynamic engine
+# ── Core API and thermodynamic engine (required) ─────────────────────────────
 python-dotenv==1.0.1
 fastapi==0.115.6
 httpx==0.28.1
@@ -21,21 +30,25 @@ thermo==0.6.1
 uvicorn[standard]==0.34.0
 sentence-transformers>=2.2.0
 
-# Optional phase-equilibrium engines
+# ── Optional: phase-equilibrium engines ──────────────────────────────────────
+# Extra cubic and activity-coefficient backends. Phasepy has no Windows wheel for
+# Python 3.13 yet, so use Python 3.11 or 3.12 if you need it.
 phasepy==0.0.56
 pyclapeyron==0.1.1
 
-# DWSIM automation bridge (Windows/.NET)
+# ── Optional: DWSIM automation bridge (Windows / .NET) ───────────────────────
 pythonnet>=3.0.3
 
-# ThermoFormer integration
+# ── Optional: ThermoFormer neural VLE prediction ─────────────────────────────
+# Needed only to run the ThermoFormer backend; the rest of the project works
+# without it. Model weights are configured separately through .env.
 torch>=2.1,<3
 rdkit>=2024.3,<2026
 unimol-tools>=0.1.4.post1
 scikit-learn>=1.6,<2
 openpyxl>=3.1
 
-# Development and test tooling
+# ── Development and test tooling ─────────────────────────────────────────────
 mypy==1.14.1
 pytest==8.3.4
 pytest-asyncio==0.25.2
