@@ -53,7 +53,42 @@ Model selection is deterministic and happens outside the language model:
 When required information is missing, the system returns a structured
 `missing_parameters` failure instead of filling the gap with an assumption.
 
-## Try it
+## Worked example: n-heptane / n-nonane
+
+This is the recommended first case to run. It is a **direct binary distillation** with
+no solvent, so it exercises the whole chain — experiment, ThermoFormer, DWSIM — without
+any entrainer-selection steps. Experimental labels come from NIST ThermoML
+(DOI `10.1016/j.fluid.2013.05.016`).
+
+Three-source bubble-point comparison at 101.325 kPa:
+
+| x (n-heptane) | T exp (°C) | T ThermoFormer (°C) | T DWSIM (°C) | y exp | y ThermoFormer | y DWSIM |
+|---|---|---|---|---|---|---|
+| 0.117 | 140.75 | 138.93 | 139.97 | 0.3250 | 0.3830 | 0.3403 |
+| 0.359 | 123.05 | 121.67 | 123.28 | 0.7260 | 0.7384 | 0.7006 |
+| 0.466 | 117.15 | 116.28 | 117.66 | 0.8240 | 0.8163 | 0.7890 |
+| 0.633 | 109.15 | 109.55 | 110.30 | 0.9160 | 0.8970 | 0.8844 |
+| 0.837 | 102.55 | 103.10 | 103.01 | 0.9730 | 0.9613 | 0.9593 |
+
+Across all 16 locked test points the ThermoFormer temperature MAE is **0.985 °C** and
+the vapour n-heptane MAE is **0.0246**. All three sources agree within roughly 2 °C.
+
+The distillation design uses feed `x(heptane) = 0.466` at 101.325 kPa, 1.0 mol/s, with
+0.995 distillate mole fraction and 0.98 recovery of n-heptane. Relative volatility is
+taken from the DWSIM UNIQUAC bubble-point calculation rather than assumed:
+
+| Quantity | Value |
+|---|---|
+| Theoretical stages | 15 |
+| Minimum stages | 6.42 |
+| Feed stage | 7 |
+| Minimum reflux ratio | 0.638 |
+| Operating reflux ratio | 0.893 (1.4 × minimum) |
+| Distillate flow | 0.459 mol/s |
+| Bottoms flow | 0.541 mol/s |
+| Condenser type | Total |
+
+### Run it from the workbench
 
 Start the stack:
 
@@ -62,10 +97,7 @@ python -m uvicorn apps.api.main:app --reload --port 8000   # backend
 pnpm --dir apps/web dev                                     # frontend
 ```
 
-Then open the workbench and paste one of these into the input box.
-
-**1. Direct binary distillation with a DWSIM file** — the n-heptane / n-nonane
-reference case. Both the feed composition and an export word are required:
+Then paste either of these into the input box:
 
 ```text
 正庚烷 0.466，正壬烷 0.534，导出 DWSIM 精馏塔文件
@@ -75,52 +107,11 @@ reference case. Both the feed composition and an export word are required:
 heptane 0.466, nonane 0.534, export the DWSIM distillation file
 ```
 
-The design uses feed `x(heptane) = 0.466` at 101.325 kPa with 0.995 distillate purity
-and 0.98 recovery, giving 15 theoretical stages, feed stage 7, and reflux ratio 0.893.
-Drop the composition or the export word and the request degrades predictably: without
-a composition it reports a missing parameter, and `正庚烷-正壬烷精馏塔设计` (no export
-word) returns design numbers only, with no file.
+Both the feed composition and an export word are required. Without a composition the
+system reports a missing parameter; `正庚烷-正壬烷精馏塔设计` (no export word) returns
+design numbers only, with no file.
 
-**2. Extractive distillation** — the entrainer is selected as the highest-boiling
-component and the selectivity is checked to confirm the entrainer actually helps:
-
-```text
-乙酸 / 水 / DMSO 萃取精馏，导出 DWSIM 文件
-```
-
-**3. Liquid-liquid extraction**:
-
-```text
-水 / 正丁醇 液液萃取，导出 DWSIM 文件
-```
-
-## Validation
-
-The current three-source comparison is documented in:
-
-```text
-report/Agent整合ThermoFormer进度与三源验证报告v5.md
-```
-
-Representative result — n-heptane / n-nonane at 101.325 kPa, experimental labels from
-NIST ThermoML (DOI `10.1016/j.fluid.2013.05.016`):
-
-| x (n-heptane) | T exp (°C) | T ThermoFormer (°C) | T DWSIM (°C) | y exp | y ThermoFormer | y DWSIM |
-|---|---|---|---|---|---|---|
-| 0.117 | 140.75 | 138.93 | 139.97 | 0.3250 | 0.3830 | 0.3403 |
-| 0.466 | 117.15 | 116.28 | 117.66 | 0.8240 | 0.8163 | 0.7890 |
-| 0.837 | 102.55 | 103.10 | 103.01 | 0.9730 | 0.9613 | 0.9593 |
-
-Across all 16 locked test points the ThermoFormer temperature MAE is **0.985 °C** and
-the vapour n-heptane MAE is **0.0246**. All three sources agree within roughly 2 °C,
-which is why this pair is the recommended first case to run.
-
-The report also documents where the models do *not* hold: for acetic acid / water /
-DMSO, DMSO lies outside the ThermoFormer training distribution, and the resulting
-vapour-composition MAE (0.22–0.29) is about three times worse than DWSIM. Both the
-working and the failing cases are reported rather than only the favourable ones.
-
-## Reproducing the case files
+### Reproducing the case files
 
 ```powershell
 python scripts\generate_heptane_nonane_comparison.py     # ThermoFormer vs experiment
@@ -128,11 +119,19 @@ python scripts\generate_heptane_nonane_dwsim.py          # five near-bubble flas
 python scripts\generate_heptane_nonane_binary_column.py  # short-cut design + column
 ```
 
-Artifacts land in `report/success/正庚烷-正壬烷/`. Opening them requires DWSIM plus
-pythonnet, and pythonnet needs a full process — it will not run inside a restricted
-sandbox. Condenser and reboiler specifications are not reliably settable through the
-DWSIM Automation API, so the exported columns are completed and recalculated in the
-DWSIM GUI.
+Artifacts land in `report/success/正庚烷-正壬烷/`:
+
+| File | Contents |
+|---|---|
+| `heptane_nonane_three_source_bubble.csv` | Three-source comparison at five compositions |
+| `heptane_nonane_binary_distillation_x0p466_design.json` | Design record and DWSIM VLE values |
+| `heptane_nonane_binary_distillation_x0p466.dwxmz` | Rigorous binary distillation column |
+| `heptane_x0p*_2comp_bubble_*.dwxmz` | Five near-bubble TP-flash files |
+
+Opening them requires DWSIM plus pythonnet, and pythonnet needs a full process — it
+will not run inside a restricted sandbox. Condenser and reboiler specifications are not
+reliably settable through the DWSIM Automation API, so the exported columns are
+completed and recalculated in the DWSIM GUI.
 
 ## Layout
 
@@ -167,3 +166,5 @@ ruff check . && mypy .                # lint and types
 pnpm --dir apps/web test              # frontend tests
 docker compose up --build             # full stack
 ```
+
+The full three-source validation report is `report/Agent整合ThermoFormer进度与三源验证报告v5.md`.
