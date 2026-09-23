@@ -1,5 +1,7 @@
 # ThermoAgent
 
+> **English** | [中文](readme.zh-CN.md)
+
 ThermoAgent is a conversational thermodynamic engineering workbench. It turns a
 natural-language problem statement into a reproducible VLE / LLE calculation and, when
 asked, into a flowsheet file that opens in DWSIM.
