@@ -1,0 +1,9 @@
+extends: ../../../ablation/studies/direct_ge_supervision/config.yaml
+name: c1_binary_unseen_three_stage
+protocol:
+  registered_splits: [binary_unseen_component]
+  seeds: [0, 1, 2, 3, 4]
+  evaluation_partition: test
+runtime:
+  output_dir: experiments/vle/generalization/training_records/predictive_performance/binary_unseen_components
+  results_file: experiments/vle/prediction/study_records/binary_unseen_components/results.md

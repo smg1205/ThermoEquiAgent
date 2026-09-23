@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "vle.ablation.joint",
+  "section": "VLE / Controlled ablations",
+  "title": "Joint binary--ternary molecular and interaction ablation",
+  "status": "runnable",
+  "backend": "scripts/run_vle_joint_ablations.py",
+  "args": [],
+  "configs": [
+    "configs/vle/ablation/studies/vle_joint/stage0_base.yaml",
+    "configs/vle/ablation/studies/vle_joint/three_stage_base.yaml"
+  ],
+  "sources": [
+    "configs/vle/ablation/studies/vle_joint",
+    "experiments/vle/ablation/joint",
+    "experiments/vle/training_records/v1/three/results/thermoformer_vle_three_stage.on.vle_overall_binary_ternary",
+    "models/vle/prediction/vle_overall_binary_ternary"
+  ],
+  "provenance": "vle_nist",
+  "output_mode": "native",
+  "seed_mode": "optional",
+  "device": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "All variants use identical release-data split assignments. The completed C1 main-benchmark result is reused; five unique variants are trained.",
+  "protocol": "vle_overall_binary_ternary"
+}

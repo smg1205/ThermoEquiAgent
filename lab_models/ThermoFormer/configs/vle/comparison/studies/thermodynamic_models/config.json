@@ -1,0 +1,8 @@
+{
+  "extends": "../../../../protocols/state_generalization.yaml",
+  "name": "thermodynamic_model_state_generalization",
+  "runtime": {
+    "output_dir": "experiments/vle/comparison/reference_evaluations/thermodynamic_models",
+    "results_file": "experiments/vle/comparison/study_records/thermodynamic_models/results.md"
+  }
+}

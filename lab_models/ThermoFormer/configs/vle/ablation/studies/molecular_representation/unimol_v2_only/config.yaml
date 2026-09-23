@@ -1,0 +1,13 @@
+extends: ../../../../../training/supervised.yaml
+name: c0_current_vanilla
+encoder:
+  representation: unimol_v2
+  fusion_mode: legacy
+  use_rdkit_descriptors: false
+  use_unimol: true
+  use_functional_groups: false
+  chemical_attention_bias: false
+  context_pair_interaction: false
+runtime:
+  output_dir: experiments/vle/generalization/training_records/ablations/molecular_representation/unimol_v2_only
+  results_file: experiments/vle/ablation/study_records/molecular_representation/unimol_v2_only/results.md

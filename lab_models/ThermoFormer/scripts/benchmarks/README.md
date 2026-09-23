@@ -1,0 +1,1 @@
+Research workflow entry points. Shared orchestration is in registry.py; public discovery uses python scripts/run_experiments.py list. Task scripts delegate to the same implementation. Scientific algorithms remain in the original backends.

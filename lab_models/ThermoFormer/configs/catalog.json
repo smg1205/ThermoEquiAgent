@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "id": "vle.prediction.binary",
+      "config": "vle/prediction/binary.json"
+    },
+    {
+      "id": "vle.prediction.mixed",
+      "config": "vle/prediction/mixed.json"
+    },
+    {
+      "id": "vle.prediction.ternary",
+      "config": "vle/prediction/ternary.json"
+    },
+    {
+      "id": "vle.generalization.composition_interpolation",
+      "config": "vle/generalization/composition_interpolation.json"
+    },
+    {
+      "id": "vle.generalization.composition_edge",
+      "config": "vle/generalization/composition_edge.json"
+    },
+    {
+      "id": "vle.generalization.temperature_low",
+      "config": "vle/generalization/temperature_low.json"
+    },
+    {
+      "id": "vle.generalization.temperature_high",
+      "config": "vle/generalization/temperature_high.json"
+    },
+    {
+      "id": "vle.generalization.pressure_low",
+      "config": "vle/generalization/pressure_low.json"
+    },
+    {
+      "id": "vle.generalization.pressure_high",
+      "config": "vle/generalization/pressure_high.json"
+    },
+    {
+      "id": "vle.generalization.unseen_component",
+      "config": "vle/generalization/unseen_component.json"
+    },
+    {
+      "id": "lle.prediction.binary_random",
+      "config": "lle/prediction/binary_random.json"
+    },
+    {
+      "id": "lle.prediction.binary_system",
+      "config": "lle/prediction/binary_system.json"
+    },
+    {
+      "id": "lle.prediction.ternary_random",
+      "config": "lle/prediction/ternary_random.json"
+    },
+    {
+      "id": "lle.prediction.ternary_system",
+      "config": "lle/prediction/ternary_system.json"
+    },
+    {
+      "id": "lle.prediction.mixed_random",
+      "config": "lle/prediction/mixed_random.json"
+    },
+    {
+      "id": "lle.prediction.mixed_system",
+      "config": "lle/prediction/mixed_system.json"
+    },
+    {
+      "id": "lle.generalization.binary_temperature_low",
+      "config": "lle/generalization/binary_temperature_low.json"
+    },
+    {
+      "id": "lle.generalization.binary_temperature_high",
+      "config": "lle/generalization/binary_temperature_high.json"
+    },
+    {
+      "id": "lle.generalization.binary_pressure_low",
+      "config": "lle/generalization/binary_pressure_low.json"
+    },
+    {
+      "id": "lle.generalization.binary_pressure_high",
+      "config": "lle/generalization/binary_pressure_high.json"
+    },
+    {
+      "id": "lle.generalization.binary_unseen_component",
+      "config": "lle/generalization/binary_unseen_component.json"
+    },
+    {
+      "id": "lle.thermodynamics.stability",
+      "config": "lle/thermodynamics/stability.json"
+    },
+    {
+      "id": "data.construction.audit",
+      "config": "data/construction/audit.json"
+    },
+    {
+      "id": "data.construction.distribution",
+      "config": "data/construction/distribution.json"
+    },
+    {
+      "id": "vle.comparison.machine_learning",
+      "config": "vle/comparison/machine_learning.json"
+    },
+    {
+      "id": "vle.comparison.joint_activity",
+      "config": "vle/comparison/joint_activity.json"
+    },
+    {
+      "id": "vle.comparison.ternary_activity",
+      "config": "vle/comparison/ternary_activity.json"
+    },
+    {
+      "id": "vle.comparison.classical_binary",
+      "config": "vle/comparison/classical_binary.json"
+    },
+    {
+      "id": "vle.comparison.classical_ternary",
+      "config": "vle/comparison/classical_ternary.json"
+    },
+    {
+      "id": "vle.ablation.molecular_representation",
+      "config": "vle/ablation/molecular_representation.json"
+    },
+    {
+      "id": "vle.ablation.interaction_architecture",
+      "config": "vle/ablation/interaction_architecture.json"
+    },
+    {
+      "id": "vle.ablation.staged_validation",
+      "config": "vle/ablation/staged_validation.json"
+    },
+    {
+      "id": "vle.interpretability.molecular_interactions",
+      "config": "vle/interpretability/molecular_interactions.json"
+    },
+    {
+      "id": "separation_design.thermoequi_agent.case_studies",
+      "config": "separation_design/autonomous/thermoequi_agent.json"
+    },
+    {
+      "id": "vle.ablation.joint",
+      "config": "vle/ablation/joint.json"
+    }
+  ]
+}

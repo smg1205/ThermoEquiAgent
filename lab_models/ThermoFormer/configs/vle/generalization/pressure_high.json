@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "vle.generalization.pressure_high",
+  "section": "VLE / Generalization and extrapolation",
+  "title": "High-pressure extrapolation",
+  "status": "runnable",
+  "backend": "scripts/run_phase_equilibrium_benchmarks.py",
+  "args": [
+    "--task",
+    "vle",
+    "--protocols",
+    "vle_binary_state_pressure_high_extrapolation",
+    "--max-workers",
+    "1"
+  ],
+  "configs": [
+    "configs/vle/prediction/studies/vle/stage0.yaml",
+    "configs/vle/prediction/studies/vle/three_stage.yaml"
+  ],
+  "sources": [
+    "experiments/vle/training_records/v1/three/results/thermoformer_vle_three_stage.on.vle_binary_state_pressure_high_extrapolation",
+    "datasets/splits/vle/vle_binary_state_pressure_high_extrapolation",
+    "models/vle/generalization/vle_binary_state_pressure_high_extrapolation"
+  ],
+  "provenance": "vle_nist",
+  "output_mode": "campaign",
+  "seed_mode": "optional",
+  "device": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Unchanged Stage 0 prerequisite and Stage 1–3 backend. Both isothermal and isobaric evaluation. Backend regenerates registered VLE splits; formal provenance checks still apply.",
+  "protocol": "vle_binary_state_pressure_high_extrapolation"
+}

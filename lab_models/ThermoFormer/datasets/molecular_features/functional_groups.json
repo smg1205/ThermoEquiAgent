@@ -1,0 +1,33 @@
+{
+  "version": "thermoformer_functional_groups_v1",
+  "groups": [
+    {"name": "alcohol", "smarts": "[OX2H][CX4;!$(C=O)]"},
+    {"name": "phenol", "smarts": "[OX2H]c"},
+    {"name": "carboxylic_acid", "smarts": "[CX3](=O)[OX2H1]"},
+    {"name": "ester", "smarts": "[CX3](=O)[OX2][#6]"},
+    {"name": "ether", "smarts": "[OD2]([#6])[#6]"},
+    {"name": "aldehyde", "smarts": "[CX3H1](=O)[#6]"},
+    {"name": "ketone", "smarts": "[#6][CX3](=O)[#6]"},
+    {"name": "amide", "smarts": "[CX3](=O)[NX3]"},
+    {"name": "primary_amine", "smarts": "[NX3;H2;!$(NC=O)]"},
+    {"name": "secondary_amine", "smarts": "[NX3;H1;!$(NC=O)]"},
+    {"name": "tertiary_amine", "smarts": "[NX3;H0;!$(N=*);!$(NC=O)]"},
+    {"name": "nitrile", "smarts": "[CX2]#[NX1]"},
+    {"name": "nitro", "smarts": "[$([N+](=O)[O-]),$([NX3](=O)=O)]"},
+    {"name": "thiol", "smarts": "[SX2H]"},
+    {"name": "thioether", "smarts": "[#6][SX2][#6]"},
+    {"name": "sulfoxide", "smarts": "[#6][SX3](=O)[#6]"},
+    {"name": "sulfone", "smarts": "[#6][SX4](=O)(=O)[#6]"},
+    {"name": "fluoro", "smarts": "[#6]-[F]"},
+    {"name": "chloro", "smarts": "[#6]-[Cl]"},
+    {"name": "bromo", "smarts": "[#6]-[Br]"},
+    {"name": "iodo", "smarts": "[#6]-[I]"},
+    {"name": "alkene", "smarts": "[CX3]=[CX3]"},
+    {"name": "alkyne", "smarts": "[CX2]#[CX2]"},
+    {"name": "aromatic_ring", "smarts": "[a;r]1[a;r][a;r][a;r][a;r][a;r]1"},
+    {"name": "heteroaromatic", "smarts": "[a;r][n,o,s;r]"},
+    {"name": "epoxide", "smarts": "[OX2;r3]1[CX4;r3][CX4;r3]1"},
+    {"name": "phosphate", "smarts": "P(=O)(O)O"},
+    {"name": "siloxane", "smarts": "[Si]-O-[Si]"}
+  ]
+}

@@ -54,7 +54,25 @@ weights/
 # ── Explicit re-includes (negations MUST come last to take effect) ───────
 # Safe, credential-free configuration template: required for onboarding.
 !.env.example
-# Research weights that ship with the repository (see *.pt note above).
-!lab_models/**/*.pt
-!.thermoformer-cache/
-lab_models/
+
+# Runtime feature caches are never published.
+.thermoformer-cache/
+data/vector_store.npz
+
+# ── lab_models: published research artifacts (plain Git files) ───────────
+# Re-included here so the negation applies to the *.pth / *.ckpt rules above.
+!lab_models/**
+!lab_models/**/*.pth
+
+# Training experiment records are kept local: they are large (hundreds of MB
+# of per-run CSV/JSON evaluation dumps) and are reproducible from the code.
+lab_models/**/experiments/
+
+# Keep non-source noise out of lab_models even though the tree is published.
+lab_models/**/__pycache__/
+lab_models/**/*.pyc
+lab_models/**/.ipynb_checkpoints/
+lab_models/**/.pytest_cache/
+lab_models/**/.mypy_cache/
+lab_models/**/.ruff_cache/
+lab_models/**/cache/

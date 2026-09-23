@@ -1,0 +1,29 @@
+{
+  "version": "thermoformer_rdkit24_v1",
+  "descriptors": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumHAcceptors",
+    "NumRotatableBonds",
+    "RingCount",
+    "NumAromaticRings",
+    "NumAliphaticRings",
+    "FractionCSP3",
+    "HeavyAtomCount",
+    "NHOHCount",
+    "NOCount",
+    "NumHeteroatoms",
+    "NumValenceElectrons",
+    "MolMR",
+    "MaxPartialCharge",
+    "MinPartialCharge",
+    "NumRadicalElectrons",
+    "BertzCT",
+    "BalabanJ",
+    "Chi0v",
+    "Kappa1",
+    "LabuteASA"
+  ]
+}

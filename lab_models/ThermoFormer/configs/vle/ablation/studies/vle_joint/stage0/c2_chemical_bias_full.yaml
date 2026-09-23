@@ -1,0 +1,5 @@
+extends: ../stage0_base.yaml
+name: c2_chemical_bias_full
+encoder:
+  chemical_attention_bias: true
+  context_pair_interaction: true

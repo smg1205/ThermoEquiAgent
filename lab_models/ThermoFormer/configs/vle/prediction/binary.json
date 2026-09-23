@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "vle.prediction.binary",
+  "section": "VLE / Predictive benchmarks",
+  "title": "Binary training → binary test",
+  "status": "runnable",
+  "backend": "scripts/run_phase_equilibrium_benchmarks.py",
+  "args": [
+    "--task",
+    "vle",
+    "--protocols",
+    "vle_overall_binary",
+    "--max-workers",
+    "1"
+  ],
+  "configs": [
+    "configs/vle/prediction/studies/vle/stage0.yaml",
+    "configs/vle/prediction/studies/vle/three_stage.yaml"
+  ],
+  "sources": [
+    "experiments/vle/training_records/v1/three/results/thermoformer_vle_three_stage.on.vle_overall_binary",
+    "datasets/splits/vle/vle_overall_binary",
+    "models/vle/prediction/vle_overall_binary"
+  ],
+  "provenance": "vle_nist",
+  "output_mode": "campaign",
+  "seed_mode": "optional",
+  "device": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Uses the registered Stage 0 prerequisite and Stage 1–3 backend. Both isothermal and isobaric evaluation. The backend generates the registered VLE splits and applies formal provenance checks.",
+  "protocol": "vle_overall_binary"
+}

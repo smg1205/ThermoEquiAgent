@@ -1,0 +1,48 @@
+{
+  "binary_vle_english.xlsx": {
+    "all_molecular_identities_roundtrip": true,
+    "original_quality_flags_preserved": true,
+    "units_roundtrip": true,
+    "loader_default": {
+      "raw_rows": 22760,
+      "accepted_before_deduplication": 14968,
+      "duplicates_removed": 10,
+      "loaded_samples": 14958,
+      "rejected": {
+        "failed_quality": 1309,
+        "pressure_above_limit": 6483
+      }
+    },
+    "loader_all_quality_no_pressure_cutoff": {
+      "raw_rows": 22760,
+      "accepted_before_deduplication": 22760,
+      "duplicates_removed": 14,
+      "loaded_samples": 22746,
+      "rejected": {}
+    }
+  },
+  "ternary_vle_english.xlsx": {
+    "all_molecular_identities_roundtrip": true,
+    "original_quality_flags_preserved": true,
+    "units_roundtrip": true,
+    "loader_default": {
+      "raw_rows": 4544,
+      "accepted_before_deduplication": 2277,
+      "duplicates_removed": 0,
+      "loaded_samples": 2277,
+      "rejected": {
+        "failed_quality": 2088,
+        "pressure_above_limit": 179
+      }
+    },
+    "loader_all_quality_no_pressure_cutoff": {
+      "raw_rows": 4544,
+      "accepted_before_deduplication": 4544,
+      "duplicates_removed": 0,
+      "loaded_samples": 4544,
+      "rejected": {}
+    }
+  },
+  "direct_source_discrepancy_regression_rows": 68,
+  "original_VLE_source_files_unchanged": 205
+}

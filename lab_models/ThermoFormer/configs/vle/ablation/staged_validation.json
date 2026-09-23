@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "vle.ablation.staged_validation",
+  "section": "VLE / Controlled ablations",
+  "title": "Stage 0–3 validation-only physical diagnostics",
+  "status": "completed",
+  "backend": "scripts/evaluate_staged_thermodynamic_optimization.py",
+  "args": [
+    "--seeds",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "--device",
+    "cpu"
+  ],
+  "configs": [
+    "configs/vle/prediction/studies/vle/three_stage.yaml"
+  ],
+  "sources": [
+    "experiments/vle/ablation/staged_validation",
+    "models/vle/prediction/vle_overall_binary_ternary"
+  ],
+  "provenance": "updated_vle_dataset",
+  "output_mode": "native",
+  "seed_mode": "fixed",
+  "device": false,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Validation-only recomputation from the original validation-selected Stage 0–3 checkpoints. No retraining, checkpoint reselection, or test-set evaluation.",
+  "protocol": "vle_overall_binary_ternary"
+}

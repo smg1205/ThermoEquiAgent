@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "vle.comparison.classical_binary",
+  "section": "VLE / Baseline comparison",
+  "title": "binary classical-model phase curves",
+  "status": "runnable",
+  "backend": "scripts/visualization/plot_thermodynamic_phase_diagrams.py",
+  "args": [],
+  "configs": [
+    "configs/vle/comparison/studies/thermodynamic_models/phase_diagrams/settings.json"
+  ],
+  "sources": [
+    "experiments/vle/comparison/reference_evaluations/thermodynamic_models/phase_diagrams",
+    "experiments/vle/comparison/thermodynamic_models/figures"
+  ],
+  "provenance": "registered_vle_dataset",
+  "output_mode": "native",
+  "seed_mode": "fixed",
+  "device": false,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Retrospective per-system fitting and incomplete pure-property coverage. Paper seed/split/case selection needs reconciliation; this invokes the retained historical study, not a verified reconstruction of all 12 manuscript panels.",
+  "protocol": null
+}
+

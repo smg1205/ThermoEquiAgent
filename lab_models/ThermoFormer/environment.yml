@@ -1,0 +1,10 @@
+name: ggnn39
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      # The versioned requirements file includes the exact TeNNet-SAC,
+      # Transformers, Tokenizers and PyArrow compatibility pins.
+      - -r requirements.txt

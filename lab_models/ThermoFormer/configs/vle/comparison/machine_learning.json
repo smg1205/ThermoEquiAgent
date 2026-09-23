@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "vle.comparison.machine_learning",
+  "section": "VLE / Baseline comparison",
+  "title": "Formal ML benchmark",
+  "status": "runnable",
+  "backend": "scripts/run_ml_baselines_formal.py",
+  "args": [
+    "--settings",
+    "configs/vle/comparison/studies/machine_learning/formal_settings.json"
+  ],
+  "configs": [
+    "configs/vle/comparison/studies/machine_learning/formal_settings.json"
+  ],
+  "sources": [
+    "experiments/vle/comparison/reference_evaluations/machine_learning/formal"
+  ],
+  "provenance": "registered_vle_dataset",
+  "output_mode": "ml",
+  "seed_mode": "optional",
+  "device": false,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Matched-data blocks use the registered VLE workbooks and frozen VLE splits. Official pretrained and 298.15±0.5 K reference models retain their declared capability and coverage limits.",
+  "protocol": null
+}
+
+

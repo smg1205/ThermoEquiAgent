@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "workbooks": [
+    {
+      "task": "vle",
+      "path": "datasets/vle/binary_vle_english.xlsx",
+      "sha256": "1fdd6bd4417970a023a4917882a0faa14a747f232cff06f33fd5394672029788",
+      "status": "current_versioned_input"
+    },
+    {
+      "task": "vle",
+      "path": "datasets/vle/ternary_vle_english.xlsx",
+      "sha256": "f7fcd62064f0f192b3a2d14f57860a03cae9606744fcb3b3a5efd019eafcaf8b",
+      "status": "current_versioned_input"
+    },
+    {
+      "task": "lle",
+      "path": "datasets/lle/ternary_lle.xlsx",
+      "sha256": "412f631a94e28802bb73b7175692695bdf9ecdd54a6326392c9550bf5f2b8b5c",
+      "status": "current_versioned_input"
+    },
+    {
+      "task": "lle",
+      "path": "datasets/lle/binary_lle.xlsx",
+      "sha256": "2379fc57b16c6a95de7f658173ea368da7a083f80b7ac9d0e6ec8d1f55a98f59",
+      "status": "current_versioned_input"
+    }
+  ],
+  "historical_root": "datasets/vle_reference",
+  "split_root": "datasets/splits/vle"
+}

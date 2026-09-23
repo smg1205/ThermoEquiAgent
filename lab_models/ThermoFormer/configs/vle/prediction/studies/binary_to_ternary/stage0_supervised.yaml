@@ -1,0 +1,12 @@
+extends: ../../../../training/supervised.yaml
+name: c1_binary_to_ternary_supervised_reference
+protocol:
+  registered_splits:
+    - binary_to_ternary_zero_shot
+    - binary_to_ternary_scale_0.05
+    - binary_to_ternary_scale_0.1
+    - binary_to_ternary_scale_0.25
+    - binary_to_ternary_scale_0.5
+    - binary_to_ternary_scale_1
+  seeds: [0, 1, 2, 3, 4]
+  evaluation_partition: validation

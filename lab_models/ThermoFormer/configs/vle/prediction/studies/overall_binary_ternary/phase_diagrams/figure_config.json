@@ -1,0 +1,16 @@
+{
+  "seed": 0,
+  "minimum_points": 5,
+  "pressure_range_floor_kpa": 5.0,
+  "temperature_range_floor_k": 5.0,
+  "binary_candidate_output": "experiments/vle/prediction/case_studies/overall_binary_ternary/phase_diagrams/binary_candidate_ranking.csv",
+  "binary_plot_data_output": "experiments/vle/prediction/case_studies/overall_binary_ternary/phase_diagrams/binary_selected_plot_data.csv",
+  "binary_figure_stem": "experiments/vle/prediction/phase_diagrams/binary_phase_diagram_cases",
+  "ternary_candidate_output": "experiments/vle/prediction/case_studies/overall_binary_ternary/phase_diagrams/ternary_candidate_ranking.csv",
+  "ternary_plot_data_output": "experiments/vle/prediction/case_studies/overall_binary_ternary/phase_diagrams/ternary_selected_plot_data.csv",
+  "ternary_figure_stem": "experiments/vle/prediction/phase_diagrams/ternary_phase_diagram_cases",
+  "combined_figure_stem": "configs/vle/prediction/studies/overall_binary_ternary/phase_diagrams/combined_binary_ternary_phase_diagram_cases",
+  "classical_fit_audit_output": "experiments/vle/prediction/case_studies/overall_binary_ternary/phase_diagrams/classical_system_fit_audit.json",
+  "report_output": "experiments/vle/prediction/study_records/overall_binary_ternary/phase_diagrams/results.md",
+  "manifest_output": "experiments/vle/prediction/case_studies/overall_binary_ternary/phase_diagrams/manifest.json"
+}

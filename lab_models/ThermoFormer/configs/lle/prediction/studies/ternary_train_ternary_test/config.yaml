@@ -1,0 +1,37 @@
+name: c1_three_view_vanilla_lle_ternary
+task_mode: lle
+extends: ../../../../model/c1_three_view_vanilla.yaml
+runtime:
+  output_dir: experiments/vle/generalization/training_records/lle/ternary_train_ternary_test
+  results_file: experiments/lle/prediction/study_records/ternary_train_ternary_test/results.md
+data:
+  root: datasets/vle_reference
+  failed_weight: 0.0
+training:
+  batch_size: 16
+  learning_rate: 0.0002
+  epochs_supervised: 80
+  early_stopping_patience: 12
+  minimum_supervised_epochs: 10
+  gradient_clip: 5.0
+physics_finetuning:
+  enabled: true
+  warmup_epochs: 2
+  pair_potential_lr: 2.0e-5
+  film_lr: 5.0e-6
+  mixture_token_lr: 5.0e-6
+lle:
+  binary_workbook: binary_lle_english.xlsx
+  ternary_workbook: ternary_lle_english.xlsx
+  component_count: 3
+  stage1_checkpoint_template: models/vle/experiments/ablations/three_stage_training/overall_binary_ternary/c1_three_view_vanilla_three_stage.on.overall_binary_ternary/seed_{seed}/stage1_best_model.pt
+  composition_weight: 1.0
+  fugacity_weight: 0.01
+  x_min: 1.0e-4
+  multistarts: 8
+  train_iterations: 24
+  eval_iterations: 64
+  step_size: 0.2
+  phase_tol: 1.0e-3
+  equilibrium_tolerance: 1.0e-4
+  tpd_tolerance: 1.0e-4

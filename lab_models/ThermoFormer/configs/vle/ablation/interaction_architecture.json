@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "vle.ablation.interaction_architecture",
+  "section": "VLE / Controlled ablations",
+  "title": "C0/C1 shared controls and C2/C3 interactions",
+  "status": "runnable",
+  "backend": "scripts/run_chemical_attention_suite.py",
+  "args": [],
+  "configs": [
+    "configs/vle/ablation/studies/molecular_representation/unimol_v2_only/config.yaml",
+    "configs/vle/ablation/studies/interaction_architecture/vanilla_transformer/config.yaml",
+    "configs/vle/ablation/studies/interaction_architecture/chemical_interaction_bias/config.yaml",
+    "configs/vle/ablation/studies/interaction_architecture/context_pair_without_attention_bias/config.yaml"
+  ],
+  "sources": [
+    "experiments/vle/ablation/multiview/chemical_attention"
+  ],
+  "provenance": "registered_vle_dataset",
+  "output_mode": "artifact",
+  "seed_mode": "fixed",
+  "device": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Fixed joint split/seeds 0–4. Also supplies representation controls.",
+  "protocol": null
+}
+

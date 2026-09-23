@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "lle.generalization.binary_temperature_low",
+  "section": "LLE / Generalization and extrapolation",
+  "title": "binary-temperature-low",
+  "status": "runnable",
+  "backend": "scripts/run_phase_equilibrium_benchmarks.py",
+  "args": [
+    "--task",
+    "lle",
+    "--protocols",
+    "binary-temperature-low",
+    "--max-workers",
+    "1"
+  ],
+  "configs": [
+    "src/thermoformer/lle_tp/verified_fast_campaign.py"
+  ],
+  "sources": [
+    "experiments/lle/training_records/v1/formal/binary-temperature-low"
+  ],
+  "provenance": "lle_nist",
+  "output_mode": "campaign",
+  "seed_mode": "optional",
+  "device": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Binary RK / ternary continuous parallel tie-line model; SMILES+T+P only. Includes unchanged activity and finite-grid TPD certification. No LLE comparison/ablation/interpretability.",
+  "protocol": "binary-temperature-low"
+}
+

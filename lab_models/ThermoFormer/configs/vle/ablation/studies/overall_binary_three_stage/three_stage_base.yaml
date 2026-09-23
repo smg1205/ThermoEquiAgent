@@ -1,0 +1,20 @@
+extends: ../../../../protocols/overall_binary.yaml
+name: binary_three_stage_base
+data:
+  pure_property_catalog: datasets/derived/thermodynamic_labels/external_psat_catalog.json
+direct_ge_supervision:
+  enabled: true
+  pretrain_epochs: 20
+  pretrain_learning_rate: 0.0002
+  fugacity_epochs: 10
+  excess_gibbs_weight: 1.0
+  activity_coefficient_weight: 0.5
+  vle_weight: 1.0
+  fugacity_weight: 0.01
+  minimum_fraction: 0.0001
+  warmup_epochs: 2
+physics_finetuning:
+  teacher_forced_fugacity_weight: 0.01
+runtime:
+  output_dir: experiments/vle/generalization/training_records/ablations/overall_binary_three_stage
+  results_file: configs/vle/ablation/studies/overall_binary_three_stage/results.md

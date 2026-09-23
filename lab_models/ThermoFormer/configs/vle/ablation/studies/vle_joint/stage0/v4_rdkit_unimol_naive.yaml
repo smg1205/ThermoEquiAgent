@@ -1,0 +1,10 @@
+extends: ../stage0_base.yaml
+name: v4_rdkit_unimol_naive
+encoder:
+  representation: multiview
+  fusion_mode: naive
+  use_rdkit_descriptors: true
+  use_unimol: true
+  use_functional_groups: false
+  chemical_attention_bias: false
+  context_pair_interaction: false

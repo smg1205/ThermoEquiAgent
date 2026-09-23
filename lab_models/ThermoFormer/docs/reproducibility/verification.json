@@ -1,0 +1,15 @@
+{
+  "entries": 36,
+  "errors": [],
+  "protected_files_checked": 325,
+  "changed_protected_files": [],
+  "scope": "Structure/protected-content check; not performance validation.",
+  "registered_experiments": 36,
+  "scientific_files_recorded": 325,
+  "formal_training_started": false,
+  "dataset_roots": [
+    "datasets/vle",
+    "datasets/lle"
+  ],
+  "vle_protocol_prefix": "vle_"
+}

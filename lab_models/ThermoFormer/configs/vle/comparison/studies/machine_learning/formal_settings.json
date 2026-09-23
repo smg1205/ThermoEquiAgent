@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "experiment": "ml_vle_baselines_formal",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "formal": {
+    "enabled": true,
+    "hyperparameter_selection_partition": "validation",
+    "evaluation_partition": "test",
+    "epochs": 200,
+    "learning_rate": 0.001,
+    "patience": 25,
+    "mc_dropout_samples": 32,
+    "fixed_temperature_tolerance_k": 0.5,
+    "minimum_composition": 1e-05,
+    "gdi_weight": 0.01,
+    "device": "cuda",
+    "metrics": [
+      "pressure_mae_kpa",
+      "pressure_rmse_kpa",
+      "pressure_r2",
+      "temperature_mae_k",
+      "temperature_rmse_k",
+      "temperature_r2",
+      "y_mae",
+      "y_rmse",
+      "y_r2",
+      "valid_coverage",
+      "nonphysical_rate",
+      "solver_failure_rate"
+    ]
+  },
+  "benchmarks": [
+    {
+      "key": "binary_train_binary_test",
+      "split": "vle_overall_binary",
+      "train_components": [
+        2
+      ],
+      "test_components": [
+        2
+      ]
+    },
+    {
+      "key": "ternary_train_ternary_test",
+      "split": "vle_overall_ternary",
+      "train_components": [
+        3
+      ],
+      "test_components": [
+        3
+      ]
+    },
+    {
+      "key": "joint_train_joint_test",
+      "split": "vle_overall_binary_ternary",
+      "train_components": [
+        2,
+        3
+      ],
+      "test_components": [
+        2,
+        3
+      ]
+    }
+  ],
+  "fixed_external_baselines": {
+    "tennet_sac": {
+      "package": "tennetsac==0.1.10",
+      "wheel_sha256": "0ec0e2724273730e4fd8dd70a2fc1c170c092f098462b1065eb20cf5110a05e5",
+      "model_version": "tuned_mean_of_10_experimental_finetuned_heads",
+      "test_retraining_or_tuning": false
+    },
+    "spt_nrtl": {
+      "database_revision": "f8e903ad96ac1a6d9c3dbaaa53c1752e8106286e",
+      "missing_pair_policy": "unavailable",
+      "ternary_policy": "three_binary_pairs_standard_multicomponent_nrtl",
+      "test_fitting_or_imputation": false
+    }
+  },
+  "adapted_spt_nrtl": {
+    "label_source": "binary_rows_from_registered_training_partition_only",
+    "validation_role": "pair_label_checkpoint_selection_only",
+    "test_fitting_or_tuning": false,
+    "author_weights_or_cosmo_pretraining_used": false,
+    "max_sequence_length": 128,
+    "embedding_dimension": 128,
+    "attention_heads": 4,
+    "transformer_layers": 2,
+    "feedforward_dimension": 256,
+    "dropout": 0.1,
+    "batch_size": 32,
+    "epochs": 300,
+    "learning_rate": 0.0003,
+    "patience": 30,
+    "minimum_pair_rows": 5,
+    "label_fit_evaluations": 250,
+    "label_regularization": 0.001
+  }
+}

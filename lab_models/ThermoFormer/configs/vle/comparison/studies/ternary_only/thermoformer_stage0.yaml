@@ -1,0 +1,8 @@
+extends: ../../../../protocols/overall_ternary.yaml
+name: c1_three_view_vanilla_ternary
+training:
+  epochs_physics: 0
+  minimum_physics_epochs: 0
+runtime:
+  output_dir: experiments/vle/generalization/training_records/comparisons/ternary_only/stage0
+  results_file: experiments/vle/comparison/study_records/ternary_only/results.md

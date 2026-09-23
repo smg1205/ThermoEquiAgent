@@ -1,0 +1,11 @@
+extends: ../training/fugacity_finetuning.yaml
+name: c1_fugacity_overall_binary
+seed: 0
+protocol:
+  registered_splits:
+    - overall_binary
+  seeds: [0, 1, 2, 3, 4]
+  evaluation_partition: test
+runtime:
+  output_dir: experiments/vle/generalization/training_records/predictive_performance/overall_binary
+  results_file: experiments/vle/prediction/study_records/overall_binary/results.md

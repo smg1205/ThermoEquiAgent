@@ -1,0 +1,6 @@
+{
+  "method": "Exact AST identity including docstrings; not a semantic similarity or reachability proof",
+  "groups": [],
+  "parse_errors": [],
+  "deleted_files": []
+}

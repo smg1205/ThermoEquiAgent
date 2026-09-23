@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "vle.interpretability.molecular_interactions",
+  "section": "VLE / Interpretability and analysis",
+  "title": "Molecular-view attribution and composition-dependent interactions",
+  "status": "runnable",
+  "backend": "scripts/benchmarks/vle/generate_interpretability.py",
+  "args": [],
+  "configs": [
+    "configs/model/c1_three_view_vanilla.yaml"
+  ],
+  "sources": [
+    "experiments/vle/interpretability/molecular_interactions/reports/analysis_manifest.json",
+    "experiments/vle/interpretability/molecular_interactions/figures/vle_interpretability_complete.png",
+    "models/vle/prediction/vle_overall_binary"
+  ],
+  "provenance": "vle_nist",
+  "output_mode": "native",
+  "seed_mode": "fixed",
+  "device": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Five-seed grouped Shapley, named-feature occlusion, pair attribution, held-out composition paths, and SMARTS-view molecular structure heatmaps using the validation-selected formal checkpoints.",
+  "protocol": "vle_overall_binary"
+}

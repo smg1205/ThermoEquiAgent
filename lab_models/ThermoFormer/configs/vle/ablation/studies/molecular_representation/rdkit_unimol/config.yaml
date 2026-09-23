@@ -1,0 +1,11 @@
+extends: ../../../../../training/supervised.yaml
+name: v4_rdkit_unimol_naive
+encoder:
+  representation: multiview
+  fusion_mode: naive
+  use_rdkit_descriptors: true
+  use_unimol: true
+  use_functional_groups: false
+runtime:
+  output_dir: experiments/vle/generalization/training_records/ablations/molecular_representation/rdkit_unimol
+  results_file: experiments/vle/ablation/study_records/molecular_representation/rdkit_unimol/results.md

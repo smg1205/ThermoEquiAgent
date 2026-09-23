@@ -1,0 +1,52 @@
+[
+  {
+    "backend": "scripts/data/dataset_distribution/analyze_datasets.py",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "backend": "scripts/run_c1_physics_finetune.py",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "backend": "scripts/run_chemical_attention_suite.py",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "backend": "scripts/run_context_mechanism_analysis.py",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "backend": "scripts/run_joint_activity_adapted.py",
+    "returncode": 0,
+    "stderr": "E:\\anaconda\\envs\\ggnn39\\lib\\site-packages\\transformers\\utils\\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.\n  _torch_pytree._register_pytree_node(\n"
+  },
+  {
+    "backend": "scripts/run_ml_baselines_formal.py",
+    "returncode": 0,
+    "stderr": "E:\\anaconda\\envs\\ggnn39\\lib\\site-packages\\transformers\\utils\\generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.\n  _torch_pytree._register_pytree_node(\n"
+  },
+  {
+    "backend": "scripts/run_multiview_suite.py",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "backend": "scripts/run_phase_equilibrium_benchmarks.py",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "backend": "scripts/visualization/plot_ternary_phase_diagrams.py",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "backend": "scripts/visualization/plot_thermodynamic_phase_diagrams.py",
+    "returncode": 0,
+    "stderr": ""
+  }
+]

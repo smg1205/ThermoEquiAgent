@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "experiment": "ml_vle_baselines",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "smoke": {
+    "seed": 0,
+    "epochs": 1,
+    "max_train_rows": 8,
+    "max_validation_rows": 8,
+    "evaluation_partition": "validation"
+  },
+  "formal": {
+    "enabled": false,
+    "hyperparameter_selection_partition": "validation",
+    "evaluation_partition": "test",
+    "metrics": [
+      "pressure_mae_kpa",
+      "pressure_rmse_kpa",
+      "pressure_r2",
+      "temperature_mae_k",
+      "temperature_rmse_k",
+      "temperature_r2",
+      "y_mae",
+      "y_rmse",
+      "y_r2",
+      "valid_coverage"
+    ]
+  },
+  "benchmarks": [
+    {
+      "key": "binary_train_binary_test",
+      "split": "vle_overall_binary",
+      "train_components": [
+        2
+      ],
+      "test_components": [
+        2
+      ]
+    },
+    {
+      "key": "ternary_train_ternary_test",
+      "split": "vle_overall_ternary",
+      "train_components": [
+        3
+      ],
+      "test_components": [
+        3
+      ]
+    },
+    {
+      "key": "joint_train_joint_test",
+      "split": "vle_overall_binary_ternary",
+      "train_components": [
+        2,
+        3
+      ],
+      "test_components": [
+        2,
+        3
+      ]
+    }
+  ],
+  "baselines": {
+    "descriptor_ann": {
+      "topology": [
+        23,
+        64,
+        64,
+        64,
+        1
+      ],
+      "native_task": "binary_isobaric"
+    },
+    "smiles_rnn": {
+      "recurrent_widths": [
+        32,
+        16
+      ],
+      "dense_width": 8
+    },
+    "ualf_gnn": {
+      "graph_updates": 3,
+      "objective": "heteroscedastic_gaussian",
+      "mc_dropout": true
+    },
+    "solvgnn": {
+      "native_temperature_k": 298.15
+    },
+    "gdi_gnn": {
+      "native_temperature_k": 298.15,
+      "thermodynamic_regularizer": "gibbs_duhem"
+    },
+    "ge_gnn": {
+      "native_temperature_k": 298.15,
+      "activity_coefficients": "excess_gibbs_autograd"
+    },
+    "hanna": {
+      "asset_policy": "official_pretrained_only",
+      "source_revision": "6fe873ca1a92c306eb9b5be3e9adb2ebbbb95365",
+      "asset_root": "models/baselines/hanna_official",
+      "multicomponent_method": "binary_trained_muggianu_projection",
+      "training_system_overlap": "unknown_official_training_inventory_not_published"
+    },
+    "tennet_sac": {
+      "asset_policy": "official_experimental_finetuned_only",
+      "package": "tennetsac==0.1.10",
+      "model_version": "tuned_mean_of_10_heads",
+      "qc_pretraining": "reuse_author_modules",
+      "test_retraining_or_tuning": false
+    },
+    "spt_nrtl": {
+      "asset_policy": "fixed_public_database_lookup",
+      "database_revision": "f8e903ad96ac1a6d9c3dbaaa53c1752e8106286e",
+      "missing_pair_policy": "unavailable",
+      "ternary_policy": "three_binary_pairs_standard_multicomponent_nrtl",
+      "test_fitting_or_imputation": false
+    }
+  }
+}

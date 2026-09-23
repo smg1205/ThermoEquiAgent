@@ -1,0 +1,21 @@
+extends: supervised.yaml
+name: c1_fugacity_finetuning
+training:
+  epochs_physics: 10
+  minimum_physics_epochs: 10
+physics_finetuning:
+  enabled: true
+  warmup_epochs: 2
+  trainable_modules:
+  - pair_potential
+  - vapor_pressure
+  - film
+  - mixture_token
+  pair_potential_lr: 2.0e-05
+  vapor_pressure_lr: 1.0e-05
+  film_lr: 5.0e-06
+  mixture_token_lr: 5.0e-06
+  teacher_forced_fugacity_weight: 1.0
+runtime:
+  output_dir: experiments/run_records/public/c1_fugacity_finetuning
+  results_file: experiments/run_records/public/c1_fugacity_finetuning/results.md

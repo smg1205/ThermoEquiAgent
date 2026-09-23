@@ -1,0 +1,686 @@
+﻿component_1_original_name,component_1_formula,smiles1,component_2_original_name,component_2_formula,smiles2,component_3_original_name,component_3_formula,smiles3,quality_check_1,quality_check_2,pressure_mmhg,temperature_c,x1,x2,y1,y2,doi,original_excel_row,quarantine_reason
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,80.257,46.85,0.6802,0.003,0.7989,0.0216,10.1016/j.fluid.2009.01.016,1022,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,71.106,46.85,0.4391,0.0073,0.6225,0.0639,10.1016/j.fluid.2009.01.016,1023,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,87.157,46.85,0.6958,0.0135,0.7505,0.0969,10.1016/j.fluid.2009.01.016,1024,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,104.334,46.85,0.6782,0.0437,0.6271,0.2452,10.1016/j.fluid.2009.01.016,1025,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,97.358,46.85,0.4186,0.0554,0.4654,0.2866,10.1016/j.fluid.2009.01.016,1026,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,151.662,46.85,0.6234,0.1286,0.4442,0.4647,10.1016/j.fluid.2009.01.016,1027,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,146.712,46.85,0.2914,0.1532,0.2485,0.5564,10.1016/j.fluid.2009.01.016,1028,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,192.766,46.85,0.5703,0.2073,0.3115,0.6271,10.1016/j.fluid.2009.01.016,1029,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,202.367,46.85,0.2644,0.253,0.1592,0.7208,10.1016/j.fluid.2009.01.016,1030,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,218.943,46.85,0.5343,0.2588,0.2586,0.6908,10.1016/j.fluid.2009.01.016,1031,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,263.347,46.85,0.2306,0.3602,0.0929,0.8425,10.1016/j.fluid.2009.01.016,1032,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,278.123,46.85,0.4531,0.3763,0.1635,0.8063,10.1016/j.fluid.2009.01.016,1033,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,323.652,46.85,0.3901,0.4638,0.1266,0.8502,10.1016/j.fluid.2009.01.016,1034,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,317.426,46.85,0.1953,0.4661,0.0656,0.8884,10.1016/j.fluid.2009.01.016,1035,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,126.535,56.85,0.7026,0.0024,0.7978,0.013,10.1016/j.fluid.2009.01.016,1036,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,126.61,56.85,0.6801,0.004,0.7777,0.0272,10.1016/j.fluid.2009.01.016,1037,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,133.961,56.85,0.6985,0.0128,0.7468,0.0845,10.1016/j.fluid.2009.01.016,1038,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,119.335,56.85,0.4468,0.0146,0.5704,0.1063,10.1016/j.fluid.2009.01.016,1039,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,126.31,56.85,0.4433,0.0238,0.5347,0.1624,10.1016/j.fluid.2009.01.016,1040,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,158.188,56.85,0.6859,0.0382,0.6371,0.2228,10.1016/j.fluid.2009.01.016,1041,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,137.861,56.85,0.4313,0.0397,0.4764,0.2505,10.1016/j.fluid.2009.01.016,1042,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,157.588,56.85,0.4206,0.0652,0.4101,0.3542,10.1016/j.fluid.2009.01.016,1043,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,165.464,56.85,0.3204,0.0836,0.3178,0.4133,10.1016/j.fluid.2009.01.016,1044,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,174.914,56.85,0.31,0.1022,0.2927,0.4531,10.1016/j.fluid.2009.01.016,1045,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,217.743,56.85,0.6294,0.122,0.4153,0.4957,10.1016/j.fluid.2009.01.016,1046,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,214.293,56.85,0.2953,0.1525,0.2306,0.5695,10.1016/j.fluid.2009.01.016,1047,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,281.573,56.85,0.5693,0.21,0.3052,0.6295,10.1016/j.fluid.2009.01.016,1048,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,293.724,56.85,0.2657,0.2563,0.1431,0.7405,10.1016/j.fluid.2009.01.016,1049,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,352.979,56.85,0.5,0.3106,0.2102,0.7467,10.1016/j.fluid.2009.01.016,1050,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,384.557,56.85,0.2286,0.3673,0.095,0.8283,10.1016/j.fluid.2009.01.016,1051,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,400.458,56.85,0.452,0.3779,0.1695,0.796,10.1016/j.fluid.2009.01.016,1052,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,445.087,56.85,0.1972,0.4604,0.0709,0.8719,10.1016/j.fluid.2009.01.016,1053,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,465.488,56.85,0.3865,0.4691,0.1258,0.849,10.1016/j.fluid.2009.01.016,1054,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,191.041,66.85,0.7082,0.0026,0.7894,0.0183,10.1016/j.fluid.2009.01.016,1055,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,191.791,66.85,0.683,0.0045,0.7612,0.0279,10.1016/j.fluid.2009.01.016,1056,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,202.442,66.85,0.7027,0.0147,0.7328,0.0881,10.1016/j.fluid.2009.01.016,1057,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,184.44,66.85,0.4514,0.0162,0.5464,0.1104,10.1016/j.fluid.2009.01.016,1058,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,194.341,66.85,0.4485,0.0268,0.5132,0.1618,10.1016/j.fluid.2009.01.016,1059,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,200.266,66.85,0.3359,0.042,0.3845,0.2517,10.1016/j.fluid.2009.01.016,1060,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,237.544,66.85,0.6831,0.045,0.6149,0.2368,10.1016/j.fluid.2009.01.016,1061,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,239.795,66.85,0.4237,0.0726,0.3936,0.354,10.1016/j.fluid.2009.01.016,1062,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,250.071,66.85,0.3213,0.0873,0.3005,0.4163,10.1016/j.fluid.2009.01.016,1063,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,262.147,66.85,0.3135,0.1062,0.273,0.4672,10.1016/j.fluid.2009.01.016,1064,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,309.85,66.85,0.6315,0.1198,0.4329,0.4638,10.1016/j.fluid.2009.01.016,1065,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,316.826,66.85,0.2968,0.1602,0.2133,0.5859,10.1016/j.fluid.2009.01.016,1066,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,410.059,66.85,0.5696,0.21,0.3017,0.6284,10.1016/j.fluid.2009.01.016,1067,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,419.734,66.85,0.2656,0.2586,0.1447,0.7211,10.1016/j.fluid.2009.01.016,1068,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,501.191,66.85,0.4961,0.3171,0.2165,0.7345,10.1016/j.fluid.2009.01.016,1069,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,564.571,66.85,0.4483,0.3837,0.1748,0.786,10.1016/j.fluid.2009.01.016,1070,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,538.694,66.85,0.2245,0.3863,0.0975,0.8131,10.1016/j.fluid.2009.01.016,1071,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,615.426,66.85,0.1965,0.4638,0.0744,0.858,10.1016/j.fluid.2009.01.016,1072,unmatched
+"3,3-二甲基-2-丁酮",C6H12O,CC(=O)C(C)(C)C,2-甲氧基-2-甲基丙烷,C5H12O,CC(C)(C)OC,"2,2-二甲基-1-丙醇",C5H12O,CC(C)(C)CO,-1,-1,649.478,66.85,0.3744,0.4815,0.1329,0.8375,10.1016/j.fluid.2009.01.016,1073,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,5.656,80.0,0.6277,0.3677,0.2344,0.6472,10.1016/j.fluid.2012.11.026,1580,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,6.128,80.0,0.5372,0.4002,0.2011,0.5914,10.1016/j.fluid.2012.11.026,1581,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,6.0,80.0,0.4639,0.4345,0.1859,0.5705,10.1016/j.fluid.2012.11.026,1582,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,6.136,80.0,0.3566,0.4826,0.1766,0.5599,10.1016/j.fluid.2012.11.026,1583,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,6.158,80.0,0.2851,0.5292,0.1733,0.5567,10.1016/j.fluid.2012.11.026,1584,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,6.556,80.0,0.1467,0.6599,0.1637,0.5496,10.1016/j.fluid.2012.11.026,1585,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,9.398,90.0,0.5805,0.4137,0.2683,0.6126,10.1016/j.fluid.2012.11.026,1586,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,9.511,90.0,0.5098,0.4287,0.2333,0.5533,10.1016/j.fluid.2012.11.026,1587,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,9.128,90.0,0.4215,0.463,0.2176,0.5274,10.1016/j.fluid.2012.11.026,1588,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,9.113,90.0,0.2882,0.5403,0.1999,0.5177,10.1016/j.fluid.2012.11.026,1589,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,9.173,90.0,0.2274,0.5876,0.1897,0.5103,10.1016/j.fluid.2012.11.026,1590,unmatched
+碳酸二乙酯,C5H10O3,CCOC(=O)OCC,水,H2O,,乙醇,C2H6O,CCO,-1,-1,8.513,90.0,0.14,0.6784,0.1788,0.4981,10.1016/j.fluid.2012.11.026,1591,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,77.8,0.5786,0.332,0.6492,0.3186,10.1016/j.fluid.2012.12.035,1636,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,82.1,0.3848,0.2222,0.5953,0.2946,10.1016/j.fluid.2012.12.035,1637,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,83.7,0.334,0.1922,0.5776,0.287,10.1016/j.fluid.2012.12.035,1638,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,103.2,0.0341,0.0685,0.1181,0.2034,10.1016/j.fluid.2012.12.035,1639,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,84.5,0.3337,0.1429,0.6141,0.2285,10.1016/j.fluid.2012.12.035,1640,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,82.7,0.421,0.1274,0.6797,0.1837,10.1016/j.fluid.2012.12.035,1641,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,81.7,0.392,0.2351,0.5969,0.3052,10.1016/j.fluid.2012.12.035,1642,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,81.3,0.3547,0.3164,0.5049,0.3954,10.1016/j.fluid.2012.12.035,1643,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,82.3,0.323,0.2921,0.4957,0.3895,10.1016/j.fluid.2012.12.035,1644,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,81.8,0.2711,0.3982,0.3977,0.5043,10.1016/j.fluid.2012.12.035,1645,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,83.0,0.2393,0.3539,0.3964,0.4948,10.1016/j.fluid.2012.12.035,1646,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,85.8,0.1829,0.2753,0.3703,0.4689,10.1016/j.fluid.2012.12.035,1647,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,87.5,0.1597,0.2419,0.3402,0.4449,10.1016/j.fluid.2012.12.035,1648,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,86.5,0.1545,0.297,0.2985,0.4974,10.1016/j.fluid.2012.12.035,1649,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,79.0,0.5137,0.296,0.6278,0.3125,10.1016/j.fluid.2012.12.035,1650,unmatched
+"3,7-二甲基-1,6-辛二烯",C10H18,CC(CCC=C(C)C)C=C,"(1S,2S,5R)-蒎烷",C10H18,,"2,6-二甲基-7-辛烯-2-醇",C10H20O,CC(CCCC(C)(C)O)C=C,-1,-1,45.004,80.2,0.4597,0.2643,0.6069,0.3071,10.1016/j.fluid.2012.12.035,1651,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,84.1,0.95,0.0,1.0,0.0,10.1016/j.fluid.2016.06.022,2397,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,81.7,0.865,0.085,0.854,0.146,10.1016/j.fluid.2016.06.022,2398,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,80.0,0.772,0.178,0.724,0.276,10.1016/j.fluid.2016.06.022,2399,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,78.7,0.684,0.266,0.622,0.378,10.1016/j.fluid.2016.06.022,2400,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,77.9,0.596,0.354,0.535,0.465,10.1016/j.fluid.2016.06.022,2401,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,77.2,0.488,0.462,0.432,0.568,10.1016/j.fluid.2016.06.022,2402,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,76.9,0.389,0.561,0.349,0.651,10.1016/j.fluid.2016.06.022,2403,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,76.8,0.34,0.613,0.304,0.696,10.1016/j.fluid.2016.06.022,2404,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,76.5,0.192,0.758,0.179,0.821,10.1016/j.fluid.2016.06.022,2405,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,76.5,0.124,0.827,0.118,0.882,10.1016/j.fluid.2016.06.022,2406,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,77.2,0.0,0.95,0.0,1.0,10.1016/j.fluid.2016.06.022,2407,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,88.0,0.9,0.0,1.0,0.0,10.1016/j.fluid.2016.06.022,2408,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,85.4,0.825,0.075,0.851,0.149,10.1016/j.fluid.2016.06.022,2409,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,83.5,0.744,0.156,0.72,0.28,10.1016/j.fluid.2016.06.022,2410,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,81.4,0.648,0.252,0.593,0.407,10.1016/j.fluid.2016.06.022,2411,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,80.2,0.56,0.34,0.497,0.503,10.1016/j.fluid.2016.06.022,2412,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,79.6,0.473,0.427,0.409,0.591,10.1016/j.fluid.2016.06.022,2413,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,78.8,0.373,0.527,0.318,0.682,10.1016/j.fluid.2016.06.022,2414,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,78.3,0.283,0.617,0.241,0.759,10.1016/j.fluid.2016.06.022,2415,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,78.0,0.184,0.716,0.157,0.843,10.1016/j.fluid.2016.06.022,2416,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,77.7,0.092,0.808,0.079,0.921,10.1016/j.fluid.2016.06.022,2417,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,77.8,0.0,0.9,0.0,1.0,10.1016/j.fluid.2016.06.022,2418,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,93.5,0.85,0.0,1.0,0.0,10.1016/j.fluid.2016.06.022,2419,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,89.2,0.796,0.054,0.877,0.123,10.1016/j.fluid.2016.06.022,2420,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,86.5,0.705,0.145,0.711,0.289,10.1016/j.fluid.2016.06.022,2421,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,84.5,0.629,0.222,0.599,0.401,10.1016/j.fluid.2016.06.022,2422,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,83.0,0.537,0.313,0.486,0.514,10.1016/j.fluid.2016.06.022,2423,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,81.8,0.449,0.401,0.393,0.607,10.1016/j.fluid.2016.06.022,2424,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,80.8,0.36,0.489,0.31,0.69,10.1016/j.fluid.2016.06.022,2425,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,80.2,0.269,0.582,0.229,0.771,10.1016/j.fluid.2016.06.022,2426,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,79.8,0.185,0.665,0.156,0.844,10.1016/j.fluid.2016.06.022,2427,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,79.6,0.09,0.76,0.076,0.924,10.1016/j.fluid.2016.06.022,2428,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-ethyl-3-methylimidazolium bis((trifluoromethyl)sulfonyl)imide,C8H11F6N3O4S2,,0,0,759.812,79.4,0.0,0.85,0.0,1.0,10.1016/j.fluid.2016.06.022,2429,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,84.3,0.95,0.0,1.0,0.0,10.1016/j.fluid.2016.06.022,2430,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,81.4,0.861,0.089,0.842,0.158,10.1016/j.fluid.2016.06.022,2431,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,80.5,0.81,0.14,0.766,0.234,10.1016/j.fluid.2016.06.022,2432,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,78.8,0.679,0.272,0.599,0.401,10.1016/j.fluid.2016.06.022,2433,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,78.4,0.592,0.358,0.513,0.487,10.1016/j.fluid.2016.06.022,2434,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,77.7,0.5,0.45,0.422,0.578,10.1016/j.fluid.2016.06.022,2435,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,77.2,0.406,0.544,0.341,0.659,10.1016/j.fluid.2016.06.022,2436,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,77.0,0.321,0.629,0.27,0.73,10.1016/j.fluid.2016.06.022,2437,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,76.7,0.202,0.748,0.175,0.825,10.1016/j.fluid.2016.06.022,2438,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,76.9,0.096,0.854,0.089,0.911,10.1016/j.fluid.2016.06.022,2439,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,77.0,0.0,0.95,0.0,1.0,10.1016/j.fluid.2016.06.022,2440,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,87.6,0.9,0.0,1.0,0.0,10.1016/j.fluid.2016.06.022,2441,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,85.5,0.819,0.081,0.828,0.172,10.1016/j.fluid.2016.06.022,2442,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,83.6,0.742,0.159,0.706,0.294,10.1016/j.fluid.2016.06.022,2443,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,80.6,0.656,0.244,0.591,0.409,10.1016/j.fluid.2016.06.022,2444,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,79.7,0.567,0.333,0.486,0.514,10.1016/j.fluid.2016.06.022,2445,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,78.8,0.473,0.427,0.401,0.599,10.1016/j.fluid.2016.06.022,2446,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,78.4,0.387,0.513,0.316,0.684,10.1016/j.fluid.2016.06.022,2447,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,78.0,0.293,0.607,0.233,0.767,10.1016/j.fluid.2016.06.022,2448,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,77.5,0.206,0.694,0.166,0.834,10.1016/j.fluid.2016.06.022,2449,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,78.7,0.0,0.9,0.0,1.0,10.1016/j.fluid.2016.06.022,2450,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,93.0,0.85,0.0,1.0,0.0,10.1016/j.fluid.2016.06.022,2451,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,89.8,0.773,0.077,0.811,0.189,10.1016/j.fluid.2016.06.022,2452,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,87.5,0.699,0.151,0.678,0.322,10.1016/j.fluid.2016.06.022,2453,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,86.0,0.637,0.213,0.585,0.415,10.1016/j.fluid.2016.06.022,2454,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,84.1,0.542,0.308,0.468,0.532,10.1016/j.fluid.2016.06.022,2455,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,83.2,0.464,0.386,0.383,0.617,10.1016/j.fluid.2016.06.022,2456,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,82.2,0.375,0.475,0.299,0.701,10.1016/j.fluid.2016.06.022,2457,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,81.2,0.272,0.578,0.213,0.787,10.1016/j.fluid.2016.06.022,2458,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,80.9,0.189,0.661,0.146,0.854,10.1016/j.fluid.2016.06.022,2459,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,80.5,0.098,0.752,0.075,0.925,10.1016/j.fluid.2016.06.022,2460,unmatched
+乙腈,C2H3N,CC#N,乙酸乙酯,C4H8O2,CCOC(=O)C,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,0,0,759.812,80.7,0.0,0.85,0.0,1.0,10.1016/j.fluid.2016.06.022,2461,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,81.75,0.03,0.7114,0.0706,0.4152,10.1016/j.fluid.2017.05.012,2583,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,83.15,0.2548,0.2662,0.2019,0.2802,10.1016/j.fluid.2017.05.012,2584,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,83.35,0.2579,0.2136,0.193,0.2956,10.1016/j.fluid.2017.05.012,2585,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,82.05,0.0818,0.6594,0.0453,0.4405,10.1016/j.fluid.2017.05.012,2586,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,82.15,0.1253,0.5656,0.0899,0.3977,10.1016/j.fluid.2017.05.012,2587,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,82.25,0.1552,0.5208,0.1067,0.3838,10.1016/j.fluid.2017.05.012,2588,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,82.35,0.2106,0.4242,0.1152,0.3641,10.1016/j.fluid.2017.05.012,2589,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,82.45,0.1844,0.4763,0.1444,0.3493,10.1016/j.fluid.2017.05.012,2590,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,82.55,0.2347,0.3648,0.1447,0.3405,10.1016/j.fluid.2017.05.012,2591,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,82.75,0.2388,0.3371,0.1688,0.3241,10.1016/j.fluid.2017.05.012,2592,unmatched
+1-丙醇,C3H8O,CCCO,乙酸正丙酯,C5H10O2,CCCOC(=O)C,水,H2O,,-1,-1,757.562,83.05,0.2533,0.3026,0.1779,0.3136,10.1016/j.fluid.2017.05.012,2593,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,81.35,0.1282,0.8604,0.383,0.4215,10.1016/j.fluid.2017.09.010,2594,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,81.25,0.1191,0.8712,0.374,0.4197,10.1016/j.fluid.2017.09.010,2595,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,81.15,0.1054,0.8813,0.3556,0.4257,10.1016/j.fluid.2017.09.010,2596,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,81.05,0.101,0.8897,0.3374,0.4286,10.1016/j.fluid.2017.09.010,2597,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,81.25,0.0919,0.8943,0.3146,0.4369,10.1016/j.fluid.2017.09.010,2598,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,81.05,0.0873,0.8998,0.2874,0.4411,10.1016/j.fluid.2017.09.010,2599,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.95,0.0828,0.9083,0.2648,0.4431,10.1016/j.fluid.2017.09.010,2600,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.75,0.0782,0.9043,0.2354,0.4559,10.1016/j.fluid.2017.09.010,2601,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.65,0.0691,0.9182,0.214,0.4571,10.1016/j.fluid.2017.09.010,2602,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.55,0.051,0.9335,0.188,0.4636,10.1016/j.fluid.2017.09.010,2603,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.45,0.0463,0.939,0.162,0.4733,10.1016/j.fluid.2017.09.010,2604,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.35,0.0372,0.9498,0.136,0.4829,10.1016/j.fluid.2017.09.010,2605,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.25,0.0328,0.952,0.1056,0.495,10.1016/j.fluid.2017.09.010,2606,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.15,0.0237,0.9659,0.0796,0.5015,10.1016/j.fluid.2017.09.010,2607,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸正丙酯,C5H10O2,CCCOC(=O)C,-1,-1,757.562,80.05,0.0101,0.9791,0.0578,0.509,10.1016/j.fluid.2017.09.010,2608,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,77.25,0.1007,0.8889,0.19,0.3783,10.1016/j.fluid.2017.09.010,2609,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,77.15,0.0725,0.9127,0.181,0.3803,10.1016/j.fluid.2017.09.010,2610,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,77.05,0.0613,0.9229,0.1688,0.3864,10.1016/j.fluid.2017.09.010,2611,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,76.85,0.0557,0.9258,0.1565,0.3873,10.1016/j.fluid.2017.09.010,2612,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,76.75,0.0557,0.9306,0.1412,0.3922,10.1016/j.fluid.2017.09.010,2613,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,76.65,0.05,0.9334,0.132,0.3943,10.1016/j.fluid.2017.09.010,2614,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,76.45,0.0444,0.9509,0.1229,0.3935,10.1016/j.fluid.2017.09.010,2615,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,76.25,0.0332,0.9542,0.1166,0.394,10.1016/j.fluid.2017.09.010,2616,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,76.15,0.0278,0.9543,0.0983,0.3954,10.1016/j.fluid.2017.09.010,2617,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,76.05,0.0278,0.9663,0.0922,0.401,10.1016/j.fluid.2017.09.010,2618,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,75.95,0.0222,0.974,0.083,0.399,10.1016/j.fluid.2017.09.010,2619,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,75.75,0.0136,0.976,0.0585,0.4059,10.1016/j.fluid.2017.09.010,2620,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,75.65,0.0166,0.9768,0.0341,0.4101,10.1016/j.fluid.2017.09.010,2621,unmatched
+2-丙醇,C3H8O,CC(C)O,水,H2O,,乙酸异丙酯,C5H10O2,,-1,-1,757.562,75.45,0.0053,0.9776,0.0188,0.4112,10.1016/j.fluid.2017.09.010,2622,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,43.0,0.5735,0.032,0.9722,0.0273,10.1016/j.fluid.2018.01.038,2749,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,43.89,0.5133,0.0928,0.9562,0.0433,10.1016/j.fluid.2018.01.038,2750,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,44.3,0.4529,0.1526,0.9319,0.0675,10.1016/j.fluid.2018.01.038,2751,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,45.41,0.3608,0.2468,0.885,0.1144,10.1016/j.fluid.2018.01.038,2752,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,48.21,0.2713,0.3368,0.8416,0.1576,10.1016/j.fluid.2018.01.038,2753,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,52.3,0.182,0.4267,0.7637,0.2353,10.1016/j.fluid.2018.01.038,2754,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,57.9,0.122,0.4883,0.6581,0.3403,10.1016/j.fluid.2018.01.038,2755,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,66.45,0.0609,0.5479,0.4455,0.5517,10.1016/j.fluid.2018.01.038,2756,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,43.79,0.7629,0.0415,0.9738,0.0257,10.1016/j.fluid.2018.01.038,2757,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,43.65,0.6789,0.1252,0.9246,0.0749,10.1016/j.fluid.2018.01.038,2758,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,43.9,0.6,0.2034,0.8818,0.1177,10.1016/j.fluid.2018.01.038,2759,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,44.48,0.4803,0.3244,0.8323,0.1671,10.1016/j.fluid.2018.01.038,2760,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,46.1,0.3594,0.4455,0.7703,0.2291,10.1016/j.fluid.2018.01.038,2761,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,50.06,0.2398,0.5654,0.6936,0.3056,10.1016/j.fluid.2018.01.038,2762,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,53.75,0.1593,0.6459,0.6099,0.389,10.1016/j.fluid.2018.01.038,2763,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,60.3,0.0799,0.7254,0.4167,0.5815,10.1016/j.fluid.2018.01.038,2764,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,43.55,0.6669,0.0366,0.9783,0.0212,10.1016/j.fluid.2018.01.038,2765,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,43.81,0.5961,0.1092,0.9405,0.0589,10.1016/j.fluid.2018.01.038,2766,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,44.02,0.5297,0.1772,0.9093,0.0902,10.1016/j.fluid.2018.01.038,2767,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,44.93,0.4207,0.2848,0.8608,0.1387,10.1016/j.fluid.2018.01.038,2768,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,46.81,0.3138,0.3921,0.8071,0.1922,10.1016/j.fluid.2018.01.038,2769,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,50.96,0.2098,0.4975,0.7137,0.2854,10.1016/j.fluid.2018.01.038,2770,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,55.41,0.1396,0.5671,0.6293,0.3694,10.1016/j.fluid.2018.01.038,2771,unmatched
+二甲氧基甲烷,C3H8O2,COCOC,甲醇,CH4O,,乙二醇,C2H6O2,C(CO)O,-1,-1,759.812,62.95,0.0705,0.6365,0.4253,0.5725,10.1016/j.fluid.2018.01.038,2772,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,85.4,0.082,0.05,0.232,0.0,10.1016/j.fluid.2018.05.024,2803,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,82.0,0.189,0.05,0.403,0.0,10.1016/j.fluid.2018.05.024,2804,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.6,0.301,0.05,0.506,0.0,10.1016/j.fluid.2018.05.024,2805,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.4,0.393,0.05,0.567,0.0,10.1016/j.fluid.2018.05.024,2806,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.7,0.488,0.05,0.625,0.0,10.1016/j.fluid.2018.05.024,2807,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.3,0.589,0.05,0.671,0.0,10.1016/j.fluid.2018.05.024,2808,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.2,0.677,0.05,0.73,0.0,10.1016/j.fluid.2018.05.024,2809,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.4,0.762,0.05,0.788,0.0,10.1016/j.fluid.2018.05.024,2810,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.0,0.849,0.05,0.868,0.0,10.1016/j.fluid.2018.05.024,2811,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.5,0.893,0.05,0.919,0.0,10.1016/j.fluid.2018.05.024,2812,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,87.2,0.07,0.1,0.218,0.0,10.1016/j.fluid.2018.05.024,2813,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,84.2,0.154,0.1,0.38,0.0,10.1016/j.fluid.2018.05.024,2814,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,81.7,0.244,0.1,0.481,0.0,10.1016/j.fluid.2018.05.024,2815,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.0,0.347,0.1,0.559,0.0,10.1016/j.fluid.2018.05.024,2816,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.9,0.471,0.1,0.639,0.0,10.1016/j.fluid.2018.05.024,2817,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.7,0.542,0.1,0.687,0.0,10.1016/j.fluid.2018.05.024,2818,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.6,0.621,0.1,0.74,0.0,10.1016/j.fluid.2018.05.024,2819,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.8,0.704,0.1,0.802,0.0,10.1016/j.fluid.2018.05.024,2820,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.4,0.789,0.1,0.875,0.0,10.1016/j.fluid.2018.05.024,2821,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.0,0.833,0.1,0.92,0.0,10.1016/j.fluid.2018.05.024,2822,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,89.8,0.049,0.15,0.185,0.0,10.1016/j.fluid.2018.05.024,2823,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,86.6,0.115,0.15,0.345,0.0,10.1016/j.fluid.2018.05.024,2824,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,83.9,0.204,0.15,0.465,0.0,10.1016/j.fluid.2018.05.024,2825,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,81.5,0.303,0.15,0.548,0.0,10.1016/j.fluid.2018.05.024,2826,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.4,0.412,0.15,0.632,0.0,10.1016/j.fluid.2018.05.024,2827,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.0,0.477,0.15,0.686,0.0,10.1016/j.fluid.2018.05.024,2828,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.2,0.578,0.15,0.754,0.0,10.1016/j.fluid.2018.05.024,2829,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.5,0.658,0.15,0.818,0.0,10.1016/j.fluid.2018.05.024,2830,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,81.0,0.742,0.15,0.887,0.0,10.1016/j.fluid.2018.05.024,2831,unmatched
+乙醇,C2H6O,CCO,1-hexyl-3-methylimidazolium bis[(trifluoromethyl)sulfonyl]imide,C12H19F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,81.3,0.794,0.15,0.94,0.0,10.1016/j.fluid.2018.05.024,2832,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,85.7,0.069,0.05,0.207,0.0,10.1016/j.fluid.2018.05.024,2833,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,82.0,0.169,0.05,0.376,0.0,10.1016/j.fluid.2018.05.024,2834,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.5,0.295,0.05,0.501,0.0,10.1016/j.fluid.2018.05.024,2835,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.3,0.394,0.05,0.567,0.0,10.1016/j.fluid.2018.05.024,2836,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.6,0.491,0.05,0.618,0.0,10.1016/j.fluid.2018.05.024,2837,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.2,0.582,0.05,0.668,0.0,10.1016/j.fluid.2018.05.024,2838,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.1,0.676,0.05,0.727,0.0,10.1016/j.fluid.2018.05.024,2839,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.3,0.76,0.05,0.79,0.0,10.1016/j.fluid.2018.05.024,2840,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,77.7,0.85,0.05,0.867,0.0,10.1016/j.fluid.2018.05.024,2841,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.4,0.896,0.05,0.922,0.0,10.1016/j.fluid.2018.05.024,2842,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,86.8,0.057,0.1,0.192,0.0,10.1016/j.fluid.2018.05.024,2843,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,84.0,0.127,0.1,0.33,0.0,10.1016/j.fluid.2018.05.024,2844,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.8,0.269,0.1,0.502,0.0,10.1016/j.fluid.2018.05.024,2845,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.4,0.35,0.1,0.563,0.0,10.1016/j.fluid.2018.05.024,2846,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.4,0.456,0.1,0.631,0.0,10.1016/j.fluid.2018.05.024,2847,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.1,0.541,0.1,0.683,0.0,10.1016/j.fluid.2018.05.024,2848,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.1,0.633,0.1,0.743,0.0,10.1016/j.fluid.2018.05.024,2849,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.3,0.715,0.1,0.809,0.0,10.1016/j.fluid.2018.05.024,2850,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.0,0.805,0.1,0.882,0.0,10.1016/j.fluid.2018.05.024,2851,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.6,0.848,0.1,0.932,0.0,10.1016/j.fluid.2018.05.024,2852,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,88.4,0.042,0.15,0.167,0.0,10.1016/j.fluid.2018.05.024,2853,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,85.0,0.11,0.15,0.331,0.0,10.1016/j.fluid.2018.05.024,2854,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,81.2,0.24,0.15,0.501,0.0,10.1016/j.fluid.2018.05.024,2855,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.8,0.323,0.15,0.566,0.0,10.1016/j.fluid.2018.05.024,2856,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.0,0.416,0.15,0.629,0.0,10.1016/j.fluid.2018.05.024,2857,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.7,0.509,0.15,0.704,0.0,10.1016/j.fluid.2018.05.024,2858,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,78.7,0.591,0.15,0.761,0.0,10.1016/j.fluid.2018.05.024,2859,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.1,0.674,0.15,0.83,0.0,10.1016/j.fluid.2018.05.024,2860,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,79.8,0.755,0.15,0.897,0.0,10.1016/j.fluid.2018.05.024,2861,unmatched
+乙醇,C2H6O,CCO,1-butyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide,C10H15F6N3O4S2,,碳酸二甲酯,C3H6O3,COC(=O)OC,0,0,759.812,80.2,0.795,0.15,0.938,0.0,10.1016/j.fluid.2018.05.024,2862,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,66.55,0.0,0.2,0.0,0.0,10.1016/j.fluid.2018.05.031,2863,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,65.45,0.07,0.199,0.133,0.0,10.1016/j.fluid.2018.05.031,2864,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,64.35,0.151,0.199,0.243,0.0,10.1016/j.fluid.2018.05.031,2865,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,63.8,0.24,0.2,0.349,0.0,10.1016/j.fluid.2018.05.031,2866,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,63.6,0.308,0.206,0.421,0.0,10.1016/j.fluid.2018.05.031,2867,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,63.95,0.395,0.2,0.496,0.0,10.1016/j.fluid.2018.05.031,2868,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,64.8,0.489,0.2,0.582,0.0,10.1016/j.fluid.2018.05.031,2869,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,65.65,0.564,0.198,0.641,0.0,10.1016/j.fluid.2018.05.031,2870,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,67.3,0.647,0.2,0.749,0.0,10.1016/j.fluid.2018.05.031,2871,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,69.5,0.736,0.201,0.87,0.0,10.1016/j.fluid.2018.05.031,2872,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,71.65,0.801,0.199,1.0,0.0,10.1016/j.fluid.2018.05.031,2873,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,85.15,0.0,0.4,0.0,0.0,10.1016/j.fluid.2018.05.031,2874,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,83.65,0.053,0.399,0.137,0.0,10.1016/j.fluid.2018.05.031,2875,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,82.1,0.113,0.4,0.261,0.0,10.1016/j.fluid.2018.05.031,2876,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,81.2,0.17,0.4,0.367,0.0,10.1016/j.fluid.2018.05.031,2877,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,80.55,0.234,0.399,0.457,0.0,10.1016/j.fluid.2018.05.031,2878,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,80.25,0.302,0.398,0.562,0.0,10.1016/j.fluid.2018.05.031,2879,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,80.4,0.359,0.4,0.639,0.0,10.1016/j.fluid.2018.05.031,2880,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,80.7,0.42,0.399,0.721,0.0,10.1016/j.fluid.2018.05.031,2881,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,81.3,0.476,0.4,0.808,0.0,10.1016/j.fluid.2018.05.031,2882,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,82.25,0.542,0.399,0.909,0.0,10.1016/j.fluid.2018.05.031,2883,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,83.45,0.6,0.4,1.0,0.0,10.1016/j.fluid.2018.05.031,2884,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,97.1,0.0,0.499,0.0,0.0,10.1016/j.fluid.2018.05.031,2885,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,95.2,0.045,0.5,0.143,0.0,10.1016/j.fluid.2018.05.031,2886,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,93.45,0.095,0.497,0.276,0.0,10.1016/j.fluid.2018.05.031,2887,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,92.2,0.146,0.499,0.385,0.0,10.1016/j.fluid.2018.05.031,2888,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,91.2,0.197,0.499,0.479,0.0,10.1016/j.fluid.2018.05.031,2889,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,90.55,0.25,0.497,0.586,0.0,10.1016/j.fluid.2018.05.031,2890,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,90.35,0.299,0.499,0.655,0.0,10.1016/j.fluid.2018.05.031,2891,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,90.2,0.354,0.5,0.75,0.0,10.1016/j.fluid.2018.05.031,2892,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,90.5,0.411,0.499,0.842,0.0,10.1016/j.fluid.2018.05.031,2893,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,90.9,0.454,0.497,0.915,0.0,10.1016/j.fluid.2018.05.031,2894,unmatched
+甲醇,CH4O,,1-辛基-3-甲基咪唑双三氟甲磺酰亚胺,C14H23F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,91.35,0.5,0.5,1.0,0.0,10.1016/j.fluid.2018.05.031,2895,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,67.0,0.0,0.2,0.0,0.0,10.1016/j.fluid.2018.05.031,2896,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,66.3,0.075,0.2,0.152,0.0,10.1016/j.fluid.2018.05.031,2897,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,64.65,0.161,0.2,0.279,0.0,10.1016/j.fluid.2018.05.031,2898,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,63.7,0.243,0.203,0.338,0.0,10.1016/j.fluid.2018.05.031,2899,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,63.45,0.329,0.2,0.455,0.0,10.1016/j.fluid.2018.05.031,2900,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,63.8,0.414,0.2,0.534,0.0,10.1016/j.fluid.2018.05.031,2901,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,64.45,0.498,0.2,0.598,0.0,10.1016/j.fluid.2018.05.031,2902,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,65.6,0.583,0.199,0.682,0.0,10.1016/j.fluid.2018.05.031,2903,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,66.95,0.654,0.2,0.762,0.0,10.1016/j.fluid.2018.05.031,2904,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,68.75,0.732,0.2,0.873,0.0,10.1016/j.fluid.2018.05.031,2905,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,71.05,0.8,0.2,1.0,0.0,10.1016/j.fluid.2018.05.031,2906,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,84.9,0.0,0.4,0.0,0.0,10.1016/j.fluid.2018.05.031,2907,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,84.0,0.052,0.4,0.147,0.0,10.1016/j.fluid.2018.05.031,2908,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,82.55,0.105,0.402,0.269,0.0,10.1016/j.fluid.2018.05.031,2909,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,80.85,0.173,0.399,0.387,0.0,10.1016/j.fluid.2018.05.031,2910,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,79.8,0.238,0.397,0.496,0.0,10.1016/j.fluid.2018.05.031,2911,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,79.2,0.304,0.4,0.587,0.0,10.1016/j.fluid.2018.05.031,2912,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,79.05,0.362,0.4,0.66,0.0,10.1016/j.fluid.2018.05.031,2913,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,79.25,0.427,0.398,0.74,0.0,10.1016/j.fluid.2018.05.031,2914,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,79.8,0.486,0.399,0.818,0.0,10.1016/j.fluid.2018.05.031,2915,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,80.7,0.547,0.398,0.91,0.0,10.1016/j.fluid.2018.05.031,2916,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,81.75,0.6,0.4,1.0,0.0,10.1016/j.fluid.2018.05.031,2917,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,96.45,0.0,0.497,0.0,0.0,10.1016/j.fluid.2018.05.031,2918,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,94.95,0.043,0.499,0.156,0.0,10.1016/j.fluid.2018.05.031,2919,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,93.1,0.092,0.499,0.295,0.0,10.1016/j.fluid.2018.05.031,2920,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,91.05,0.157,0.501,0.45,0.0,10.1016/j.fluid.2018.05.031,2921,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,90.2,0.197,0.499,0.521,0.0,10.1016/j.fluid.2018.05.031,2922,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,89.2,0.249,0.499,0.609,0.0,10.1016/j.fluid.2018.05.031,2923,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,88.65,0.293,0.5,0.674,0.0,10.1016/j.fluid.2018.05.031,2924,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,88.5,0.341,0.499,0.748,0.0,10.1016/j.fluid.2018.05.031,2925,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,88.5,0.4,0.499,0.832,0.0,10.1016/j.fluid.2018.05.031,2926,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,88.9,0.459,0.499,0.928,0.0,10.1016/j.fluid.2018.05.031,2927,unmatched
+甲醇,CH4O,,"2,3-二甲基-1-辛基咪唑双三氟甲磺酰亚胺",C15H25F6N3O4S2,,乙酸甲酯,C3H6O2,CC(=O)OC,0,0,759.812,89.3,0.493,0.506,1.0,0.0,10.1016/j.fluid.2018.05.031,2928,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,60.43,0.0536,0.9394,0.0165,0.9835,10.1016/j.fluid.2018.06.011,2929,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,60.89,0.0537,0.9396,0.0385,0.9615,10.1016/j.fluid.2018.06.011,2930,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.19,0.0985,0.8935,0.0737,0.9263,10.1016/j.fluid.2018.06.011,2931,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.39,0.1452,0.846,0.1066,0.8934,10.1016/j.fluid.2018.06.011,2932,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.54,0.1938,0.7968,0.1425,0.8575,10.1016/j.fluid.2018.06.011,2933,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.82,0.2396,0.7503,0.1762,0.8238,10.1016/j.fluid.2018.06.011,2934,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,62.1,0.2948,0.6947,0.2216,0.7784,10.1016/j.fluid.2018.06.011,2935,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,62.45,0.3371,0.6513,0.2562,0.7438,10.1016/j.fluid.2018.06.011,2936,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,62.77,0.385,0.6027,0.3006,0.6994,10.1016/j.fluid.2018.06.011,2937,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,60.57,0.0429,0.9442,0.0167,0.9833,10.1016/j.fluid.2018.06.011,2938,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.11,0.0535,0.9319,0.0393,0.9607,10.1016/j.fluid.2018.06.011,2939,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.4,0.0965,0.8875,0.0724,0.9276,10.1016/j.fluid.2018.06.011,2940,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.66,0.1421,0.8405,0.1083,0.8917,10.1016/j.fluid.2018.06.011,2941,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.92,0.191,0.7903,0.1478,0.8522,10.1016/j.fluid.2018.06.011,2942,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,62.13,0.2369,0.743,0.1854,0.8146,10.1016/j.fluid.2018.06.011,2943,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,62.53,0.2861,0.6928,0.2264,0.7736,10.1016/j.fluid.2018.06.011,2944,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,60.79,0.0083,0.9653,0.004,0.996,10.1016/j.fluid.2018.06.011,2945,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,60.88,0.0214,0.9539,0.0169,0.9831,10.1016/j.fluid.2018.06.011,2946,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.42,0.0527,0.9185,0.0417,0.9583,10.1016/j.fluid.2018.06.011,2947,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,61.76,0.0982,0.8717,0.0805,0.9195,10.1016/j.fluid.2018.06.011,2948,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,62.13,0.1392,0.8265,0.1164,0.8836,10.1016/j.fluid.2018.06.011,2949,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-xylose,C5H10O5,,0,0,150.012,62.46,0.1875,0.776,0.1585,0.8415,10.1016/j.fluid.2018.06.011,2950,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,60.59,0.0,0.9948,0.0,1.0,10.1016/j.fluid.2018.06.011,2951,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,60.7,0.0277,0.9664,0.0167,0.9833,10.1016/j.fluid.2018.06.011,2952,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,60.93,0.0538,0.9401,0.038,0.962,10.1016/j.fluid.2018.06.011,2953,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.19,0.0941,0.8992,0.0695,0.9305,10.1016/j.fluid.2018.06.011,2954,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.4,0.1438,0.8488,0.1046,0.8954,10.1016/j.fluid.2018.06.011,2955,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.47,0.1899,0.8024,0.1386,0.8614,10.1016/j.fluid.2018.06.011,2956,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.74,0.2365,0.7552,0.1765,0.8235,10.1016/j.fluid.2018.06.011,2957,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,62.21,0.2784,0.7128,0.2102,0.7898,10.1016/j.fluid.2018.06.011,2958,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,62.47,0.3223,0.6682,0.2539,0.7461,10.1016/j.fluid.2018.06.011,2959,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,62.85,0.3649,0.6252,0.2844,0.7156,10.1016/j.fluid.2018.06.011,2960,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,60.37,0.0,0.9896,0.0,1.0,10.1016/j.fluid.2018.06.011,2961,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,60.86,0.0259,0.9621,0.0193,0.9807,10.1016/j.fluid.2018.06.011,2962,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.09,0.0507,0.9373,0.0357,0.9643,10.1016/j.fluid.2018.06.011,2963,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.3,0.0954,0.8923,0.0711,0.9289,10.1016/j.fluid.2018.06.011,2964,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.48,0.1383,0.8481,0.1048,0.8952,10.1016/j.fluid.2018.06.011,2965,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.66,0.1911,0.7945,0.1472,0.8528,10.1016/j.fluid.2018.06.011,2966,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.83,0.2308,0.7537,0.1779,0.8221,10.1016/j.fluid.2018.06.011,2967,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,62.03,0.2772,0.7063,0.2169,0.7831,10.1016/j.fluid.2018.06.011,2968,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,62.33,0.2773,0.7054,0.2075,0.7925,10.1016/j.fluid.2018.06.011,2969,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,60.58,0.0,0.9801,0.0,1.0,10.1016/j.fluid.2018.06.011,2970,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.06,0.0268,0.9506,0.0201,0.9799,10.1016/j.fluid.2018.06.011,2971,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.18,0.0525,0.9256,0.0413,0.9587,10.1016/j.fluid.2018.06.011,2972,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.37,0.09,0.8868,0.0745,0.9255,10.1016/j.fluid.2018.06.011,2973,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.69,0.1364,0.8372,0.111,0.889,10.1016/j.fluid.2018.06.011,2974,unmatched
+乙酸,C2H4O2,CC(=O)O,水,H2O,,D-glucose,C6H12O6,,0,0,150.012,61.98,0.1783,0.7932,0.1492,0.8508,10.1016/j.fluid.2018.06.011,2975,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,64.32,0.051,0.102,0.177,0.0,10.1016/j.fluid.2019.03.022,3653,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,62.83,0.102,0.102,0.275,0.0,10.1016/j.fluid.2019.03.022,3654,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,61.85,0.145,0.101,0.336,0.0,10.1016/j.fluid.2019.03.022,3655,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,61.49,0.203,0.101,0.397,0.0,10.1016/j.fluid.2019.03.022,3656,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,61.5,0.236,0.102,0.429,0.0,10.1016/j.fluid.2019.03.022,3657,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,61.76,0.284,0.102,0.466,0.0,10.1016/j.fluid.2019.03.022,3658,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,62.02,0.322,0.102,0.489,0.0,10.1016/j.fluid.2019.03.022,3659,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,62.33,0.365,0.102,0.525,0.0,10.1016/j.fluid.2019.03.022,3660,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,62.82,0.398,0.102,0.54,0.0,10.1016/j.fluid.2019.03.022,3661,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,63.52,0.46,0.102,0.587,0.0,10.1016/j.fluid.2019.03.022,3662,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,64.4,0.511,0.102,0.622,0.0,10.1016/j.fluid.2019.03.022,3663,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,65.34,0.555,0.102,0.652,0.0,10.1016/j.fluid.2019.03.022,3664,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,66.35,0.601,0.101,0.683,0.0,10.1016/j.fluid.2019.03.022,3665,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,67.47,0.633,0.102,0.699,0.0,10.1016/j.fluid.2019.03.022,3666,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,69.23,0.686,0.102,0.743,0.0,10.1016/j.fluid.2019.03.022,3667,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,71.57,0.738,0.102,0.787,0.0,10.1016/j.fluid.2019.03.022,3668,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,73.77,0.779,0.102,0.825,0.0,10.1016/j.fluid.2019.03.022,3669,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,76.02,0.825,0.102,0.88,0.0,10.1016/j.fluid.2019.03.022,3670,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,69.54,0.041,0.152,0.171,0.0,10.1016/j.fluid.2019.03.022,3671,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,67.35,0.095,0.152,0.308,0.0,10.1016/j.fluid.2019.03.022,3672,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,66.58,0.125,0.152,0.361,0.0,10.1016/j.fluid.2019.03.022,3673,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,65.84,0.182,0.152,0.439,0.0,10.1016/j.fluid.2019.03.022,3674,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,65.72,0.228,0.152,0.488,0.0,10.1016/j.fluid.2019.03.022,3675,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,65.73,0.266,0.152,0.525,0.0,10.1016/j.fluid.2019.03.022,3676,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,65.82,0.302,0.152,0.557,0.0,10.1016/j.fluid.2019.03.022,3677,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,66.16,0.35,0.152,0.597,0.0,10.1016/j.fluid.2019.03.022,3678,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,66.67,0.389,0.152,0.626,0.0,10.1016/j.fluid.2019.03.022,3679,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,67.36,0.439,0.153,0.665,0.0,10.1016/j.fluid.2019.03.022,3680,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,67.99,0.476,0.153,0.693,0.0,10.1016/j.fluid.2019.03.022,3681,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,68.85,0.521,0.152,0.727,0.0,10.1016/j.fluid.2019.03.022,3682,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,69.42,0.544,0.152,0.742,0.0,10.1016/j.fluid.2019.03.022,3683,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,70.92,0.602,0.152,0.786,0.0,10.1016/j.fluid.2019.03.022,3684,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,71.73,0.633,0.152,0.813,0.0,10.1016/j.fluid.2019.03.022,3685,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,73.05,0.675,0.154,0.847,0.0,10.1016/j.fluid.2019.03.022,3686,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,75.03,0.731,0.152,0.89,0.0,10.1016/j.fluid.2019.03.022,3687,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,77.23,0.778,0.153,0.934,0.0,10.1016/j.fluid.2019.03.022,3688,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,75.02,0.039,0.2,0.182,0.0,10.1016/j.fluid.2019.03.022,3689,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,73.01,0.083,0.2,0.318,0.0,10.1016/j.fluid.2019.03.022,3690,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,72.02,0.125,0.2,0.406,0.0,10.1016/j.fluid.2019.03.022,3691,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,71.4,0.17,0.204,0.479,0.0,10.1016/j.fluid.2019.03.022,3692,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,71.13,0.206,0.203,0.527,0.0,10.1016/j.fluid.2019.03.022,3693,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,70.92,0.249,0.202,0.579,0.0,10.1016/j.fluid.2019.03.022,3694,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,70.75,0.293,0.202,0.622,0.0,10.1016/j.fluid.2019.03.022,3695,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,70.85,0.336,0.201,0.661,0.0,10.1016/j.fluid.2019.03.022,3696,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,71.17,0.366,0.202,0.688,0.0,10.1016/j.fluid.2019.03.022,3697,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,71.67,0.408,0.202,0.719,0.0,10.1016/j.fluid.2019.03.022,3698,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,72.01,0.441,0.202,0.746,0.0,10.1016/j.fluid.2019.03.022,3699,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,72.97,0.5,0.202,0.789,0.0,10.1016/j.fluid.2019.03.022,3700,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,73.45,0.526,0.202,0.809,0.0,10.1016/j.fluid.2019.03.022,3701,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,74.22,0.567,0.203,0.84,0.0,10.1016/j.fluid.2019.03.022,3702,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,75.25,0.608,0.202,0.869,0.0,10.1016/j.fluid.2019.03.022,3703,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,76.32,0.65,0.202,0.899,0.0,10.1016/j.fluid.2019.03.022,3704,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,77.9,0.696,0.203,0.93,0.0,10.1016/j.fluid.2019.03.022,3705,unmatched
+苯,C6H6,C1=CC=CC=C1,3-hexyl-1-methylimidazolium acetate,C12H22N2O2,,甲醇,CH4O,,0,0,759.812,79.18,0.736,0.201,0.957,0.0,10.1016/j.fluid.2019.03.022,3706,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,66.98,0.034,0.101,0.12,0.0,10.1016/j.fluid.2019.03.022,3707,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,65.35,0.065,0.101,0.198,0.0,10.1016/j.fluid.2019.03.022,3708,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,63.84,0.118,0.101,0.295,0.0,10.1016/j.fluid.2019.03.022,3709,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,62.98,0.176,0.102,0.37,0.0,10.1016/j.fluid.2019.03.022,3710,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,62.93,0.222,0.102,0.417,0.0,10.1016/j.fluid.2019.03.022,3711,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,62.77,0.268,0.101,0.457,0.0,10.1016/j.fluid.2019.03.022,3712,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,62.87,0.307,0.102,0.484,0.0,10.1016/j.fluid.2019.03.022,3713,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,63.15,0.348,0.102,0.514,0.0,10.1016/j.fluid.2019.03.022,3714,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,63.69,0.401,0.1,0.554,0.0,10.1016/j.fluid.2019.03.022,3715,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,64.14,0.438,0.102,0.582,0.0,10.1016/j.fluid.2019.03.022,3716,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,64.88,0.484,0.102,0.614,0.0,10.1016/j.fluid.2019.03.022,3717,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,65.73,0.532,0.102,0.644,0.0,10.1016/j.fluid.2019.03.022,3718,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,66.8,0.581,0.101,0.679,0.0,10.1016/j.fluid.2019.03.022,3719,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,68.17,0.633,0.1,0.717,0.0,10.1016/j.fluid.2019.03.022,3720,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,69.35,0.672,0.102,0.747,0.0,10.1016/j.fluid.2019.03.022,3721,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,71.41,0.73,0.101,0.796,0.0,10.1016/j.fluid.2019.03.022,3722,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,73.42,0.772,0.102,0.835,0.0,10.1016/j.fluid.2019.03.022,3723,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,76.73,0.821,0.102,0.888,0.0,10.1016/j.fluid.2019.03.022,3724,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,79.72,0.856,0.101,0.933,0.0,10.1016/j.fluid.2019.03.022,3725,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,82.4,0.884,0.101,0.974,0.0,10.1016/j.fluid.2019.03.022,3726,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,70.6,0.041,0.147,0.152,0.0,10.1016/j.fluid.2019.03.022,3727,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,68.59,0.09,0.147,0.278,0.0,10.1016/j.fluid.2019.03.022,3728,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,67.89,0.119,0.147,0.329,0.0,10.1016/j.fluid.2019.03.022,3729,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,67.28,0.163,0.149,0.399,0.0,10.1016/j.fluid.2019.03.022,3730,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,67.16,0.225,0.15,0.476,0.0,10.1016/j.fluid.2019.03.022,3731,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,67.39,0.274,0.149,0.525,0.0,10.1016/j.fluid.2019.03.022,3732,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,67.59,0.318,0.15,0.566,0.0,10.1016/j.fluid.2019.03.022,3733,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,67.95,0.355,0.151,0.599,0.0,10.1016/j.fluid.2019.03.022,3734,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,68.2,0.402,0.15,0.638,0.0,10.1016/j.fluid.2019.03.022,3735,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,68.68,0.437,0.151,0.666,0.0,10.1016/j.fluid.2019.03.022,3736,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,69.05,0.475,0.153,0.697,0.0,10.1016/j.fluid.2019.03.022,3737,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,70.15,0.531,0.153,0.742,0.0,10.1016/j.fluid.2019.03.022,3738,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,71.02,0.578,0.153,0.778,0.0,10.1016/j.fluid.2019.03.022,3739,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,71.72,0.609,0.152,0.798,0.0,10.1016/j.fluid.2019.03.022,3740,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,73.25,0.662,0.153,0.841,0.0,10.1016/j.fluid.2019.03.022,3741,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,74.37,0.7,0.153,0.87,0.0,10.1016/j.fluid.2019.03.022,3742,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,75.13,0.722,0.153,0.89,0.0,10.1016/j.fluid.2019.03.022,3743,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,77.28,0.786,0.153,0.942,0.0,10.1016/j.fluid.2019.03.022,3744,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,78.88,0.832,0.153,0.985,0.0,10.1016/j.fluid.2019.03.022,3745,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,77.8,0.038,0.199,0.155,0.0,10.1016/j.fluid.2019.03.022,3746,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,76.19,0.078,0.199,0.265,0.0,10.1016/j.fluid.2019.03.022,3747,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,74.75,0.123,0.198,0.369,0.0,10.1016/j.fluid.2019.03.022,3748,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,74.02,0.151,0.199,0.421,0.0,10.1016/j.fluid.2019.03.022,3749,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,73.07,0.19,0.2,0.481,0.0,10.1016/j.fluid.2019.03.022,3750,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,72.61,0.22,0.2,0.52,0.0,10.1016/j.fluid.2019.03.022,3751,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,72.32,0.274,0.2,0.584,0.0,10.1016/j.fluid.2019.03.022,3752,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,72.43,0.309,0.201,0.622,0.0,10.1016/j.fluid.2019.03.022,3753,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,72.78,0.354,0.2,0.665,0.0,10.1016/j.fluid.2019.03.022,3754,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,73.12,0.393,0.201,0.702,0.0,10.1016/j.fluid.2019.03.022,3755,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,73.49,0.438,0.2,0.741,0.0,10.1016/j.fluid.2019.03.022,3756,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,74.05,0.486,0.201,0.781,0.0,10.1016/j.fluid.2019.03.022,3757,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,74.64,0.53,0.2,0.814,0.0,10.1016/j.fluid.2019.03.022,3758,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,75.37,0.575,0.2,0.847,0.0,10.1016/j.fluid.2019.03.022,3759,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,76.07,0.61,0.201,0.873,0.0,10.1016/j.fluid.2019.03.022,3760,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,77.17,0.657,0.2,0.906,0.0,10.1016/j.fluid.2019.03.022,3761,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,78.25,0.698,0.201,0.933,0.0,10.1016/j.fluid.2019.03.022,3762,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,80.1,0.758,0.201,0.973,0.0,10.1016/j.fluid.2019.03.022,3763,unmatched
+苯,C6H6,C1=CC=CC=C1,1-methyl-3-octylimidazolium acetate,C14H26N2O2,,甲醇,CH4O,,0,0,759.812,81.0,0.784,0.2,0.99,0.0,10.1016/j.fluid.2019.03.022,3764,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,69.36,0.043,0.1,0.129,0.0,10.1016/j.fluid.2019.03.022,3765,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,67.95,0.085,0.1,0.216,0.0,10.1016/j.fluid.2019.03.022,3766,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,66.87,0.125,0.1,0.282,0.0,10.1016/j.fluid.2019.03.022,3767,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,66.01,0.167,0.1,0.338,0.0,10.1016/j.fluid.2019.03.022,3768,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,65.53,0.241,0.102,0.417,0.0,10.1016/j.fluid.2019.03.022,3769,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,65.43,0.284,0.1,0.452,0.0,10.1016/j.fluid.2019.03.022,3770,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,65.62,0.327,0.102,0.491,0.0,10.1016/j.fluid.2019.03.022,3771,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,66.01,0.386,0.1,0.533,0.0,10.1016/j.fluid.2019.03.022,3772,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,66.26,0.421,0.1,0.558,0.0,10.1016/j.fluid.2019.03.022,3773,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,66.93,0.466,0.1,0.591,0.0,10.1016/j.fluid.2019.03.022,3774,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,67.75,0.517,0.1,0.626,0.0,10.1016/j.fluid.2019.03.022,3775,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,68.64,0.561,0.1,0.659,0.0,10.1016/j.fluid.2019.03.022,3776,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,69.89,0.615,0.101,0.704,0.0,10.1016/j.fluid.2019.03.022,3777,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,71.02,0.657,0.101,0.736,0.0,10.1016/j.fluid.2019.03.022,3778,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,72.14,0.693,0.102,0.768,0.0,10.1016/j.fluid.2019.03.022,3779,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,74.02,0.744,0.101,0.812,0.0,10.1016/j.fluid.2019.03.022,3780,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,76.14,0.795,0.101,0.863,0.0,10.1016/j.fluid.2019.03.022,3781,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,78.24,0.838,0.102,0.914,0.0,10.1016/j.fluid.2019.03.022,3782,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,80.81,0.882,0.101,0.974,0.0,10.1016/j.fluid.2019.03.022,3783,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,73.74,0.039,0.153,0.134,0.0,10.1016/j.fluid.2019.03.022,3784,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,72.45,0.074,0.153,0.223,0.0,10.1016/j.fluid.2019.03.022,3785,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,71.54,0.117,0.153,0.308,0.0,10.1016/j.fluid.2019.03.022,3786,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,70.97,0.165,0.152,0.384,0.0,10.1016/j.fluid.2019.03.022,3787,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,70.51,0.222,0.15,0.452,0.0,10.1016/j.fluid.2019.03.022,3788,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,70.34,0.259,0.152,0.5,0.0,10.1016/j.fluid.2019.03.022,3789,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,70.34,0.308,0.152,0.55,0.0,10.1016/j.fluid.2019.03.022,3790,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,70.59,0.362,0.151,0.599,0.0,10.1016/j.fluid.2019.03.022,3791,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,70.91,0.411,0.15,0.638,0.0,10.1016/j.fluid.2019.03.022,3792,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,71.42,0.453,0.152,0.676,0.0,10.1016/j.fluid.2019.03.022,3793,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,72.01,0.493,0.153,0.708,0.0,10.1016/j.fluid.2019.03.022,3794,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,72.6,0.531,0.152,0.738,0.0,10.1016/j.fluid.2019.03.022,3795,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,73.53,0.581,0.15,0.776,0.0,10.1016/j.fluid.2019.03.022,3796,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,74.55,0.623,0.153,0.812,0.0,10.1016/j.fluid.2019.03.022,3797,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,75.79,0.673,0.152,0.851,0.0,10.1016/j.fluid.2019.03.022,3798,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,77.15,0.719,0.152,0.887,0.0,10.1016/j.fluid.2019.03.022,3799,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,78.1,0.755,0.153,0.917,0.0,10.1016/j.fluid.2019.03.022,3800,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,79.7,0.799,0.152,0.955,0.0,10.1016/j.fluid.2019.03.022,3801,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,81.43,0.834,0.153,0.988,0.0,10.1016/j.fluid.2019.03.022,3802,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,79.52,0.038,0.201,0.143,0.0,10.1016/j.fluid.2019.03.022,3803,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,77.74,0.076,0.202,0.256,0.0,10.1016/j.fluid.2019.03.022,3804,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,76.65,0.111,0.202,0.335,0.0,10.1016/j.fluid.2019.03.022,3805,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,75.85,0.149,0.203,0.408,0.0,10.1016/j.fluid.2019.03.022,3806,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,75.32,0.19,0.202,0.47,0.0,10.1016/j.fluid.2019.03.022,3807,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,75.01,0.236,0.203,0.536,0.0,10.1016/j.fluid.2019.03.022,3808,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,74.84,0.288,0.203,0.597,0.0,10.1016/j.fluid.2019.03.022,3809,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,74.89,0.337,0.204,0.647,0.0,10.1016/j.fluid.2019.03.022,3810,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,74.96,0.37,0.203,0.68,0.0,10.1016/j.fluid.2019.03.022,3811,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,75.15,0.421,0.203,0.724,0.0,10.1016/j.fluid.2019.03.022,3812,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,75.53,0.461,0.203,0.759,0.0,10.1016/j.fluid.2019.03.022,3813,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,76.0,0.502,0.204,0.793,0.0,10.1016/j.fluid.2019.03.022,3814,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,76.58,0.547,0.203,0.827,0.0,10.1016/j.fluid.2019.03.022,3815,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,77.24,0.589,0.2,0.855,0.0,10.1016/j.fluid.2019.03.022,3816,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,78.03,0.635,0.199,0.887,0.0,10.1016/j.fluid.2019.03.022,3817,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,78.89,0.671,0.204,0.917,0.0,10.1016/j.fluid.2019.03.022,3818,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,80.0,0.712,0.204,0.945,0.0,10.1016/j.fluid.2019.03.022,3819,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,81.09,0.754,0.203,0.972,0.0,10.1016/j.fluid.2019.03.022,3820,unmatched
+苯,C6H6,C1=CC=CC=C1,1-decyl-3-methylimidazolium acetate,C16H30N2O2,,甲醇,CH4O,,0,0,759.812,82.05,0.786,0.203,0.992,0.0,10.1016/j.fluid.2019.03.022,3821,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,174.0,0.1028,0.5951,0.1515,0.5762,10.1016/j.jct.2012.10.017,4121,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,172.7,0.1378,0.5988,0.2188,0.5588,10.1016/j.jct.2012.10.017,4122,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,172.4,0.1461,0.5937,0.2299,0.5523,10.1016/j.jct.2012.10.017,4123,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.6,0.1887,0.5938,0.2781,0.5416,10.1016/j.jct.2012.10.017,4124,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.5,0.191,0.5936,0.2825,0.532,10.1016/j.jct.2012.10.017,4125,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.34,0.2068,0.5603,0.3006,0.5068,10.1016/j.jct.2012.10.017,4126,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.28,0.2122,0.5453,0.3102,0.4968,10.1016/j.jct.2012.10.017,4127,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,168.93,0.3223,0.4435,0.4508,0.367,10.1016/j.jct.2012.10.017,4128,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,168.58,0.3298,0.434,0.4582,0.3562,10.1016/j.jct.2012.10.017,4129,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,168.51,0.3315,0.4358,0.4528,0.3569,10.1016/j.jct.2012.10.017,4130,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,167.2,0.3845,0.4077,0.5123,0.3284,10.1016/j.jct.2012.10.017,4131,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,166.99,0.3852,0.4057,0.5167,0.3231,10.1016/j.jct.2012.10.017,4132,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,166.96,0.4041,0.4012,0.5285,0.315,10.1016/j.jct.2012.10.017,4133,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,165.98,0.4496,0.3577,0.5861,0.2728,10.1016/j.jct.2012.10.017,4134,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,165.2,0.4775,0.3389,0.6142,0.2581,10.1016/j.jct.2012.10.017,4135,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,164.9,0.486,0.3361,0.6226,0.2501,10.1016/j.jct.2012.10.017,4136,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,164.4,0.5116,0.3233,0.6434,0.2382,10.1016/j.jct.2012.10.017,4137,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,164.1,0.5245,0.3322,0.6493,0.2452,10.1016/j.jct.2012.10.017,4138,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,164.0,0.5395,0.3198,0.6615,0.2356,10.1016/j.jct.2012.10.017,4139,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,163.2,0.5749,0.2928,0.7026,0.2076,10.1016/j.jct.2012.10.017,4140,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,162.8,0.6149,0.2504,0.7291,0.176,10.1016/j.jct.2012.10.017,4141,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,161.9,0.6497,0.2278,0.7618,0.1553,10.1016/j.jct.2012.10.017,4142,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,161.1,0.6918,0.1991,0.7944,0.1343,10.1016/j.jct.2012.10.017,4143,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,160.61,0.7172,0.1831,0.8083,0.1205,10.1016/j.jct.2012.10.017,4144,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,159.5,0.7699,0.1496,0.8462,0.0965,10.1016/j.jct.2012.10.017,4145,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,158.9,0.7988,0.1312,0.8701,0.0827,10.1016/j.jct.2012.10.017,4146,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,158.34,0.8393,0.1046,0.8991,0.0655,10.1016/j.jct.2012.10.017,4147,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,157.6,0.8782,0.0799,0.9231,0.0479,10.1016/j.jct.2012.10.017,4148,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,157.0,0.9075,0.0604,0.9402,0.0358,10.1016/j.jct.2012.10.017,4149,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,156.5,0.9321,0.0427,0.9556,0.0253,10.1016/j.jct.2012.10.017,4150,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,173.36,0.0527,0.8461,0.0823,0.8325,10.1016/j.jct.2012.10.017,4151,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.68,0.1437,0.7525,0.2108,0.7027,10.1016/j.jct.2012.10.017,4152,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,169.67,0.2882,0.6045,0.3523,0.5213,10.1016/j.jct.2012.10.017,4153,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,167.21,0.4053,0.4868,0.5253,0.3735,10.1016/j.jct.2012.10.017,4154,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,163.67,0.5622,0.3371,0.687,0.2733,10.1016/j.jct.2012.10.017,4155,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,173.42,0.0593,0.7518,0.074,0.7361,10.1016/j.jct.2012.10.017,4156,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,172.28,0.1634,0.6532,0.2106,0.6095,10.1016/j.jct.2012.10.017,4157,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,164.59,0.5071,0.2416,0.6411,0.1575,10.1016/j.jct.2012.10.017,4158,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,162.71,0.5936,0.1491,0.7266,0.1113,10.1016/j.jct.2012.10.017,4159,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,161.22,0.6837,0.0575,0.7829,0.0319,10.1016/j.jct.2012.10.017,4160,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,173.83,0.1324,0.4606,0.2005,0.4337,10.1016/j.jct.2012.10.017,4161,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.13,0.2227,0.3805,0.3363,0.3178,10.1016/j.jct.2012.10.017,4162,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,169.18,0.3171,0.2825,0.4381,0.2356,10.1016/j.jct.2012.10.017,4163,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,166.58,0.4297,0.1789,0.5672,0.1262,10.1016/j.jct.2012.10.017,4164,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,162.88,0.5845,0.0056,0.7113,0.0037,10.1016/j.jct.2012.10.017,4165,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,173.89,0.1033,0.3954,0.1554,0.3706,10.1016/j.jct.2012.10.017,4166,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.3,0.2135,0.2691,0.3117,0.2288,10.1016/j.jct.2012.10.017,4167,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,169.02,0.3174,0.1625,0.4358,0.1273,10.1016/j.jct.2012.10.017,4168,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,173.62,0.1268,0.2734,0.1925,0.2507,10.1016/j.jct.2012.10.017,4169,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.12,0.2317,0.1652,0.3374,0.1386,10.1016/j.jct.2012.10.017,4170,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,169.5,0.3018,0.0878,0.4175,0.0642,10.1016/j.jct.2012.10.017,4171,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,174.43,0.0983,0.1901,0.1395,0.1787,10.1016/j.jct.2012.10.017,4172,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,171.46,0.2075,0.0831,0.3024,0.0578,10.1016/j.jct.2012.10.017,4173,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,173.97,0.1058,0.0874,0.1596,0.0723,10.1016/j.jct.2012.10.017,4174,unmatched
+2-蒎烯,C10H16,CC1=CCC2CC1C2(C)C,对异丙基甲苯,C10H14,CC1=CC=C(C=C1)C(C)C,(S)-1-methyl-4-(1-methylethenyl)cyclohexene,C10H16,,0,0,755.312,174.61,0.0536,0.0489,0.1236,0.0433,10.1016/j.jct.2012.10.017,4175,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,92.25,0.0,1.0,0.0,0.759,10.1016/j.jct.2014.07.021,4284,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,91.67,0.001,0.999,0.028,0.721,10.1016/j.jct.2014.07.021,4285,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,91.31,0.002,0.998,0.049,0.721,10.1016/j.jct.2014.07.021,4286,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,91.06,0.003,0.997,0.062,0.712,10.1016/j.jct.2014.07.021,4287,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,90.68,0.004,0.996,0.078,0.707,10.1016/j.jct.2014.07.021,4288,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,90.02,0.006,0.994,0.113,0.686,10.1016/j.jct.2014.07.021,4289,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.78,0.007,0.993,0.117,0.687,10.1016/j.jct.2014.07.021,4290,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.6,0.008,0.992,0.123,0.689,10.1016/j.jct.2014.07.021,4291,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.41,0.009,0.991,0.137,0.687,10.1016/j.jct.2014.07.021,4292,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.27,0.011,0.989,0.143,0.688,10.1016/j.jct.2014.07.021,4293,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.12,0.011,0.988,0.153,0.685,10.1016/j.jct.2014.07.021,4294,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.18,0.012,0.988,0.157,0.681,10.1016/j.jct.2014.07.021,4295,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.21,0.012,0.988,0.159,0.683,10.1016/j.jct.2014.07.021,4296,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.37,0.012,0.988,0.164,0.683,10.1016/j.jct.2014.07.021,4297,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.64,0.014,0.986,0.172,0.692,10.1016/j.jct.2014.07.021,4298,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.71,0.014,0.986,0.178,0.688,10.1016/j.jct.2014.07.021,4299,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,89.96,0.015,0.985,0.179,0.697,10.1016/j.jct.2014.07.021,4300,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,90.17,0.015,0.985,0.187,0.699,10.1016/j.jct.2014.07.021,4301,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,90.78,0.016,0.984,0.203,0.714,10.1016/j.jct.2014.07.021,4302,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,90.99,0.017,0.983,0.204,0.725,10.1016/j.jct.2014.07.021,4303,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,对二甲苯,C8H10,CC1=CC=C(C=C1)C,-1,-1,759.812,92.7,0.021,0.979,0.246,0.754,10.1016/j.jct.2014.07.021,4304,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,84.0,0.012,0.014,0.015,0.548,10.1016/j.fluid.2014.10.038,5056,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,84.03,0.044,0.014,0.038,0.536,10.1016/j.fluid.2014.10.038,5057,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.44,0.102,0.025,0.066,0.527,10.1016/j.fluid.2014.10.038,5058,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.39,0.135,0.033,0.073,0.528,10.1016/j.fluid.2014.10.038,5059,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.38,0.156,0.034,0.077,0.531,10.1016/j.fluid.2014.10.038,5060,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.42,0.196,0.054,0.084,0.531,10.1016/j.fluid.2014.10.038,5061,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.44,0.234,0.054,0.089,0.53,10.1016/j.fluid.2014.10.038,5062,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.49,0.264,0.077,0.093,0.534,10.1016/j.fluid.2014.10.038,5063,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.61,0.313,0.095,0.097,0.536,10.1016/j.fluid.2014.10.038,5064,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.74,0.366,0.145,0.104,0.542,10.1016/j.fluid.2014.10.038,5065,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,83.89,0.404,0.156,0.108,0.545,10.1016/j.fluid.2014.10.038,5066,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,84.22,0.461,0.204,0.117,0.548,10.1016/j.fluid.2014.10.038,5067,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,84.7,0.496,0.264,0.13,0.561,10.1016/j.fluid.2014.10.038,5068,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,85.02,0.506,0.299,0.138,0.562,10.1016/j.fluid.2014.10.038,5069,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,85.54,0.497,0.375,0.152,0.586,10.1016/j.fluid.2014.10.038,5070,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,86.05,0.494,0.404,0.159,0.603,10.1016/j.fluid.2014.10.038,5071,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,86.61,0.483,0.436,0.165,0.613,10.1016/j.fluid.2014.10.038,5072,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,87.4,0.468,0.478,0.176,0.633,10.1016/j.fluid.2014.10.038,5073,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,88.38,0.451,0.515,0.194,0.661,10.1016/j.fluid.2014.10.038,5074,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,89.34,0.44,0.537,0.204,0.69,10.1016/j.fluid.2014.10.038,5075,unmatched
+1-丁醇,C4H10O,CCCCO,水,H2O,,甲苯,C7H8,CC1=CC=CC=C1,-1,-1,759.812,89.81,0.432,0.549,0.211,0.697,10.1016/j.fluid.2014.10.038,5076,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,58.96,0.114,0.773,0.274,0.675,10.1016/j.fluid.2013.10.060,5077,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,60.98,0.114,0.664,0.252,0.641,10.1016/j.fluid.2013.10.060,5078,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,62.99,0.113,0.563,0.236,0.599,10.1016/j.fluid.2013.10.060,5079,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,65.01,0.112,0.467,0.223,0.551,10.1016/j.fluid.2013.10.060,5080,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,67.07,0.11,0.375,0.212,0.497,10.1016/j.fluid.2013.10.060,5081,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,69.73,0.104,0.28,0.201,0.422,10.1016/j.fluid.2013.10.060,5082,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,72.41,0.101,0.192,0.197,0.332,10.1016/j.fluid.2013.10.060,5083,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,75.7,0.097,0.105,0.199,0.213,10.1016/j.fluid.2013.10.060,5084,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,73.13,0.182,0.103,0.298,0.216,10.1016/j.fluid.2013.10.060,5085,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,69.97,0.186,0.184,0.285,0.331,10.1016/j.fluid.2013.10.060,5086,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,67.16,0.193,0.271,0.279,0.418,10.1016/j.fluid.2013.10.060,5087,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,64.67,0.198,0.361,0.28,0.491,10.1016/j.fluid.2013.10.060,5088,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,62.36,0.201,0.463,0.283,0.555,10.1016/j.fluid.2013.10.060,5089,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,60.22,0.199,0.571,0.288,0.607,10.1016/j.fluid.2013.10.060,5090,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,58.3,0.195,0.686,0.299,0.649,10.1016/j.fluid.2013.10.060,5091,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,58.21,0.295,0.587,0.319,0.631,10.1016/j.fluid.2013.10.060,5092,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,60.12,0.292,0.488,0.317,0.586,10.1016/j.fluid.2013.10.060,5093,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,62.24,0.29,0.389,0.318,0.529,10.1016/j.fluid.2013.10.060,5094,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,64.59,0.288,0.295,0.325,0.458,10.1016/j.fluid.2013.10.060,5095,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,67.48,0.285,0.2,0.34,0.365,10.1016/j.fluid.2013.10.060,5096,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,70.9,0.283,0.109,0.367,0.24,10.1016/j.fluid.2013.10.060,5097,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,69.73,0.38,0.102,0.413,0.252,10.1016/j.fluid.2013.10.060,5098,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,66.18,0.387,0.19,0.377,0.38,10.1016/j.fluid.2013.10.060,5099,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,63.14,0.393,0.284,0.356,0.478,10.1016/j.fluid.2013.10.060,5100,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,60.5,0.388,0.396,0.341,0.558,10.1016/j.fluid.2013.10.060,5101,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,58.36,0.393,0.497,0.337,0.616,10.1016/j.fluid.2013.10.060,5102,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,58.57,0.493,0.399,0.351,0.599,10.1016/j.fluid.2013.10.060,5103,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,61.93,0.468,0.282,0.368,0.503,10.1016/j.fluid.2013.10.060,5104,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,64.8,0.47,0.194,0.394,0.416,10.1016/j.fluid.2013.10.060,5105,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,68.41,0.463,0.108,0.435,0.287,10.1016/j.fluid.2013.10.060,5106,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,67.42,0.565,0.104,0.464,0.31,10.1016/j.fluid.2013.10.060,5107,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,63.01,0.577,0.196,0.408,0.459,10.1016/j.fluid.2013.10.060,5108,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,59.15,0.586,0.295,0.374,0.566,10.1016/j.fluid.2013.10.060,5109,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,60.86,0.689,0.193,0.413,0.517,10.1016/j.fluid.2013.10.060,5110,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,65.55,0.68,0.103,0.483,0.361,10.1016/j.fluid.2013.10.060,5111,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,60.94,0.795,0.147,0.444,0.519,10.1016/j.fluid.2013.10.060,5112,unmatched
+乙醇,C2H6O,CCO,正己烷,C6H14,CCCCCC,四氢吡喃,C5H10O,C1CCOCC1,-1,-1,705.058,65.53,0.828,0.074,0.547,0.37,10.1016/j.fluid.2013.10.060,5113,unmatched

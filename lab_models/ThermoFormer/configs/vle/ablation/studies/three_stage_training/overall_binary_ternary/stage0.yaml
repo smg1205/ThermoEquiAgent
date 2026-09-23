@@ -1,0 +1,11 @@
+extends: ../../../../../training/supervised.yaml
+name: c1_three_view_vanilla_stage0
+data:
+  pure_property_catalog: datasets/derived/thermodynamic_labels/external_psat_catalog.json
+protocol:
+  registered_splits: [overall_binary_ternary]
+  seeds: [0, 1, 2, 3, 4]
+  evaluation_partition: validation
+runtime:
+  output_dir: experiments/vle/generalization/training_records/ablations/three_stage_training/overall_binary_ternary/stage0
+  results_file: experiments/vle/ablation/study_records/three_stage_training/overall_binary_ternary/results.md

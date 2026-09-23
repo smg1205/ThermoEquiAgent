@@ -1,0 +1,6 @@
+extends: ../../../prediction/studies/vle/three_stage.yaml
+name: vle_joint_ablation_three_stage
+protocol:
+  registered_splits: [vle_overall_binary_ternary]
+  seeds: [0, 1, 2, 3, 4]
+  evaluation_partition: test

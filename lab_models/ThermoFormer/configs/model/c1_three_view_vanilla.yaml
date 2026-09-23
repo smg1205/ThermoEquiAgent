@@ -1,0 +1,26 @@
+name: c1_three_view_vanilla
+seed: 42
+model:
+  hidden_dim: 192
+  layers: 3
+  heads: 6
+  feedforward_multiplier: 4
+  dropout: 0.0
+  pair_hidden_dim: 192
+  pure_hidden_dim: 192
+  film_scale: 0.1
+  use_transformer: true
+  use_mixture_token: true
+  use_film: true
+  use_composition_context: true
+  activity_mode: excess_gibbs
+encoder:
+  representation: multiview
+  fusion_mode: naive
+  use_rdkit_descriptors: true
+  use_unimol: true
+  use_functional_groups: true
+  chemical_attention_bias: false
+  context_pair_interaction: false
+  model_size: 84m
+  batch_size: 16

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "lle.thermodynamics.stability",
+  "section": "LLE / Equilibrium and stability diagnostics",
+  "title": "Activity residuals and finite-grid TPD (same predictions)",
+  "status": "artifact_only",
+  "backend": null,
+  "args": [],
+  "configs": [],
+  "sources": [
+    "experiments/lle/training_records/v1/formal",
+    "experiments/summary/LLE_results_table.md"
+  ],
+  "provenance": "lle_nist",
+  "output_mode": "native",
+  "seed_mode": "fixed",
+  "device": false,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Diagnostics already produced in each LLE evaluation; index, do not train an extra experiment. Accepted roots: activity RMS ≤0.001, grid TPD ≥−0.0001 plus original separation checks. Two-phase prior and parallel-line approximation apply.",
+  "protocol": null
+}
+

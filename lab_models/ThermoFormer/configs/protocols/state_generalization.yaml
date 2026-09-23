@@ -1,0 +1,21 @@
+extends: ../training/fugacity_finetuning.yaml
+name: state_generalization
+seed: 0
+protocol:
+  registered_splits:
+  - state_composition_interpolation
+  - state_composition_edge_extrapolation
+  - state_temperature_low_extrapolation
+  - state_temperature_high_extrapolation
+  - state_pressure_low_extrapolation
+  - state_pressure_high_extrapolation
+  seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  evaluation_partition: test
+runtime:
+  output_dir: experiments/vle/generalization/training_records/predictive_performance/state_generalization
+  results_file: experiments/vle/prediction/study_records/state_generalization/results.md

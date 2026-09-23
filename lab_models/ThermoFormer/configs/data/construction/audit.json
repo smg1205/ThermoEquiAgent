@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "data.construction.audit",
+  "section": "DATA / Data curation and audit",
+  "title": "NIST VLE/LLE dataset audit",
+  "status": "artifact_only",
+  "backend": null,
+  "args": [],
+  "configs": [],
+  "sources": [
+    "datasets/vle/manifest.json",
+    "datasets/vle/validation.json",
+    "datasets/lle/manifest.json",
+    "experiments/data_quality/construction/dataset_distribution/reports"
+  ],
+  "provenance": "nist_thermoml",
+  "output_mode": "native",
+  "seed_mode": "fixed",
+  "device": false,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Source records, registered dataset records, training-filtered records, and independent conditions must be reported separately.",
+  "protocol": null
+}
+

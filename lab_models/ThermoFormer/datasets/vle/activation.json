@@ -1,0 +1,12 @@
+{
+  "active_workbooks": {
+    "binary_vle_english.xlsx": "1fdd6bd4417970a023a4917882a0faa14a747f232cff06f33fd5394672029788",
+    "ternary_vle_english.xlsx": "f7fcd62064f0f192b3a2d14f57860a03cae9606744fcb3b3a5efd019eafcaf8b"
+  },
+  "unrelated_dataset_workbooks_unchanged": {
+    "ternary_lle.xlsx": "ac32863470eb0003dc0c9f29072ca21af56f861bd221967b1affaf34e9d15cfc",
+    "binary_lle.xlsx": "58fe0bfec77efc2c141b9c4c61b3eb47bad6c97fbd5f836d6c3ce0911950b122"
+  },
+  "original_backup_directory": "D:\\VLE\\paper_structure_worktree\\dataset_vle_original_backup",
+  "status": "activated"
+}

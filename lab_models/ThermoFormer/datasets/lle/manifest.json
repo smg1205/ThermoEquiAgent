@@ -1,0 +1,18 @@
+{
+  "2": {
+    "rows": 5983,
+    "file": "binary_lle.xlsx",
+    "sha256": "2379fc57b16c6a95de7f658173ea368da7a083f80b7ac9d0e6ec8d1f55a98f59",
+    "finite_simplex": true,
+    "doi_count": 254,
+    "source_urls_present": true
+  },
+  "3": {
+    "rows": 13861,
+    "file": "ternary_lle.xlsx",
+    "sha256": "412f631a94e28802bb73b7175692695bdf9ecdd54a6326392c9550bf5f2b8b5c",
+    "finite_simplex": true,
+    "doi_count": 432,
+    "source_urls_present": true
+  }
+}

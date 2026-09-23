@@ -1,0 +1,38 @@
+extends: ../../../../training/supervised.yaml
+name: thermoformer_vle_three_stage
+data:
+  root: datasets/vle
+  pure_property_catalog: datasets/derived/thermodynamic_labels/external_psat_catalog.json
+  failed_weight: 0.0
+  max_pressure_kpa: 500.0
+  minimum_pure_anchor_temperatures: 2
+protocol:
+  registered_splits:
+    - vle_overall_binary
+    - vle_overall_binary_ternary
+    - vle_overall_ternary
+    - vle_binary_state_composition_interpolation
+    - vle_binary_state_composition_edge_extrapolation
+    - vle_binary_state_temperature_low_extrapolation
+    - vle_binary_state_temperature_high_extrapolation
+    - vle_binary_state_pressure_low_extrapolation
+    - vle_binary_state_pressure_high_extrapolation
+    - vle_binary_unseen_component
+  seeds: [0, 1, 2, 3, 4]
+  evaluation_partition: test
+direct_ge_supervision:
+  enabled: true
+  pretrain_epochs: 20
+  pretrain_learning_rate: 0.0002
+  fugacity_epochs: 10
+  excess_gibbs_weight: 1.0
+  activity_coefficient_weight: 0.5
+  vle_weight: 1.0
+  fugacity_weight: 0.01
+  minimum_fraction: 0.0001
+  warmup_epochs: 2
+physics_finetuning:
+  teacher_forced_fugacity_weight: 0.01
+runtime:
+  output_dir: experiments/run_records/phase_equilibrium/vle/three_stage
+  results_file: experiments/data_quality/reports/phase_equilibrium/vle.md

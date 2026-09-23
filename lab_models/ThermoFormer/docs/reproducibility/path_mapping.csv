@@ -1,0 +1,9 @@
+source_location,research_repository_location,purpose
+dataset_vle_nist_corrected,datasets/vle,VLE dataset registry
+dataset_lle_nist_rebuilt,datasets/lle,LLE dataset registry
+src/models.py,src/thermoformer/models/,VLE model implementation
+src/lle_tp,src/thermoformer/lle_tp/,LLE model and solver implementation
+train/evaluate scripts,scripts/ and scripts/benchmarks/,Unified and task-specific entry points
+experiment definitions,configs/benchmarks/ and experiments/,Configuration and protocol records
+phase-equilibrium results,results/benchmarks/vle and results/benchmarks/lle,Task-indexed outputs
+validation-selected checkpoints,runs/phase_equilibrium/v1,Cataloged by models/registry.json

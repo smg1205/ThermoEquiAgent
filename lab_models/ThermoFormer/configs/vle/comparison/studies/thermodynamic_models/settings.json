@@ -1,0 +1,21 @@
+{
+  "models": ["nrtl", "wilson", "uniquac"],
+  "protocol_seeds": {
+    "state_composition_interpolation": [0, 1, 2, 3, 4],
+    "state_composition_edge_extrapolation": [0],
+    "state_temperature_low_extrapolation": [0],
+    "state_temperature_high_extrapolation": [0],
+    "state_pressure_low_extrapolation": [0],
+    "state_pressure_high_extrapolation": [0]
+  },
+  "pure_vapor_pressure": "ln(Psat/kPa) = a + b/T",
+  "activity_parameter_temperature_form": "B_ij/T",
+  "nrtl_alpha": 0.3,
+  "maximum_optimizer_iterations": 200,
+  "formal_output_root": "experiments/vle/comparison/reference_evaluations/thermodynamic_models",
+  "smoke_output_root": "experiments/run_records/thermodynamic_baselines_smoke",
+  "thermoformer_output_template": "experiments/vle/generalization/evaluations/physics_finetuning/c1_three_view_vanilla_fugacity/c1_three_view_vanilla_fugacity_finetune.on.{protocol}",
+  "thermoformer_seeds": [0, 1, 2, 3, 4],
+  "training_partition": "train",
+  "evaluation_partition": "test"
+}

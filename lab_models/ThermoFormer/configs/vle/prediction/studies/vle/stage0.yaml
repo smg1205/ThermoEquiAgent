@@ -1,0 +1,25 @@
+extends: ../../../../training/supervised.yaml
+name: c1_three_view_vanilla
+data:
+  root: datasets/vle
+  pure_property_catalog: datasets/derived/thermodynamic_labels/external_psat_catalog.json
+  failed_weight: 0.0
+  max_pressure_kpa: 500.0
+  minimum_pure_anchor_temperatures: 2
+protocol:
+  registered_splits:
+    - vle_overall_binary
+    - vle_overall_binary_ternary
+    - vle_overall_ternary
+    - vle_binary_state_composition_interpolation
+    - vle_binary_state_composition_edge_extrapolation
+    - vle_binary_state_temperature_low_extrapolation
+    - vle_binary_state_temperature_high_extrapolation
+    - vle_binary_state_pressure_low_extrapolation
+    - vle_binary_state_pressure_high_extrapolation
+    - vle_binary_unseen_component
+  seeds: [0, 1, 2, 3, 4]
+  evaluation_partition: validation
+runtime:
+  output_dir: experiments/run_records/phase_equilibrium/vle/stage0
+  results_file: experiments/data_quality/reports/phase_equilibrium/vle.md

@@ -1,0 +1,10 @@
+extends: ../three_stage_base.yaml
+name: v3_functional_group_only
+encoder:
+  representation: functional_groups
+  fusion_mode: legacy
+  use_rdkit_descriptors: false
+  use_unimol: false
+  use_functional_groups: true
+  chemical_attention_bias: false
+  context_pair_interaction: false

@@ -1,0 +1,1 @@
+Scientific experiment catalog. Each task/category/experiment JSON declares its original backend, configuration, seed policy, data provenance, and output locations. See ../../docs/reproducibility/README.md.

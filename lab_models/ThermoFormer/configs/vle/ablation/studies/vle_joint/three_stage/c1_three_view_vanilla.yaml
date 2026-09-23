@@ -1,0 +1,2 @@
+extends: ../three_stage_base.yaml
+name: c1_three_view_vanilla

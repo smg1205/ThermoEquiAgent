@@ -1,0 +1,31 @@
+[stage experimental] starting 1 epoch(s)
+[stage experimental] [epoch 1/1] train_total=0.637331 val_total=0.643507 best=0.643507 improved=yes epoch_time=0.0s total_time=0.0s
+test_campaign_matrix_is_exactly_original (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_commands_preserve_all_protocols_and_frozen_data (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_completed_resume_is_noop_and_changed_identity_rejected (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_dry_run_has_no_files_or_subprocess (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_every_backend_and_config_exists (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_lle_scope_has_no_extra_studies (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_missing_scientific_implementation_cannot_launch (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_rejects_invalid_seed_or_unsupported_options (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_run_id_cannot_escape_experiment_directory (tests.test_benchmark_registry.BenchmarkRegistryTests) ... ok
+test_ablation_result_namespace_reuses_split_without_overwriting_reference (tests.test_registered_runner.RegisteredRunnerTests) ... ok
+test_end_to_end_run_exports_checkpoint_predictions_metrics_and_provenance (tests.test_registered_runner.RegisteredRunnerTests) ... ok
+test_generated_stage1_checkpoint_requires_matching_completed_manifest (tests.test_registered_runner.RegisteredRunnerTests) ... ok
+test_registered_suite_smoke_remains_supervised_only (tests.test_registered_runner.RegisteredRunnerTests) ... ok
+test_single_run_smoke_defaults_are_isolated_from_formal_roots (tests.test_registered_runner.RegisteredRunnerTests) ... ok
+test_active_experiments_cover_existing_research_tasks (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_active_implementation_uses_manuscript_subpackages (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_active_python_comments_are_english (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_active_source_paths_are_ascii (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_checkpoint_documentation_matches_manuscript_artifacts (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_experiment_navigation_declares_incomplete_studies (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_legacy_code_is_isolated_from_active_imports (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_manuscript_configs_resolve (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_manuscript_figures_have_single_active_sources (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+test_release_dataset_contains_only_two_workbooks (tests.test_repository_layout.RepositoryLayoutTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 1.703s
+
+OK

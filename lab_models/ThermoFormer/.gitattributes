@@ -1,0 +1,6 @@
+# Preserve byte identity for registered scientific artifacts.
+* -text
+# Model weights and molecular representation arrays are stored as ordinary
+# git blobs (not Git LFS): the published checkpoints must be usable by a
+# plain `git clone` without requiring git-lfs, and the repository avoids
+# depending on LFS bandwidth quota.

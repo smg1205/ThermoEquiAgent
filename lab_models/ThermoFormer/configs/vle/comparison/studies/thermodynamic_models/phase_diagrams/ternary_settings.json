@@ -1,0 +1,23 @@
+{
+  "protocol_by_direction": {
+    "isothermal": [
+      "state_temperature_low_extrapolation",
+      "state_temperature_high_extrapolation"
+    ]
+  },
+  "thermoformer_seeds": [0, 1, 2, 3, 4],
+  "baseline_seed": 0,
+  "minimum_points": 6,
+  "temperature_precision": 2,
+  "pressure_precision": 2,
+  "pressure_range_floor_kpa": 5.0,
+  "temperature_range_floor_k": 5.0,
+  "candidate_output": "experiments/vle/comparison/reference_evaluations/thermodynamic_models/phase_diagrams/ternary_candidate_ranking.csv",
+  "plot_data_output": "experiments/vle/comparison/reference_evaluations/thermodynamic_models/phase_diagrams/ternary_selected_plot_data.csv",
+  "figure_pdf": "experiments/vle/comparison/thermodynamic_models/figures/ternary_phase_diagram_cases.pdf",
+  "figure_png": "experiments/vle/comparison/thermodynamic_models/figures/ternary_phase_diagram_cases.png",
+  "figure_svg": "experiments/vle/comparison/thermodynamic_models/figures/ternary_phase_diagram_cases.svg",
+  "figure_tiff": "experiments/vle/comparison/thermodynamic_models/figures/ternary_phase_diagram_cases.tiff",
+  "report_output": "experiments/vle/comparison/study_records/thermodynamic_models/phase_diagrams/ternary_results.md",
+  "manifest_output": "experiments/vle/comparison/reference_evaluations/thermodynamic_models/phase_diagrams/ternary_manifest.json"
+}

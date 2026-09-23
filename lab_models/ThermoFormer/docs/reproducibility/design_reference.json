@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "article_source": {
+    "path": "C:\\Users\\user\\Downloads\\sn-article (11).tex",
+    "sha256": "56e042c50dd5595396277c7db236f3d10097051ff589c85dc6c3abb22799093a"
+  },
+  "article_pdf": {
+    "path": "C:\\Users\\user\\Downloads\\ThermoFormer (5).pdf",
+    "sha256": "7334d450a8a2d59167aa6a707cb419688ecbcf71041ed4e1ad5c23effadd8b94"
+  },
+  "results_structure": [
+    "Phase-equilibrium dataset construction",
+    "Predictive performance and generalization: VLE prediction",
+    "Predictive performance and generalization: LLE prediction",
+    "Comparison with machine-learning and thermodynamic models",
+    "Ablation analysis",
+    "Interpreting learned multicomponent thermodynamics",
+    "Agent-assisted separation design with ThermoFormer"
+  ],
+  "note": "Article files are scientific references and are not modified by repository commands."
+}

@@ -1,0 +1,20 @@
+extends: ../../../../protocols/overall_binary_ternary.yaml
+name: c1_three_view_vanilla_direct_ge
+data:
+  pure_property_catalog: datasets/derived/thermodynamic_labels/external_psat_catalog.json
+direct_ge_supervision:
+  enabled: true
+  pretrain_epochs: 20
+  pretrain_learning_rate: 0.0002
+  fugacity_epochs: 10
+  excess_gibbs_weight: 1.0
+  activity_coefficient_weight: 0.5
+  vle_weight: 1.0
+  fugacity_weight: 0.01
+  minimum_fraction: 0.0001
+  warmup_epochs: 2
+physics_finetuning:
+  teacher_forced_fugacity_weight: 0.01
+runtime:
+  output_dir: experiments/vle/generalization/training_records/ablations/direct_ge_supervision
+  results_file: experiments/vle/ablation/study_records/direct_ge_supervision/results.md

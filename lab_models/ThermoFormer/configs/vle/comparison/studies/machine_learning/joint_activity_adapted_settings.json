@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "experiment": "joint_activity_residual_adaptation",
+  "protocol": "joint_train_joint_test",
+  "split_protocol": "vle_overall_binary_ternary",
+  "seeds": [0, 1, 2, 3, 4],
+  "selection_partition": "validation",
+  "evaluation_partition": "test",
+  "test_labels_used_for_selection": false,
+  "official_base_parameters_frozen": true,
+  "residual_head": {
+    "hidden_dimension": 32,
+    "dropout": 0.05,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.00001,
+    "batch_size": 256,
+    "epochs": 100,
+    "patience": 15,
+    "minimum_composition": 0.00001,
+    "trainable_parameters": 1345
+  },
+  "device": "cuda",
+  "tennetsac_cuda_equivalence_tolerance_log_gamma": 0.00011
+}
+

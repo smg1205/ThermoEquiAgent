@@ -1,0 +1,8 @@
+extends: ../../../../../training/supervised.yaml
+name: c2_chemical_bias_full
+encoder:
+  chemical_attention_bias: true
+  context_pair_interaction: true
+runtime:
+  output_dir: experiments/vle/generalization/training_records/ablations/interaction_architecture/chemical_interaction_bias
+  results_file: experiments/vle/ablation/study_records/interaction_architecture/chemical_interaction_bias/results.md

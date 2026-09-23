@@ -1,0 +1,5 @@
+extends: ../../../../protocols/overall_binary_ternary.yaml
+name: c1_three_view_vanilla_fugacity_finetune
+runtime:
+  output_dir: experiments/vle/generalization/training_records/ablations/fugacity_finetuning
+  results_file: experiments/vle/ablation/study_records/fugacity_finetuning/results.md

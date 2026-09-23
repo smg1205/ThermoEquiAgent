@@ -1,0 +1,32 @@
+extends: ../model/c1_three_view_vanilla.yaml
+name: c1_supervised
+data:
+  root: datasets/vle_reference
+  pure_property_catalog: ""
+  source_filter: ""
+  failed_weight: 0.0
+  max_pressure_kpa: 500.0
+  minimum_pure_anchor_temperatures: 2
+evaluation:
+  mode: kfold
+  folds: 5
+  test_fraction: 0.15
+  validation_fraction: 0.15
+training:
+  batch_size: 128
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  epochs_supervised: 80
+  epochs_physics: 0
+  early_stopping_patience: 12
+  minimum_supervised_epochs: 10
+  minimum_physics_epochs: 0
+  validation_min_delta: 0.0
+  pressure_weight: 1.0
+  pure_weight: 0.5
+  solver_iterations_eval: 48
+  gradient_clip: 5.0
+runtime:
+  output_dir: experiments/run_records/public/c1_supervised
+  device: auto
+  results_file: experiments/run_records/public/c1_supervised/results.md

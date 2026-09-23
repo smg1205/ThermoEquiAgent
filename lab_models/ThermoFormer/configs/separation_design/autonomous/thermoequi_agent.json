@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "separation_design.thermoequi_agent.case_studies",
+  "section": "SEPARATION_DESIGN / Agent-assisted separation design",
+  "title": "Agent-assisted separation design with ThermoFormer",
+  "status": "artifact_only",
+  "backend": null,
+  "args": [],
+  "configs": [],
+  "sources": [
+    "docs/vle/separation_design/study_records/README.md"
+  ],
+  "provenance": "registered_case_studies",
+  "output_mode": "native",
+  "seed_mode": "fixed",
+  "device": false,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "The ThermoEqui-Agent orchestration, Fenske-Underwood-Gilliland workflow, .dwxmz export, and the IPA-water and EA/NPA+DMSO case artifacts described in the article are required for complete reproduction but are not available in this repository snapshot.",
+  "protocol": null
+}

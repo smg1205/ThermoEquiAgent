@@ -1,0 +1,69 @@
+original,current,experiments,entry,status
+scripts/__init__.py,scripts/__init__.py,,,retained_existing_entry
+scripts/aggregate_results.py,scripts/aggregate_results.py,,,retained_existing_entry
+scripts/analyze_higher_order_context_mechanism.py,scripts/analyze_higher_order_context_mechanism.py,,,retained_existing_entry
+scripts/audit_dataset.py,scripts/audit_dataset.py,,,retained_existing_entry
+scripts/paper/__init__.py,scripts/benchmarks/__init__.py,,,shared_workflow
+scripts/paper/_dispatch.py,scripts/benchmarks/_dispatch.py,,,shared_workflow
+scripts/paper/data/run_construction.py,scripts/benchmarks/data/run_construction.py,,,shared_workflow
+scripts/paper/lle/run_generalization.py,scripts/benchmarks/lle/run_generalization.py,,,shared_workflow
+scripts/paper/lle/run_prediction.py,scripts/benchmarks/lle/run_prediction.py,,,shared_workflow
+scripts/paper/lle/run_thermodynamics.py,scripts/benchmarks/lle/run_thermodynamics.py,,,shared_workflow
+scripts/paper/registry.py,scripts/benchmarks/registry.py,,,shared_workflow
+scripts/paper/separation_design/run_autonomous.py,scripts/benchmarks/separation_design/run_autonomous.py,,,shared_workflow
+scripts/paper/vle/run_ablation.py,scripts/benchmarks/vle/run_ablation.py,,,shared_workflow
+scripts/paper/vle/run_comparison.py,scripts/benchmarks/vle/run_comparison.py,,,shared_workflow
+scripts/paper/vle/run_generalization.py,scripts/benchmarks/vle/run_generalization.py,,,shared_workflow
+scripts/paper/vle/run_interpretability.py,scripts/benchmarks/vle/run_interpretability.py,,,shared_workflow
+scripts/paper/vle/run_prediction.py,scripts/benchmarks/vle/run_prediction.py,,,shared_workflow
+scripts/build_c1_ablation_report.py,scripts/build_c1_ablation_report.py,,,retained_existing_entry
+scripts/build_c1_generalization_report.py,scripts/build_c1_generalization_report.py,,,retained_existing_entry
+scripts/build_reports.py,scripts/build_reports.py,,,retained_existing_entry
+scripts/build_three_stage_training_ablation_report.py,scripts/build_three_stage_training_ablation_report.py,,,retained_existing_entry
+scripts/data/prepare_dataset.py,scripts/data/prepare_dataset.py,,,retained_existing_entry
+scripts/evaluate.py,scripts/evaluate.py,,,retained_existing_entry
+scripts/evaluate_lle.py,scripts/evaluate_lle.py,,,retained_existing_entry
+scripts/finalize_context_mechanism_audit.py,scripts/finalize_context_mechanism_audit.py,,,retained_existing_entry
+scripts/generate_entrainer_workflow_figure.py,scripts/generate_entrainer_workflow_figure.py,,,retained_existing_entry
+scripts/generate_lle_splits.py,scripts/generate_lle_splits.py,,,retained_existing_entry
+scripts/generate_splits.py,scripts/generate_splits.py,,,retained_existing_entry
+scripts/generate_ternary_splits.py,scripts/generate_ternary_splits.py,,,retained_existing_entry
+scripts/generate_vle_splits.py,scripts/generate_vle_splits.py,,,retained_existing_entry
+scripts/import_entrainer_validation.py,scripts/import_entrainer_validation.py,,,retained_existing_entry
+scripts/internal/phasepy_baseline_worker.py,scripts/internal/phasepy_baseline_worker.py,,,retained_existing_entry
+scripts/plot_context_mechanism_main.py,scripts/plot_context_mechanism_main.py,,,retained_existing_entry
+scripts/plot_context_mechanism_main_audited.py,scripts/plot_context_mechanism_main_audited.py,,,retained_existing_entry
+scripts/plot_lle_tie_lines.py,scripts/plot_lle_tie_lines.py,,,retained_existing_entry
+scripts/report_phase_equilibrium_results.py,scripts/report_phase_equilibrium_results.py,,,retained_existing_entry
+scripts/reproduce/ablations.py,scripts/reproduce/ablations.py,,,retained_existing_entry
+scripts/reproduce/predictive_performance.py,scripts/reproduce/predictive_performance.py,,,retained_existing_entry
+scripts/run_binary_generalization_three_stage.py,scripts/run_binary_generalization_three_stage.py,,,retained_existing_entry
+scripts/run_c1_direct_ge_training.py,scripts/run_c1_direct_ge_training.py,,,retained_existing_entry
+scripts/run_c1_physics_finetune.py,scripts/run_c1_physics_finetune.py,vle.ablation.fugacity_legacy,python scripts/run_experiments.py run vle.ablation.fugacity_legacy,scientific_backend
+scripts/run_chemical_attention_suite.py,scripts/run_chemical_attention_suite.py,vle.ablation.interaction_architecture,python scripts/run_experiments.py run vle.ablation.interaction_architecture,scientific_backend
+scripts/run_context_mechanism_analysis.py,scripts/run_context_mechanism_analysis.py,vle.interpretability.context_exploratory,python scripts/run_experiments.py run vle.interpretability.context_exploratory,scientific_backend
+scripts/run_entrainer_closed_loop.py,scripts/run_entrainer_closed_loop.py,,,retained_existing_entry
+scripts/run_experiment.py,scripts/run_experiment.py,,,retained_existing_entry
+scripts/paper/run.py,scripts/run_experiments.py,,,shared_workflow
+scripts/run_external_activity_baselines_smoke.py,scripts/run_external_activity_baselines_smoke.py,,,retained_existing_entry
+scripts/run_higher_order_multicomponent.py,scripts/run_higher_order_multicomponent.py,,,retained_existing_entry
+scripts/run_joint_activity_adapted.py,scripts/run_joint_activity_adapted.py,vle.comparison.joint_activity;vle.comparison.ternary_activity,python scripts/run_experiments.py run vle.comparison.joint_activity;python scripts/run_experiments.py run vle.comparison.ternary_activity,scientific_backend
+scripts/run_lle_experiment.py,scripts/run_lle_experiment.py,,,retained_existing_entry
+scripts/run_ml_baselines.py,scripts/run_ml_baselines.py,,,retained_existing_entry
+scripts/run_ml_baselines_formal.py,scripts/run_ml_baselines_formal.py,vle.comparison.machine_learning,python scripts/run_experiments.py run vle.comparison.machine_learning,scientific_backend
+scripts/run_multiview_suite.py,scripts/run_multiview_suite.py,vle.ablation.molecular_representation,python scripts/run_experiments.py run vle.ablation.molecular_representation,scientific_backend
+scripts/run_overall_binary_three_stage_ablations.py,scripts/run_overall_binary_three_stage_ablations.py,,,retained_existing_entry
+scripts/run_paper_experiment.py,scripts/run_registered_experiment.py,,,retained_existing_entry
+scripts/run_paper_suite.py,scripts/run_registered_suite.py,,,retained_existing_entry
+scripts/run_spt_nrtl_adapted_smoke.py,scripts/run_spt_nrtl_adapted_smoke.py,,,retained_existing_entry
+scripts/run_ternary_only_thermoformer.py,scripts/run_ternary_only_thermoformer.py,,,retained_existing_entry
+scripts/run_thermodynamic_baselines.py,scripts/run_thermodynamic_baselines.py,,,retained_existing_entry
+scripts/run_three_stage_training_ablation.py,scripts/run_three_stage_training_ablation.py,,,retained_existing_entry
+scripts/run_phase_equilibrium_benchmarks.py,scripts/run_phase_equilibrium_benchmarks.py,vle.prediction.binary;vle.prediction.mixed;vle.prediction.ternary;vle.generalization.composition_interpolation;vle.generalization.composition_edge;vle.generalization.temperature_low;vle.generalization.temperature_high;vle.generalization.pressure_low;vle.generalization.pressure_high;vle.generalization.unseen_component;lle.prediction.binary_random;lle.prediction.binary_system;lle.prediction.ternary_random;lle.prediction.ternary_system;lle.prediction.mixed_random;lle.prediction.mixed_system;lle.generalization.binary_temperature_low;lle.generalization.binary_temperature_high;lle.generalization.binary_pressure_low;lle.generalization.binary_pressure_high;lle.generalization.binary_unseen_component,python scripts/run_experiments.py run vle.prediction.binary;python scripts/run_experiments.py run vle.prediction.mixed;python scripts/run_experiments.py run vle.prediction.ternary;python scripts/run_experiments.py run vle.generalization.composition_interpolation;python scripts/run_experiments.py run vle.generalization.composition_edge;python scripts/run_experiments.py run vle.generalization.temperature_low;python scripts/run_experiments.py run vle.generalization.temperature_high;python scripts/run_experiments.py run vle.generalization.pressure_low;python scripts/run_experiments.py run vle.generalization.pressure_high;python scripts/run_experiments.py run vle.generalization.unseen_component;python scripts/run_experiments.py run lle.prediction.binary_random;python scripts/run_experiments.py run lle.prediction.binary_system;python scripts/run_experiments.py run lle.prediction.ternary_random;python scripts/run_experiments.py run lle.prediction.ternary_system;python scripts/run_experiments.py run lle.prediction.mixed_random;python scripts/run_experiments.py run lle.prediction.mixed_system;python scripts/run_experiments.py run lle.generalization.binary_temperature_low;python scripts/run_experiments.py run lle.generalization.binary_temperature_high;python scripts/run_experiments.py run lle.generalization.binary_pressure_low;python scripts/run_experiments.py run lle.generalization.binary_pressure_high;python scripts/run_experiments.py run lle.generalization.binary_unseen_component,scientific_backend
+scripts/run_vle_benchmarks.py,scripts/run_vle_benchmarks.py,,,retained_existing_entry
+scripts/train.py,scripts/train.py,,,retained_existing_entry
+scripts/train_thermoformer.py,scripts/train_thermoformer.py,,,retained_existing_entry
+scripts/validate_splits.py,scripts/validate_splits.py,,,retained_existing_entry
+scripts/visualization/plot_overall_phase_diagrams.py,scripts/visualization/plot_overall_phase_diagrams.py,,,retained_existing_entry
+scripts/visualization/plot_ternary_phase_diagrams.py,scripts/visualization/plot_ternary_phase_diagrams.py,vle.comparison.classical_ternary,python scripts/run_experiments.py run vle.comparison.classical_ternary,scientific_backend
+scripts/visualization/plot_thermodynamic_phase_diagrams.py,scripts/visualization/plot_thermodynamic_phase_diagrams.py,vle.comparison.classical_binary,python scripts/run_experiments.py run vle.comparison.classical_binary,scientific_backend

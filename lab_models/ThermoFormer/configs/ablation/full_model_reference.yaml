@@ -1,0 +1,57 @@
+# Immutable reference for the ablation campaign.
+reference_training_commits:
+  overall_binary_ternary: 8c41a1b46d217f5b9714bd5179fe28224b86408c
+  unseen_component: 704458163ee2afd9e2c0a681ea4a670a287b6778
+  binary_to_ternary_zero_shot: 704458163ee2afd9e2c0a681ea4a670a287b6778
+reference_aggregation_commit: 704458163ee2afd9e2c0a681ea4a670a287b6778
+reference_protocol: overall_binary_ternary
+architecture:
+  model_name: ThermoFormer
+  hidden_dim: 192
+  layers: 3
+  heads: 6
+  feedforward_multiplier: 4
+  dropout: 0.0
+  pair_hidden_dim: 192
+  pure_hidden_dim: 192
+  film_scale: 0.1
+  use_transformer: true
+  use_mixture_token: true
+  use_film: true
+  use_composition_context: true
+  interaction_mode: full
+  activity_mode: excess_gibbs
+  decoder_mode: thermodynamic
+molecular_encoder:
+  representation: unimol_v2
+  model_size: 84m
+  frozen_precomputed_cls_repr: true
+optimizer:
+  name: AdamW
+  learning_rate: 0.0002
+  physics_learning_rate: 0.00002
+  weight_decay: 0.0001
+training:
+  batch_size: 128
+  epochs_supervised: 80
+  epochs_physics: 5
+  early_stopping_patience: 12
+  minimum_supervised_epochs: 10
+  minimum_physics_epochs: 3
+  validation_min_delta: 0.0
+  gradient_clip: 5.0
+loss_weights:
+  vapor_composition: 1.0
+  pressure: 1.0
+  pure_vapor_pressure: 0.5
+  phase_continuity: 0.00001
+  pure_component_boundary: 0.001
+  differentiable_solver: 0.1
+solver:
+  train_iterations: 16
+  evaluation_iterations: 48
+  solver_batches_per_epoch: 2
+model_selection:
+  validation_only: true
+  supervised_checkpoint_is_physics_epoch_zero_candidate: true
+seeds: [0, 1, 2, 3, 4]

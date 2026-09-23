@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "data.construction.distribution",
+  "section": "DATA / Data curation and audit",
+  "title": "Historical dataset distribution",
+  "status": "runnable",
+  "backend": "scripts/data/dataset_distribution/analyze_datasets.py",
+  "args": [
+    "--dataset-root",
+    "dataset"
+  ],
+  "configs": [],
+  "sources": [
+    "experiments/data_quality/construction/dataset_distribution/reports"
+  ],
+  "provenance": "registered_dataset",
+  "output_mode": "analysis",
+  "seed_mode": "fixed",
+  "device": false,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Historical workbook schema and counts. Do not substitute release input without checking loader scope.",
+  "protocol": null
+}
+
+

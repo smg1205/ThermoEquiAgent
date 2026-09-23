@@ -1,0 +1,31 @@
+{
+  "binary_vle_english.xlsx": {
+    "original_rows": 23061,
+    "retained_rows": 22760,
+    "quarantined_rows": 301,
+    "quarantine_reasons": {
+      "unmatched": 214,
+      "ambiguous": 87
+    },
+    "composition_repairs_applied": 0,
+    "rows_with_SMILES_recovered": 679,
+    "SMILES_cells_recovered": 679,
+    "remaining_missing_smiles": 0,
+    "source_sha256": "d122177fe42b5b41ca2e782cc77b3e6a7a0ebf922bb0e589f18edde622bf3efc",
+    "release_sha256": "1fdd6bd4417970a023a4917882a0faa14a747f232cff06f33fd5394672029788"
+  },
+  "ternary_vle_english.xlsx": {
+    "original_rows": 5229,
+    "retained_rows": 4544,
+    "quarantined_rows": 685,
+    "quarantine_reasons": {
+      "unmatched": 685
+    },
+    "composition_repairs_applied": 68,
+    "rows_with_SMILES_recovered": 2935,
+    "SMILES_cells_recovered": 4392,
+    "remaining_missing_smiles": 0,
+    "source_sha256": "52fe356da44cc5e78f32b881a614ac95ea98e55002aaba464cfcf35069764c67",
+    "release_sha256": "f7fcd62064f0f192b3a2d14f57860a03cae9606744fcb3b3a5efd019eafcaf8b"
+  }
+}

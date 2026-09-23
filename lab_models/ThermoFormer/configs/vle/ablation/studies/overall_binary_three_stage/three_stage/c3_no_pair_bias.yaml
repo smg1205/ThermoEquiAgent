@@ -1,0 +1,5 @@
+extends: ../three_stage_base.yaml
+name: c3_no_pair_bias
+encoder:
+  chemical_attention_bias: false
+  context_pair_interaction: true

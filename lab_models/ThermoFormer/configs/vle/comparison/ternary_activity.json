@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "vle.comparison.ternary_activity",
+  "section": "VLE / Baseline comparison",
+  "title": "HANNA / TeNNet-SAC adapted ternary_train_ternary_test",
+  "status": "runnable",
+  "backend": "scripts/run_joint_activity_adapted.py",
+  "args": [
+    "--benchmark",
+    "ternary_train_ternary_test"
+  ],
+  "configs": [
+    "configs/vle/comparison/studies/machine_learning/joint_activity_adapted_settings.json"
+  ],
+  "sources": [
+    "experiments/vle/comparison/reference_evaluations/machine_learning"
+  ],
+  "provenance": "registered_vle_dataset",
+  "output_mode": "native",
+  "seed_mode": "optional",
+  "device": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "notes": "Native output paths retained. Joint checkpoint supplies joint and ternary subset comparison; not a fourth training trajectory.",
+  "protocol": null
+}
+
