@@ -1,0 +1,56 @@
+{
+  "system": "1-chlorobutane / cyclohexane",
+  "mode": "direct binary VLE distillation; no extraction solvent",
+  "property_package": "DWSIM UNIQUAC",
+  "pressure_kPa": 101.3,
+  "feed": {
+    "flow_mol_s": 1.0,
+    "x_1_chlorobutane": 0.4705
+  },
+  "product_targets": {
+    "distillate_1_chlorobutane_mole_fraction": 0.995,
+    "1_chlorobutane_recovery_to_distillate": 0.98
+  },
+  "dwsim_bubble_vle": {
+    "feed": {
+      "temperature_K": 350.5301896392251,
+      "vapor_composition": [
+        0.4761195244593652,
+        0.5238804755406349
+      ],
+      "relative_volatility": 1.0227985761694953
+    },
+    "distillate_target": {
+      "x_1_chlorobutane": 0.995,
+      "temperature_K": 351.8327360806637,
+      "vapor_composition": [
+        0.9942377535963601,
+        0.0057622464036398155
+      ]
+    },
+    "bottoms_target": {
+      "x_1_chlorobutane": 0.017536569833867185,
+      "temperature_K": 353.5796663679997,
+      "vapor_composition": [
+        0.028203517183026865,
+        0.9717964828169731
+      ]
+    }
+  },
+  "shortcut_column_design": {
+    "theoretical_stages": 671,
+    "minimum_stages": 413.399,
+    "feed_stage": 302,
+    "minimum_reflux_ratio": 92.335,
+    "reflux_ratio": 129.269,
+    "distillate_flow_mol_s": 0.463407,
+    "bottoms_flow_mol_s": 0.536593,
+    "assumptions": [
+      "non-extractive binary distillation (Fenske/Underwood/Gilliland-Eduljee)",
+      "feed component ordering: 1-chlorobutane overhead-concentrated, cyclohexane bottoms-concentrated",
+      "operating reflux ratio = 1.4 x minimum reflux ratio",
+      "total condenser",
+      "relative volatility supplied by an external VLE calculation"
+    ]
+  }
+}

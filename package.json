@@ -1,0 +1,11 @@
+{
+  "name": "thermoequi-agent",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "dev": "pnpm --dir apps/web dev",
+    "build": "pnpm --dir apps/web build",
+    "lint": "pnpm --dir apps/web lint",
+    "test": "pnpm --dir apps/web test"
+  }
+}

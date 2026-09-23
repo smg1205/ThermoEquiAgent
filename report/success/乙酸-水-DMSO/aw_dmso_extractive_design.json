@@ -1,0 +1,177 @@
+{
+  "system": "acetic acid / water / dimethyl sulfoxide (DMSO)",
+  "experimental_source": "NIST ThermoML DOI 10.1016/j.fluid.2008.09.010",
+  "mode": "extractive distillation; DMSO (highest boiler) as entrainer",
+  "pressure_kPa": 101.325,
+  "normal_boiling_points_K": {
+    "water": 319.55,
+    "acetic_acid": 390.94,
+    "dimethyl_sulfoxide": 463.7
+  },
+  "key_pair": {
+    "light": "water",
+    "heavy": "acetic_acid",
+    "entrainer": "dimethyl_sulfoxide"
+  },
+  "feed": {
+    "flow_mol_s": 1.0,
+    "water_mole_fraction": 0.5,
+    "acetic_acid_mole_fraction": 0.5
+  },
+  "entrainer": {
+    "ratio": 2.0,
+    "flow_mol_s": 2.0
+  },
+  "product_targets": {
+    "distillate_water_mole_fraction": 0.95,
+    "water_recovery_to_distillate": 0.9
+  },
+  "material_balance_mol_s": {
+    "distillate": 0.473684,
+    "bottoms": 2.526316,
+    "closure": "D + B = 3.0 = feed + entrainer"
+  },
+  "three_source_accuracy": {
+    "note": "17 experimental points, isobaric 13.33 kPa",
+    "temperature_note": "ThermoFormer was run as an ISOTHERMAL bubble point (input T and x, output y), so it produces no bubble temperature; the DWSIM column is an isobaric bubble point and does. Hence T_thermoformer_K is 'n/a' in the CSV.",
+    "dwsim": {
+      "mae_overall": 0.0714,
+      "mae_acetic": 0.0207,
+      "mae_water": 0.0873,
+      "mae_dmso": 0.1061,
+      "dT_mean": -11.84
+    },
+    "thermoformer_seeds": {
+      "seed_0": {
+        "mae_overall": 0.2871,
+        "mae_acetic": 0.066,
+        "mae_water": 0.4118,
+        "mae_dmso": 0.3835
+      },
+      "seed_1": {
+        "mae_overall": 0.2445,
+        "mae_acetic": 0.0618,
+        "mae_water": 0.3667,
+        "mae_dmso": 0.3049
+      },
+      "seed_2": {
+        "mae_overall": 0.2548,
+        "mae_acetic": 0.0459,
+        "mae_water": 0.3408,
+        "mae_dmso": 0.3779
+      },
+      "seed_3": {
+        "mae_overall": 0.2814,
+        "mae_acetic": 0.0912,
+        "mae_water": 0.4193,
+        "mae_dmso": 0.3338
+      },
+      "seed_4": {
+        "mae_overall": 0.2233,
+        "mae_acetic": 0.0647,
+        "mae_water": 0.3349,
+        "mae_dmso": 0.2702
+      }
+    }
+  },
+  "property_package_note": "DWSIM has NO built-in NRTL binary parameters for any of the three pairs (acetic acid/water, acetic acid/DMSO, water/DMSO); it estimates them with alpha defaulting to 0.2. For point-wise bubble comparison this distorts the flash (vapour appears at 300 K, dT = +108..+142 K), so UNIFAC is used there. The rigorous column file uses NRTL and converges.",
+  "shortcut_column_design": {
+    "source": "seed_2 (ThermoFormer vle_overall_ternary)",
+    "alpha_base": 1.6836,
+    "alpha_ext": 3.9952,
+    "selectivity": 2.3731,
+    "alpha_avg": 2.5935,
+    "theoretical_stages": 15,
+    "minimum_stages": 7.185,
+    "reflux_ratio": 1.441,
+    "minimum_reflux_ratio": 1.03,
+    "feed_stage": 7,
+    "entrainer_stage": 2
+  },
+  "shortcut_column_design_unifac": {
+    "source": "unifac",
+    "alpha_base": 2.0728,
+    "alpha_ext": 13.384,
+    "selectivity": 6.4569,
+    "theoretical_stages": 11,
+    "reflux_ratio": 0.451,
+    "feed_stage": 5,
+    "entrainer_stage": 2
+  },
+  "dwsim_rigorous_column": {
+    "file": "water_acetic_acid_dmso_extractive_thermoformer.dwxmz",
+    "property_package": "NRTL",
+    "solving_method": "Napthali-Sandholm (Simultaneous Correction)",
+    "max_iterations": 100,
+    "stages": 15,
+    "reflux_ratio": 1.441,
+    "pressure_drop_kPa": 5.0,
+    "specifications": {
+      "condenser": {
+        "type": "Stream_Ratio",
+        "value": 1.441
+      },
+      "reboiler": {
+        "type": "Product_Molar_Flow_Rate",
+        "value": 2.526316,
+        "unit": "mol/s"
+      }
+    },
+    "feeds": {
+      "key_pair": {
+        "stage": 14,
+        "flow_mol_s": 1.0,
+        "temperature_K": 366.01,
+        "composition": [
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      "entrainer": {
+        "stage": 3,
+        "flow_mol_s": 2.0,
+        "temperature_K": 354.1,
+        "composition": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "converged": true,
+    "solve_error_count": 0,
+    "results": {
+      "distillate": {
+        "temperature_K": 412.59,
+        "flow_mol_s": 0.4737,
+        "composition": [
+          0.5036,
+          0.0289,
+          0.4675
+        ]
+      },
+      "bottoms": {
+        "temperature_K": 462.57,
+        "flow_mol_s": 2.5263,
+        "composition": [
+          0.1035,
+          0.1925,
+          0.704
+        ]
+      }
+    },
+    "notes": [
+      "feeds moved down (7->14, 2->3) relative to the shortcut estimate to converge",
+      "bottoms temperature 462.57 K matches the DMSO boiling point 463.7 K",
+      "distillate water fraction 0.5036 falls short of the 0.95 shortcut target"
+    ]
+  },
+  "bubble_point_files": [
+    "aw_dmso_x0p261_x0p093_3comp_bubble_113.4C.dwxmz",
+    "aw_dmso_x0p262_x0p043_3comp_bubble_118.8C.dwxmz",
+    "aw_dmso_x0p316_x0p279_3comp_bubble_84.5C.dwxmz",
+    "aw_dmso_x0p321_x0p204_3comp_bubble_95.4C.dwxmz",
+    "aw_dmso_x0p324_x0p166_3comp_bubble_100.8C.dwxmz"
+  ]
+}

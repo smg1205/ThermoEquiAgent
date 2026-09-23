@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Engineering Workbench"
+  short_description: "Build the engineering calculation workbench"
+  default_prompt: "Use $frontend-engineering-workbench to implement the ThermoEqui engineering UI."

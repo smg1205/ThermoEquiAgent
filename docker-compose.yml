@@ -1,0 +1,46 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      DATABASE_URL: sqlite:////data/thermoequi.db
+      LLM_PROVIDER: ${LLM_PROVIDER:-deterministic}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-v4-flash}
+      DEEPSEEK_BASE_URL: ${DEEPSEEK_BASE_URL:-https://api.deepseek.com}
+      APP_ENV: ${APP_ENV:-production}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      # PGSSI: private weights are mounted from the host and never baked into
+      # the image.  Members without weights leave these unset; PGSSI then
+      # reports a structured missing_parameters failure.
+      PGSSI_CHECKPOINT: ${PGSSI_CHECKPOINT:-}
+      PGSSI_SRC: ${PGSSI_SRC:-}
+      PGSSI_HIDDEN_DIM: ${PGSSI_HIDDEN_DIM:-512}
+      PGSSI_ENABLE_CROSS_INTERACTION: ${PGSSI_ENABLE_CROSS_INTERACTION:-1}
+    volumes:
+      - thermoequi-data:/data
+      # Host path with your private PGSSI weights; the host directory itself
+      # is never committed (see .gitignore weights/).
+      - ${PGSSI_WEIGHTS_DIR:-./weights}:/weights:ro
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    ports:
+      - "3000:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  thermoequi-data:

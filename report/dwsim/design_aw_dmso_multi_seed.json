@@ -1,0 +1,176 @@
+{
+  "system": {
+    "light": "water",
+    "heavy": "acetic acid",
+    "entrainer": "dimethyl sulfoxide"
+  },
+  "conditions": {
+    "F": 1.0,
+    "feed": [
+      0.5,
+      0.5
+    ],
+    "P_kPa": 101.325,
+    "purity": 0.95,
+    "recovery": 0.9,
+    "entrainer_ratio": 2.0
+  },
+  "designs": {
+    "unifac": {
+      "light": "water",
+      "heavy": "acetic acid",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 373.8,
+      "alpha_source": "unifac",
+      "alpha_base": 2.0728,
+      "alpha_ext": 13.384,
+      "selectivity": 6.4569,
+      "alpha_avg": 5.2671,
+      "minimum_stages": 4.121,
+      "minimum_reflux_ratio": 0.322,
+      "reflux_ratio": 0.451,
+      "theoretical_stages": 11,
+      "feed_stage": 5,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 372.23,
+      "reboiler_temperature_K": 459.7,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.95,
+      "distillate_flow_mol_s": 0.473684,
+      "bottoms_flow_mol_s": 2.526316,
+      "warnings": [
+        "activity coefficients from UNIFAC temperature-dependent prediction"
+      ]
+    },
+    "seed_0": {
+      "light": "water",
+      "heavy": "acetic acid",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 378.9,
+      "alpha_source": "thermoformer",
+      "alpha_base": 1.182,
+      "alpha_ext": 1.9881,
+      "selectivity": 1.6819,
+      "alpha_avg": 1.533,
+      "minimum_stages": 16.027,
+      "minimum_reflux_ratio": 3.277,
+      "reflux_ratio": 4.588,
+      "theoretical_stages": 29,
+      "feed_stage": 13,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 369.31,
+      "reboiler_temperature_K": 392.32,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.95,
+      "distillate_flow_mol_s": 0.473684,
+      "bottoms_flow_mol_s": 2.526316,
+      "warnings": [
+        "ThermoFormer is a predictive ML backend; results are approximate and unvalidated for this system."
+      ]
+    },
+    "seed_1": {
+      "light": "water",
+      "heavy": "acetic acid",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 361.84,
+      "alpha_source": "thermoformer",
+      "alpha_base": 1.1731,
+      "alpha_ext": 1.9007,
+      "selectivity": 1.6202,
+      "alpha_avg": 1.4932,
+      "minimum_stages": 17.078,
+      "minimum_reflux_ratio": 3.55,
+      "reflux_ratio": 4.969,
+      "theoretical_stages": 31,
+      "feed_stage": 14,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 361.57,
+      "reboiler_temperature_K": 371.2,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.95,
+      "distillate_flow_mol_s": 0.473684,
+      "bottoms_flow_mol_s": 2.526316,
+      "warnings": [
+        "ThermoFormer is a predictive ML backend; results are approximate and unvalidated for this system."
+      ]
+    },
+    "seed_2": {
+      "light": "water",
+      "heavy": "acetic acid",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 366.01,
+      "alpha_source": "thermoformer",
+      "alpha_base": 1.6836,
+      "alpha_ext": 3.9952,
+      "selectivity": 2.3731,
+      "alpha_avg": 2.5935,
+      "minimum_stages": 7.185,
+      "minimum_reflux_ratio": 1.03,
+      "reflux_ratio": 1.441,
+      "theoretical_stages": 15,
+      "feed_stage": 7,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 354.1,
+      "reboiler_temperature_K": 366.59,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.95,
+      "distillate_flow_mol_s": 0.473684,
+      "bottoms_flow_mol_s": 2.526316,
+      "warnings": [
+        "ThermoFormer is a predictive ML backend; results are approximate and unvalidated for this system."
+      ]
+    },
+    "seed_3": {
+      "light": "water",
+      "heavy": "acetic acid",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 376.58,
+      "alpha_source": "thermoformer",
+      "alpha_base": 0.8001,
+      "alpha_ext": 1.6916,
+      "selectivity": 2.1141,
+      "alpha_avg": 1.1634,
+      "minimum_stages": 45.245,
+      "minimum_reflux_ratio": 10.917,
+      "reflux_ratio": 15.284,
+      "theoretical_stages": 76,
+      "feed_stage": 34,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 364.64,
+      "reboiler_temperature_K": 382.37,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.95,
+      "distillate_flow_mol_s": 0.473684,
+      "bottoms_flow_mol_s": 2.526316,
+      "warnings": [
+        "ThermoFormer is a predictive ML backend; results are approximate and unvalidated for this system."
+      ]
+    },
+    "seed_4": {
+      "light": "water",
+      "heavy": "acetic acid",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 360.9,
+      "alpha_source": "thermoformer",
+      "alpha_base": 1.2804,
+      "alpha_ext": 2.3129,
+      "selectivity": 1.8064,
+      "alpha_avg": 1.7209,
+      "minimum_stages": 12.613,
+      "minimum_reflux_ratio": 2.397,
+      "reflux_ratio": 3.356,
+      "theoretical_stages": 23,
+      "feed_stage": 10,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 353.86,
+      "reboiler_temperature_K": 355.2,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.95,
+      "distillate_flow_mol_s": 0.473684,
+      "bottoms_flow_mol_s": 2.526316,
+      "warnings": [
+        "ThermoFormer is a predictive ML backend; results are approximate and unvalidated for this system."
+      ]
+    }
+  }
+}

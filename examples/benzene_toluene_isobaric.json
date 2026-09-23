@@ -1,0 +1,15 @@
+{
+  "equilibrium_type": "VLE",
+  "calculation_type": "isobaric_vle",
+  "components": [
+    {"component_id": "benzene", "name": "Benzene", "cas_number": "71-43-2"},
+    {"component_id": "toluene", "name": "Toluene", "cas_number": "108-88-3"}
+  ],
+  "conditions": {"pressure_kPa": 101.325},
+  "composition_basis": "mole_fraction",
+  "requested_outputs": ["chart", "table", "validation", "json", "csv"],
+  "validation_requirements": ["composition_balance", "equilibrium_residual", "convergence"],
+  "assumptions": ["Ideal liquid and ideal gas phases", "Raoult's law"],
+  "model_name": "Ideal/Raoult",
+  "points": 21
+}

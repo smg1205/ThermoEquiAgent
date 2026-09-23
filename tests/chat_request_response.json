@@ -1,0 +1,3817 @@
+[
+    {
+        "case": "binary_isobaric_txy_benzene_toluene",
+        "time": "2026-08-04T10:17:53.100830",
+        "request": {
+            "message": "计算苯-甲苯在101.325 kPa下的T-x-y相图，使用Ideal/Raoult模型"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:17:44 GMT",
+                "server": "uvicorn",
+                "content-length": "33672",
+                "content-type": "application/json",
+                "x-request-id": "63e7e2a3-58d7-4276-ba1b-6c9a172b6a8a"
+            },
+            "body": {
+                "conversation_id": "ee31476c-7f15-4383-a3c1-0cc60446181c",
+                "intent": "EQUILIBRIUM_CALCULATION",
+                "answer": "计算完成。\n模型：Ideal/Raoult | P=101.3250 kPa | 数据点：101 个 | 验证：warning | ⚠ Benzene Antoine correlation extrapolated at 383.773 K outside 333.4-373.5 K.",
+                "statements": [
+                    {
+                        "category": "Inference",
+                        "text": "## 计算结果摘要：苯-甲苯体系在 101.325 kPa 下的等压气液平衡（T-x-y 相图）\n\n计算已成功完成，采用 Ideal/Raoult 模型（假设理想气体和理想液体，适用 Raoult 定律），在常压（101.325 kPa）下计算了苯-甲苯二元体系的完整 T-x-y 相图数据（共 101 个数据点）。\n\n### 平衡温度范围\n\n- **纯甲苯沸点（x苯 = 0）**：约 **383.77 K**（110.6 °C）\n- **纯苯沸点（x苯 = 1）**：约 **353.29 K**（80.1 °C）\n- 体系温度随苯含量增加而单调降低，没有共沸现象（符合理想体系预期）。\n\n### 关键组成特征\n\n气液两相组成存在明显差异，苯在气相中得到富集：\n\n| 液相苯组成 (x) | 温度 (K) | 气相苯组成 (y) |\n|---|---|---|\n| 0.10 | 379.21 | 0.211 |\n| 0.30 | 371.52 | 0.512 |\n| 0.50 | 365.21 | 0.714 |\n| 0.70 | 359.91 | 0.856 |\n| 0.90 | 355.34 | 0.959 |\n\n气相中苯的组成始终高于液相（y > x），表明苯为更易挥发的组分，通过蒸馏可以有效分离该混合物。\n\n### 计算收敛情况\n\n- 求解器完全收敛，最大平衡残差为 6.68×10⁻¹²，远低于容差要求。\n- 物料平衡和组成归一化均通过验证。\n\n### ⚠️ 重要警告\n\n**25 个数据点（对应液相苯组成 0 至 0.25）超出了苯 Antoine 方程的适用温度范围（333.4–373.5 K）**。在这些高温区域（373.7 K 以上），苯的饱和蒸汽压计算值属于外推结果，可能存在一定误差。建议在高苯含量区间（温度低于 373.5 K）的结果可直接用于工程用途，而富甲苯端的高温数据应谨慎对待，必要时可考虑使用更高精度的活度系数模型或查阅实验数据验证。"
+                    }
+                ],
+                "execution_steps": [
+                    {
+                        "phase": "plan",
+                        "status": "completed",
+                        "summary": "A structured task manifest was created and an allowlisted tool was selected.",
+                        "tool_name": null
+                    },
+                    {
+                        "phase": "execute",
+                        "status": "completed",
+                        "summary": "The registered deterministic phase-equilibrium tool completed.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "validate",
+                        "status": "completed",
+                        "summary": "Independent physical validation status: warning.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "respond",
+                        "status": "completed",
+                        "summary": "The provider interpreted only the grounded calculation and validation payload.",
+                        "tool_name": null
+                    }
+                ],
+                "task": {
+                    "task_id": "benzene-toluene-txy-101325",
+                    "equilibrium_type": "VLE",
+                    "calculation_type": "isobaric_vle",
+                    "components": [
+                        {
+                            "component_id": "benzene",
+                            "name": "Benzene",
+                            "cas_number": "71-43-2",
+                            "aliases": [
+                                "苯",
+                                "benzene"
+                            ]
+                        },
+                        {
+                            "component_id": "toluene",
+                            "name": "Toluene",
+                            "cas_number": "108-88-3",
+                            "aliases": [
+                                "甲苯",
+                                "toluene"
+                            ]
+                        }
+                    ],
+                    "conditions": {
+                        "temperature_K": null,
+                        "pressure_kPa": 101.325,
+                        "liquid_composition": null,
+                        "vapor_composition": null,
+                        "feed_composition": null
+                    },
+                    "composition_basis": "mole_fraction",
+                    "requested_outputs": [
+                        "T-x-y diagram"
+                    ],
+                    "validation_requirements": [],
+                    "assumptions": [
+                        "Ideal gas",
+                        "Ideal liquid (Raoult's law)"
+                    ],
+                    "model_name": null,
+                    "points": 101,
+                    "original_question": "计算苯-甲苯在101.325 kPa下的T-x-y相图，使用Ideal/Raoult模型"
+                },
+                "calculation": {
+                    "result": {
+                        "run_id": "d27b3d19-30ad-4749-9591-4bbb03ffa717",
+                        "task_id": "benzene-toluene-txy-101325",
+                        "calculation_type": "isobaric_vle",
+                        "input_snapshot": {
+                            "task_id": "benzene-toluene-txy-101325",
+                            "equilibrium_type": "VLE",
+                            "calculation_type": "isobaric_vle",
+                            "components": [
+                                {
+                                    "component_id": "benzene",
+                                    "name": "Benzene",
+                                    "cas_number": "71-43-2",
+                                    "aliases": [
+                                        "苯",
+                                        "benzene"
+                                    ]
+                                },
+                                {
+                                    "component_id": "toluene",
+                                    "name": "Toluene",
+                                    "cas_number": "108-88-3",
+                                    "aliases": [
+                                        "甲苯",
+                                        "toluene"
+                                    ]
+                                }
+                            ],
+                            "conditions": {
+                                "temperature_K": null,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": null,
+                                "vapor_composition": null,
+                                "feed_composition": null
+                            },
+                            "composition_basis": "mole_fraction",
+                            "requested_outputs": [
+                                "T-x-y diagram"
+                            ],
+                            "validation_requirements": [],
+                            "assumptions": [
+                                "Ideal gas",
+                                "Ideal liquid (Raoult's law)",
+                                "Ideal/Raoult was selected within its reviewed low-pressure pure-property registry."
+                            ],
+                            "model_name": "Ideal/Raoult",
+                            "points": 101,
+                            "original_question": "计算苯-甲苯在101.325 kPa下的T-x-y相图，使用Ideal/Raoult模型"
+                        },
+                        "model_name": "Ideal/Raoult",
+                        "parameter_set_id": null,
+                        "points": [
+                            {
+                                "temperature_K": 383.77309382235046,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "vapor_composition": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 383.2909079361096,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.01,
+                                    0.99
+                                ],
+                                "vapor_composition": [
+                                    0.02349201611703566,
+                                    0.9765079838829643
+                                ],
+                                "equilibrium_residual": 2.805004631670763e-16
+                            },
+                            {
+                                "temperature_K": 382.81486612882503,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.02,
+                                    0.98
+                                ],
+                                "vapor_composition": [
+                                    0.0464003453990436,
+                                    0.9535996546009563
+                                ],
+                                "equilibrium_residual": 1.1220018526683052e-15
+                            },
+                            {
+                                "temperature_K": 382.34482926466177,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.03,
+                                    0.97
+                                ],
+                                "vapor_composition": [
+                                    0.06874459677744733,
+                                    0.9312554032225526
+                                ],
+                                "equilibrium_residual": 1.1220018526683052e-15
+                            },
+                            {
+                                "temperature_K": 381.8806627283013,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.04,
+                                    0.96
+                                ],
+                                "vapor_composition": [
+                                    0.09054354312248183,
+                                    0.9094564568775182
+                                ],
+                                "equilibrium_residual": 1.4025023158353816e-15
+                            },
+                            {
+                                "temperature_K": 381.42223623327055,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.05,
+                                    0.95
+                                ],
+                                "vapor_composition": [
+                                    0.11181516450072197,
+                                    0.8881848354992781
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 380.9694236403085,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.06,
+                                    0.94
+                                ],
+                                "vapor_composition": [
+                                    0.13257668879988313,
+                                    0.867423311200117
+                                ],
+                                "equilibrium_residual": 2.805004631670763e-16
+                            },
+                            {
+                                "temperature_K": 380.52210278514247,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.07,
+                                    0.9299999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.15284462990514028,
+                                    0.8471553700948597
+                                ],
+                                "equilibrium_residual": 1.1220018526683052e-15
+                            },
+                            {
+                                "temperature_K": 380.0801553150959,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.08,
+                                    0.92
+                                ],
+                                "vapor_composition": [
+                                    0.17263482359663018,
+                                    0.8273651764033698
+                                ],
+                                "equilibrium_residual": 2.103753473753072e-15
+                            },
+                            {
+                                "temperature_K": 379.64346653398815,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.09,
+                                    0.91
+                                ],
+                                "vapor_composition": [
+                                    0.1919624613245358,
+                                    0.8080375386754642
+                                ],
+                                "equilibrium_residual": 4.2075069475061445e-16
+                            },
+                            {
+                                "temperature_K": 379.2119252548251,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.1,
+                                    0.9
+                                ],
+                                "vapor_composition": [
+                                    0.21084212200600064,
+                                    0.7891578779939993
+                                ],
+                                "equilibrium_residual": 1.4025023158353815e-16
+                            },
+                            {
+                                "temperature_K": 378.7854236598147,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.11,
+                                    0.89
+                                ],
+                                "vapor_composition": [
+                                    0.2292878019770676,
+                                    0.7707121980229324
+                                ],
+                                "equilibrium_residual": 4.2075069475061445e-16
+                            },
+                            {
+                                "temperature_K": 378.3638571672751,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.12,
+                                    0.88
+                                ],
+                                "vapor_composition": [
+                                    0.24731294322268432,
+                                    0.7526870567773156
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 377.94712430503057,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.13,
+                                    0.87
+                                ],
+                                "vapor_composition": [
+                                    0.26493045999856263,
+                                    0.7350695400014374
+                                ],
+                                "equilibrium_residual": 1.4025023158353815e-16
+                            },
+                            {
+                                "temperature_K": 377.535126589919,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.14,
+                                    0.86
+                                ],
+                                "vapor_composition": [
+                                    0.28215276395017413,
+                                    0.7178472360498259
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 377.1277684129761,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.15,
+                                    0.85
+                                ],
+                                "vapor_composition": [
+                                    0.29899178782643243,
+                                    0.7010082121735676
+                                ],
+                                "equilibrium_residual": 1.707827069992744e-12
+                            },
+                            {
+                                "temperature_K": 376.72495693036626,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.16,
+                                    0.84
+                                ],
+                                "vapor_composition": [
+                                    0.3154590078782053,
+                                    0.6845409921217948
+                                ],
+                                "equilibrium_residual": 3.810037791198398e-12
+                            },
+                            {
+                                "temperature_K": 376.32660195955685,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.17,
+                                    0.83
+                                ],
+                                "vapor_composition": [
+                                    0.3315654650255244,
+                                    0.6684345349744757
+                                ],
+                                "equilibrium_residual": 4.371880218922051e-12
+                            },
+                            {
+                                "temperature_K": 375.9326158779389,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.18,
+                                    0.8200000000000001
+                                ],
+                                "vapor_composition": [
+                                    0.34732178487270005,
+                                    0.6526782151273
+                                ],
+                                "equilibrium_residual": 3.1319279214919904e-12
+                            },
+                            {
+                                "temperature_K": 375.54291353112967,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.19,
+                                    0.81
+                                ],
+                                "vapor_composition": [
+                                    0.3627381966393675,
+                                    0.6372618033606324
+                                ],
+                                "equilibrium_residual": 2.2306799333361742e-12
+                            },
+                            {
+                                "temperature_K": 375.157412140538,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.2,
+                                    0.8
+                                ],
+                                "vapor_composition": [
+                                    0.3778245510801973,
+                                    0.6221754489198027
+                                ],
+                                "equilibrium_residual": 1.583074488999187e-12
+                            },
+                            {
+                                "temperature_K": 374.77603121751713,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.21,
+                                    0.79
+                                ],
+                                "vapor_composition": [
+                                    0.3925903374515184,
+                                    0.6074096625484817
+                                ],
+                                "equilibrium_residual": 1.115690592247046e-12
+                            },
+                            {
+                                "temperature_K": 374.398692480888,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.22,
+                                    0.78
+                                ],
+                                "vapor_composition": [
+                                    0.4070446995845665,
+                                    0.5929553004154335
+                                ],
+                                "equilibrium_residual": 7.832274182782689e-13
+                            },
+                            {
+                                "temperature_K": 374.025319778123,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.23,
+                                    0.77
+                                ],
+                                "vapor_composition": [
+                                    0.4211964511191486,
+                                    0.5788035488808514
+                                ],
+                                "equilibrium_residual": 5.469759031757988e-13
+                            },
+                            {
+                                "temperature_K": 373.65583901000014,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.24,
+                                    0.76
+                                ],
+                                "vapor_composition": [
+                                    0.4350540899481086,
+                                    0.5649459100518914
+                                ],
+                                "equilibrium_residual": 3.7951712666505423e-13
+                            },
+                            {
+                                "temperature_K": 373.2901780585441,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.25,
+                                    0.75
+                                ],
+                                "vapor_composition": [
+                                    0.4486258119195355,
+                                    0.5513741880804645
+                                ],
+                                "equilibrium_residual": 2.626185586401752e-13
+                            },
+                            {
+                                "temperature_K": 372.9282667180839,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.26,
+                                    0.74
+                                ],
+                                "vapor_composition": [
+                                    0.4619195238405483,
+                                    0.5380804761594516
+                                ],
+                                "equilibrium_residual": 1.8036179781643007e-13
+                            },
+                            {
+                                "temperature_K": 372.5700366292679,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.27,
+                                    0.73
+                                ],
+                                "vapor_composition": [
+                                    0.4749428558235221,
+                                    0.5250571441764779
+                                ],
+                                "equilibrium_residual": 1.2320982844613827e-13
+                            },
+                            {
+                                "temperature_K": 372.21542121588425,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.28,
+                                    0.72
+                                ],
+                                "vapor_composition": [
+                                    0.48770317301294736,
+                                    0.5122968269870526
+                                ],
+                                "equilibrium_residual": 8.365926313958051e-14
+                            },
+                            {
+                                "temperature_K": 371.86435562434497,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.29,
+                                    0.71
+                                ],
+                                "vapor_composition": [
+                                    0.5002075867286091,
+                                    0.4997924132713909
+                                ],
+                                "equilibrium_residual": 5.69415940229165e-14
+                            },
+                            {
+                                "temperature_K": 371.5167766657011,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.3,
+                                    0.7
+                                ],
+                                "vapor_composition": [
+                                    0.5124629650584415,
+                                    0.4875370349415585
+                                ],
+                                "equilibrium_residual": 3.8919439264431836e-14
+                            },
+                            {
+                                "temperature_K": 371.1726227600626,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.31,
+                                    0.69
+                                ],
+                                "vapor_composition": [
+                                    0.5244759429322686,
+                                    0.4755240570677313
+                                ],
+                                "equilibrium_residual": 2.7699420737748785e-14
+                            },
+                            {
+                                "temperature_K": 370.8318338833035,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.32,
+                                    0.6799999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.5362529317056398,
+                                    0.46374706829436024
+                                ],
+                                "equilibrium_residual": 1.9354531958528265e-14
+                            },
+                            {
+                                "temperature_K": 370.4943515159424,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.33,
+                                    0.6699999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.547800128281115,
+                                    0.452199871718885
+                                ],
+                                "equilibrium_residual": 1.2903021305685511e-14
+                            },
+                            {
+                                "temperature_K": 370.1601185940916,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.34,
+                                    0.6599999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.5591235237926375,
+                                    0.4408764762073624
+                                ],
+                                "equilibrium_residual": 9.186390168721748e-15
+                            },
+                            {
+                                "temperature_K": 369.82907946237543,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.35000000000000003,
+                                    0.6499999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.5702289118770123,
+                                    0.4297710881229877
+                                ],
+                                "equilibrium_residual": 6.241135305467448e-15
+                            },
+                            {
+                                "temperature_K": 369.5011798287242,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.36,
+                                    0.64
+                                ],
+                                "vapor_composition": [
+                                    0.5811218965550338,
+                                    0.41887810344496623
+                                ],
+                                "equilibrium_residual": 4.277632063297914e-15
+                            },
+                            {
+                                "temperature_K": 369.1763667209551,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.37,
+                                    0.63
+                                ],
+                                "vapor_composition": [
+                                    0.5918078997434074,
+                                    0.4081921002565927
+                                ],
+                                "equilibrium_residual": 3.0855050948378394e-15
+                            },
+                            {
+                                "temperature_K": 368.8545884450552,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.38,
+                                    0.62
+                                ],
+                                "vapor_composition": [
+                                    0.6022921684173216,
+                                    0.39770783158267836
+                                ],
+                                "equilibrium_residual": 2.033628357961303e-15
+                            },
+                            {
+                                "temperature_K": 368.53579454508866,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.39,
+                                    0.61
+                                ],
+                                "vapor_composition": [
+                                    0.6125797814423222,
+                                    0.38742021855767783
+                                ],
+                                "equilibrium_residual": 1.051876736876536e-15
+                            },
+                            {
+                                "temperature_K": 368.2199357646518,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.4,
+                                    0.6
+                                ],
+                                "vapor_composition": [
+                                    0.6226756560930091,
+                                    0.3773243439069909
+                                ],
+                                "equilibrium_residual": 7.7137627370945985e-16
+                            },
+                            {
+                                "temperature_K": 367.90696400980556,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.41000000000000003,
+                                    0.59
+                                ],
+                                "vapor_composition": [
+                                    0.6325845542750448,
+                                    0.36741544572495516
+                                ],
+                                "equilibrium_residual": 4.2075069475061445e-16
+                            },
+                            {
+                                "temperature_K": 367.59683231341825,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.42,
+                                    0.5800000000000001
+                                ],
+                                "vapor_composition": [
+                                    0.6423110884659583,
+                                    0.35768891153404175
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 367.28949480085424,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.43,
+                                    0.5700000000000001
+                                ],
+                                "vapor_composition": [
+                                    0.6518597273893493,
+                                    0.3481402726106508
+                                ],
+                                "equilibrium_residual": 9.817516210847671e-16
+                            },
+                            {
+                                "temperature_K": 366.9849066569491,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.44,
+                                    0.56
+                                ],
+                                "vapor_composition": [
+                                    0.6612348014362067,
+                                    0.33876519856379333
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 366.68302409421307,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.45,
+                                    0.55
+                                ],
+                                "vapor_composition": [
+                                    0.6704405078462928,
+                                    0.32955949215370717
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 366.38380432220885,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.46,
+                                    0.54
+                                ],
+                                "vapor_composition": [
+                                    0.6794809156617642,
+                                    0.3205190843382359
+                                ],
+                                "equilibrium_residual": 7.012511579176908e-16
+                            },
+                            {
+                                "temperature_K": 366.087205518053,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.47000000000000003,
+                                    0.53
+                                ],
+                                "vapor_composition": [
+                                    0.6883599704645313,
+                                    0.31164002953546865
+                                ],
+                                "equilibrium_residual": 1.4025023158353815e-16
+                            },
+                            {
+                                "temperature_K": 365.7931867979902,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.48,
+                                    0.52
+                                ],
+                                "vapor_composition": [
+                                    0.6970814989081875,
+                                    0.3029185010918124
+                                ],
+                                "equilibrium_residual": 4.2075069475061445e-16
+                            },
+                            {
+                                "temperature_K": 365.50170818999584,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.49,
+                                    0.51
+                                ],
+                                "vapor_composition": [
+                                    0.7056492130547267,
+                                    0.2943507869452733
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 365.21273060736235,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.5,
+                                    0.5
+                                ],
+                                "vapor_composition": [
+                                    0.714066714525705,
+                                    0.28593328547429503
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 364.92621582322585,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.51,
+                                    0.49
+                                ],
+                                "vapor_composition": [
+                                    0.722337498476952,
+                                    0.27766250152304806
+                                ],
+                                "equilibrium_residual": 2.805004631670763e-16
+                            },
+                            {
+                                "temperature_K": 364.64212644599553,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.52,
+                                    0.48
+                                ],
+                                "vapor_composition": [
+                                    0.7304649574054405,
+                                    0.26953504259455957
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 364.36042589564664,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.53,
+                                    0.47
+                                ],
+                                "vapor_composition": [
+                                    0.7384523847964458,
+                                    0.2615476152035542
+                                ],
+                                "equilibrium_residual": 1.5427525474189197e-15
+                            },
+                            {
+                                "temperature_K": 364.08107838084084,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.54,
+                                    0.45999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.7463029786186834,
+                                    0.2536970213813165
+                                ],
+                                "equilibrium_residual": 7.012511579176908e-16
+                            },
+                            {
+                                "temperature_K": 363.80404887683994,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.55,
+                                    0.44999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.7540198446746943,
+                                    0.24598015532530565
+                                ],
+                                "equilibrium_residual": 7.012511579176908e-16
+                            },
+                            {
+                                "temperature_K": 363.5293031041811,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.56,
+                                    0.43999999999999995
+                                ],
+                                "vapor_composition": [
+                                    0.7616059998133597,
+                                    0.23839400018664017
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 363.2568075080808,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.5700000000000001,
+                                    0.42999999999999994
+                                ],
+                                "vapor_composition": [
+                                    0.7690643750110471,
+                                    0.2309356249889529
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 362.9865292385392,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.58,
+                                    0.42000000000000004
+                                ],
+                                "vapor_composition": [
+                                    0.7763978183275604,
+                                    0.2236021816724397
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 362.7184361311165,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.59,
+                                    0.41000000000000003
+                                ],
+                                "vapor_composition": [
+                                    0.7836090977427238,
+                                    0.2163909022572762
+                                ],
+                                "equilibrium_residual": 4.2075069475061445e-16
+                            },
+                            {
+                                "temperature_K": 362.4524966883536,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.6,
+                                    0.4
+                                ],
+                                "vapor_composition": [
+                                    0.7907009038791301,
+                                    0.20929909612086986
+                                ],
+                                "equilibrium_residual": 9.817516210847671e-16
+                            },
+                            {
+                                "temperature_K": 362.1886800618124,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.61,
+                                    0.39
+                                ],
+                                "vapor_composition": [
+                                    0.7976758526162986,
+                                    0.2023241473837015
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 361.92695603471043,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.62,
+                                    0.38
+                                ],
+                                "vapor_composition": [
+                                    0.8045364876012033,
+                                    0.1954635123987966
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 361.66729500512724,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.63,
+                                    0.37
+                                ],
+                                "vapor_composition": [
+                                    0.8112852826598942,
+                                    0.18871471734010578
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 361.4096679697591,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.64,
+                                    0.36
+                                ],
+                                "vapor_composition": [
+                                    0.8179246441146718,
+                                    0.18207535588532817
+                                ],
+                                "equilibrium_residual": 4.2075069475061445e-16
+                            },
+                            {
+                                "temperature_K": 361.1540465082021,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.65,
+                                    0.35
+                                ],
+                                "vapor_composition": [
+                                    0.8244569130110632,
+                                    0.17554308698893686
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 360.9004027679019,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.66,
+                                    0.33999999999999997
+                                ],
+                                "vapor_composition": [
+                                    0.8308843672585561,
+                                    0.16911563274144398
+                                ],
+                                "equilibrium_residual": 4.0000768549940915e-12
+                            },
+                            {
+                                "temperature_K": 360.6487094484252,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.67,
+                                    0.32999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.8372092236895069,
+                                    0.16279077631049305
+                                ],
+                                "equilibrium_residual": 5.250688170024502e-12
+                            },
+                            {
+                                "temperature_K": 360.3989397897204,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.68,
+                                    0.31999999999999995
+                                ],
+                                "vapor_composition": [
+                                    0.8434336400377614,
+                                    0.1565663599622386
+                                ],
+                                "equilibrium_residual": 3.15885596595603e-12
+                            },
+                            {
+                                "temperature_K": 360.1510675551876,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.6900000000000001,
+                                    0.30999999999999994
+                                ],
+                                "vapor_composition": [
+                                    0.8495597168445359,
+                                    0.1504402831554641
+                                ],
+                                "equilibrium_residual": 1.8501810550500353e-12
+                            },
+                            {
+                                "temperature_K": 359.9050670202698,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.7000000000000001,
+                                    0.29999999999999993
+                                ],
+                                "vapor_composition": [
+                                    0.8555894992900437,
+                                    0.14441050070995629
+                                ],
+                                "equilibrium_residual": 1.0558037433608753e-12
+                            },
+                            {
+                                "temperature_K": 359.6609129590068,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.71,
+                                    0.29000000000000004
+                                ],
+                                "vapor_composition": [
+                                    0.8615249789573652,
+                                    0.13847502104263476
+                                ],
+                                "equilibrium_residual": 5.809164592190151e-13
+                            },
+                            {
+                                "temperature_K": 359.4185806314901,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.72,
+                                    0.28
+                                ],
+                                "vapor_composition": [
+                                    0.8673680955301996,
+                                    0.13263190446980042
+                                ],
+                                "equilibrium_residual": 3.0897126017853454e-13
+                            },
+                            {
+                                "temperature_K": 359.17804577170756,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.73,
+                                    0.27
+                                ],
+                                "vapor_composition": [
+                                    0.8731207384275496,
+                                    0.12687926157245036
+                                ],
+                                "equilibrium_residual": 1.5848276168939812e-13
+                            },
+                            {
+                                "temperature_K": 358.9392845757602,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.74,
+                                    0.26
+                                ],
+                                "vapor_composition": [
+                                    0.8787847483780282,
+                                    0.12121525162197175
+                                ],
+                                "equilibrium_residual": 7.545462459194352e-14
+                            },
+                            {
+                                "temperature_K": 358.70227369043903,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.75,
+                                    0.25
+                                ],
+                                "vapor_composition": [
+                                    0.8843619189363392,
+                                    0.11563808106366076
+                                ],
+                                "equilibrium_residual": 3.5343058359051615e-14
+                            },
+                            {
+                                "temperature_K": 358.46699020214953,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.76,
+                                    0.24
+                                ],
+                                "vapor_composition": [
+                                    0.889853997944374,
+                                    0.11014600205562604
+                                ],
+                                "equilibrium_residual": 1.65495273268575e-14
+                            },
+                            {
+                                "temperature_K": 358.23341162617004,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.77,
+                                    0.22999999999999998
+                                ],
+                                "vapor_composition": [
+                                    0.89526268893924,
+                                    0.10473731106076001
+                                ],
+                                "equilibrium_residual": 5.049008337007373e-15
+                            },
+                            {
+                                "temperature_K": 358.00151589623226,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.78,
+                                    0.21999999999999997
+                                ],
+                                "vapor_composition": [
+                                    0.900589652510434,
+                                    0.09941034748956604
+                                ],
+                                "equilibrium_residual": 2.2440037053366104e-15
+                            },
+                            {
+                                "temperature_K": 357.77128135441393,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.79,
+                                    0.20999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.9058365076082656,
+                                    0.09416349239173441
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 357.5426867413302,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.8,
+                                    0.19999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.9110048328055397,
+                                    0.08899516719446043
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 357.3157111866156,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.81,
+                                    0.18999999999999995
+                                ],
+                                "vapor_composition": [
+                                    0.9160961675144109,
+                                    0.0839038324855891
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 357.0903341996847,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.8200000000000001,
+                                    0.17999999999999994
+                                ],
+                                "vapor_composition": [
+                                    0.9211120131602414,
+                                    0.07888798683975866
+                                ],
+                                "equilibrium_residual": 1.5427525474189197e-15
+                            },
+                            {
+                                "temperature_K": 356.8665356607623,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.8300000000000001,
+                                    0.16999999999999993
+                                ],
+                                "vapor_composition": [
+                                    0.9260538343141981,
+                                    0.07394616568580199
+                                ],
+                                "equilibrium_residual": 2.805004631670763e-16
+                            },
+                            {
+                                "temperature_K": 356.64429581195736,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.84,
+                                    0.16000000000000003
+                                ],
+                                "vapor_composition": [
+                                    0.9309230597863056,
+                                    0.06907694021369443
+                                ],
+                                "equilibrium_residual": 6.173674944075766e-12
+                            },
+                            {
+                                "temperature_K": 356.42359524985835,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.85,
+                                    0.15000000000000002
+                                ],
+                                "vapor_composition": [
+                                    0.9357210836802108,
+                                    0.06427891631978931
+                                ],
+                                "equilibrium_residual": 9.252307777566011e-13
+                            },
+                            {
+                                "temperature_K": 356.20441491530636,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.86,
+                                    0.14
+                                ],
+                                "vapor_composition": [
+                                    0.9404492664121334,
+                                    0.05955073358786655
+                                ],
+                                "equilibrium_residual": 5.834409633875187e-14
+                            },
+                            {
+                                "temperature_K": 355.9867360872723,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.87,
+                                    0.13
+                                ],
+                                "vapor_composition": [
+                                    0.9451089356939159,
+                                    0.05489106430608417
+                                ],
+                                "equilibrium_residual": 1.4025023158353815e-16
+                            },
+                            {
+                                "temperature_K": 355.7705403743205,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.88,
+                                    0.12
+                                ],
+                                "vapor_composition": [
+                                    0.9497013874829983,
+                                    0.05029861251700168
+                                ],
+                                "equilibrium_residual": 2.103753473753072e-15
+                            },
+                            {
+                                "temperature_K": 355.5558097071491,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.89,
+                                    0.10999999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.9542278868998624,
+                                    0.04577211310013773
+                                ],
+                                "equilibrium_residual": 7.012511579176908e-15
+                            },
+                            {
+                                "temperature_K": 355.3425263312944,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.9,
+                                    0.09999999999999998
+                                ],
+                                "vapor_composition": [
+                                    0.9586896691144078,
+                                    0.04131033088559211
+                                ],
+                                "equilibrium_residual": 1.9438682097478387e-13
+                            },
+                            {
+                                "temperature_K": 355.1306728000397,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.91,
+                                    0.08999999999999997
+                                ],
+                                "vapor_composition": [
+                                    0.9630879402024637,
+                                    0.036912059797536284
+                                ],
+                                "equilibrium_residual": 1.6901555408132182e-12
+                            },
+                            {
+                                "temperature_K": 354.9202319670475,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.92,
+                                    0.07999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.9674238779736355,
+                                    0.03257612202636448
+                                ],
+                                "equilibrium_residual": 6.683484535881927e-12
+                            },
+                            {
+                                "temperature_K": 354.7111869812603,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.93,
+                                    0.06999999999999995
+                                ],
+                                "vapor_composition": [
+                                    0.9716986327713044,
+                                    0.02830136722869557
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 354.5035212775677,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.9400000000000001,
+                                    0.05999999999999994
+                                ],
+                                "vapor_composition": [
+                                    0.9759133282465726,
+                                    0.024086671753427415
+                                ],
+                                "equilibrium_residual": 7.012511579176908e-16
+                            },
+                            {
+                                "temperature_K": 354.2972185729684,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.9500000000000001,
+                                    0.04999999999999993
+                                ],
+                                "vapor_composition": [
+                                    0.9800690621060628,
+                                    0.019930937893937267
+                                ],
+                                "equilibrium_residual": 2.5245041685036866e-15
+                            },
+                            {
+                                "temperature_K": 354.09226285919584,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.96,
+                                    0.040000000000000036
+                                ],
+                                "vapor_composition": [
+                                    0.9841669068355561,
+                                    0.01583309316444389
+                                ],
+                                "equilibrium_residual": 4.908758105423835e-15
+                            },
+                            {
+                                "temperature_K": 353.88863839691714,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.97,
+                                    0.030000000000000027
+                                ],
+                                "vapor_composition": [
+                                    0.9882079103998216,
+                                    0.011792089600178489
+                                ],
+                                "equilibrium_residual": 1.1781019453017204e-14
+                            },
+                            {
+                                "temperature_K": 353.6863297098703,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.98,
+                                    0.020000000000000018
+                                ],
+                                "vapor_composition": [
+                                    0.9921930969197033,
+                                    0.0078069030802967255
+                                ],
+                                "equilibrium_residual": 2.90317979377924e-14
+                            },
+                            {
+                                "temperature_K": 353.4853215791576,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.99,
+                                    0.010000000000000009
+                                ],
+                                "vapor_composition": [
+                                    0.9961234673272934,
+                                    0.0038765326727066645
+                                ],
+                                "equilibrium_residual": 6.423460606526048e-14
+                            },
+                            {
+                                "temperature_K": 353.28559903769155,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "vapor_composition": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "equilibrium_residual": 1.3660372556236616e-13
+                            }
+                        ],
+                        "phases": [],
+                        "temperature_K": null,
+                        "pressure_kPa": 101.325,
+                        "vapor_fraction": null,
+                        "phase_state": "curve",
+                        "converged": true,
+                        "residual": 6.683484535881927e-12,
+                        "iterations": 975,
+                        "warnings": [
+                            "Benzene Antoine correlation extrapolated at 383.773 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 383.291 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 382.815 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 382.345 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 381.881 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 381.422 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 380.969 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 380.522 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 380.080 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 379.643 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 379.212 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 378.785 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 378.364 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.947 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.535 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.128 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 376.725 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 376.327 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.933 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.543 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.157 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 374.776 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 374.399 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 374.025 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 373.656 K outside 333.4-373.5 K."
+                        ],
+                        "backend_version": "internal-ideal-raoult/0.1.0",
+                        "solver_name": "scipy.optimize.brentq / analytical Raoult / Rachford-Rice",
+                        "failure": null,
+                        "created_at": "2026-08-04T02:17:47.711576Z"
+                    },
+                    "validation": {
+                        "overall_status": "warning",
+                        "composition_balance": {
+                            "passed": true,
+                            "metric": 1.1102230246251565e-16,
+                            "tolerance": 1e-08,
+                            "message": "All required phase compositions are present, bounded, and normalized."
+                        },
+                        "material_balance": {
+                            "passed": true,
+                            "metric": 0.0,
+                            "tolerance": 1e-07,
+                            "message": "Material balance passed."
+                        },
+                        "equilibrium_residual": {
+                            "passed": true,
+                            "metric": 6.683484535881927e-12,
+                            "tolerance": 2e-06,
+                            "message": "Equilibrium residual passed."
+                        },
+                        "convergence": {
+                            "passed": true,
+                            "metric": 1.0,
+                            "tolerance": 1.0,
+                            "message": "Solver converged."
+                        },
+                        "parameter_applicability": {
+                            "passed": false,
+                            "metric": 1.0,
+                            "tolerance": 0.0,
+                            "message": "At least one pure-property correlation was extrapolated."
+                        },
+                        "phase_stability": null,
+                        "warnings": [
+                            "Benzene Antoine correlation extrapolated at 383.773 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 383.291 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 382.815 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 382.345 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 381.881 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 381.422 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 380.969 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 380.522 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 380.080 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 379.643 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 379.212 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 378.785 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 378.364 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.947 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.535 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.128 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 376.725 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 376.327 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.933 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.543 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.157 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 374.776 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 374.399 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 374.025 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 373.656 K outside 333.4-373.5 K."
+                        ],
+                        "recommended_action": "Review warnings and applicability before engineering use.",
+                        "maximum_equilibrium_residual": 6.683484535881927e-12,
+                        "mean_equilibrium_residual": 5.248087291967512e-13,
+                        "solver_converged": true
+                    },
+                    "parameter_sources": [
+                        {
+                            "component": "Benzene",
+                            "property": "Antoine vapor pressure",
+                            "source_title": "NIST Chemistry WebBook, SRD 69",
+                            "source_identifier": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C71432&Mask=4",
+                            "temperature_range_K": "333.4-373.5"
+                        },
+                        {
+                            "component": "Toluene",
+                            "property": "Antoine vapor pressure",
+                            "source_title": "NIST Chemistry WebBook, SRD 69",
+                            "source_identifier": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C108883&Mask=4",
+                            "temperature_range_K": "308.52-384.66"
+                        }
+                    ],
+                    "model_recommendations": [
+                        {
+                            "model_name": "Ideal/Raoult",
+                            "score": 94.0,
+                            "executable": true,
+                            "reasons": [
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 15.0,
+                                "evidence_quality_score": 10.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "Wilson",
+                            "score": 57.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: Wilson requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "NRTL",
+                            "score": 47.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: NRTL requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "Peng-Robinson",
+                            "score": 47.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is cubic_eos.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [
+                                "Rejected: Peng-Robinson requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "UNIQUAC",
+                            "score": 47.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: UNIQUAC requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        }
+                    ]
+                },
+                "request_id": "63e7e2a3-58d7-4276-ba1b-6c9a172b6a8a"
+            }
+        }
+    },
+    {
+        "case": "binary_isothermal_pxy_benzene_toluene",
+        "time": "2026-08-04T10:18:04.122325",
+        "request": {
+            "message": "计算苯-甲苯在350 K下的P-x-y相图"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:17:53 GMT",
+                "server": "uvicorn",
+                "content-length": "13882",
+                "content-type": "application/json",
+                "x-request-id": "a704f212-22cc-4511-b631-ab3144e6e073"
+            },
+            "body": {
+                "conversation_id": "0796d3d4-36b9-40fd-afa9-0b4d6ed16e1f",
+                "intent": "EQUILIBRIUM_CALCULATION",
+                "answer": "计算完成。\n模型：Ideal/Raoult | T=350.00 K | 数据点：21 个 | 验证：passed",
+                "statements": [
+                    {
+                        "category": "Inference",
+                        "text": "## Isothermal VLE Calculation Results — Benzene + Toluene at 350 K\n\n**Model used:** Ideal/Raoult's law (valid for low-pressure systems of these aromatic hydrocarbons)\n\n---\n\n### Equilibrium Summary\n\nThe calculation produced a complete **P-x-y diagram** for the benzene (1) + toluene (2) system at a constant temperature of **350 K**, covering 21 liquid composition points from pure toluene (x₁ = 0) to pure benzene (x₁ = 1).\n\n---\n\n### Key Results\n\n| Quantity | Value |\n|----------|-------|\n| **Bubble-point pressure of pure toluene** | 34.79 kPa |\n| **Bubble-point pressure of pure benzene** | 91.46 kPa |\n| **Pressure range of the two-phase region** | ~34.8 to ~91.5 kPa |\n\n**Key composition points:**\n\n- **At x₁(benzene) = 0.1:** Vapor contains 22.6 mol% benzene\n- **At x₁(benzene) = 0.5:** Vapor contains 72.4 mol% benzene\n- **At x₁(benzene) = 0.9:** Vapor contains 95.9 mol% benzene\n\nThe vapor is always **enriched in benzene** relative to the liquid, as expected since benzene is the more volatile component (higher pure-component vapor pressure).\n\n---\n\n### Phase Behavior\n\n- The system shows **smooth, monotonic behavior** — no azeotrope, no liquid-liquid immiscibility.\n- At any pressure between the pure-component bubble-point pressures, the system splits into a liquid and a vapor phase; the liquid phase is richer in toluene and the vapor phase is richer in benzene.\n- All 21 points lie on a continuous bubble-point curve; the corresponding dew-point curve is obtained by connecting the vapor composition coordinates.\n\n---\n\n### Validation and Warnings\n\n- **All validation checks passed:**\n  - Composition balance: maximum deviation ~10⁻¹⁶ (negligible)\n  - Material balance: exact (0.0)\n  - Equilibrium residual: maximum 4.1×10⁻¹⁷ (well below tolerance)\n  - Solver converged successfully\n  - Pure-property correlations are within their valid ranges\n\n- **No warnings** were issued by the calculation engine.\n\n---\n\n### Interpretation\n\nAt 350 K, this binary system behaves ideally. The **relative volatility** of benzene relative to toluene is approximately 2.5–2.6 across the composition range, meaning benzene is about 2.5 times more volatile than toluene at these conditions. This makes the separation by distillation moderately easy. The P-x-y curve shows a wide separation between the bubble-point and dew-point lines, typical of an ideal system with components of similar chemical nature but different volatilities."
+                    }
+                ],
+                "execution_steps": [
+                    {
+                        "phase": "plan",
+                        "status": "completed",
+                        "summary": "A structured task manifest was created and an allowlisted tool was selected.",
+                        "tool_name": null
+                    },
+                    {
+                        "phase": "execute",
+                        "status": "completed",
+                        "summary": "The registered deterministic phase-equilibrium tool completed.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "validate",
+                        "status": "completed",
+                        "summary": "Independent physical validation status: passed.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "respond",
+                        "status": "completed",
+                        "summary": "The provider interpreted only the grounded calculation and validation payload.",
+                        "tool_name": null
+                    }
+                ],
+                "task": {
+                    "task_id": "benzene-toluene-pxy-350k",
+                    "equilibrium_type": "VLE",
+                    "calculation_type": "isothermal_vle",
+                    "components": [
+                        {
+                            "component_id": "benzene",
+                            "name": "Benzene",
+                            "cas_number": "71-43-2",
+                            "aliases": [
+                                "苯",
+                                "benzene"
+                            ]
+                        },
+                        {
+                            "component_id": "toluene",
+                            "name": "Toluene",
+                            "cas_number": "108-88-3",
+                            "aliases": [
+                                "甲苯",
+                                "toluene"
+                            ]
+                        }
+                    ],
+                    "conditions": {
+                        "temperature_K": 350.0,
+                        "pressure_kPa": null,
+                        "liquid_composition": null,
+                        "vapor_composition": null,
+                        "feed_composition": null
+                    },
+                    "composition_basis": "mole_fraction",
+                    "requested_outputs": [
+                        "P-x-y diagram",
+                        "bubble point pressure",
+                        "dew point pressure"
+                    ],
+                    "validation_requirements": [
+                        "sum of mole fractions equals 1",
+                        "bubble point pressure > dew point pressure"
+                    ],
+                    "assumptions": [
+                        "ideal liquid and vapor phases",
+                        "Raoult's law applicable"
+                    ],
+                    "model_name": null,
+                    "points": 21,
+                    "original_question": "计算苯-甲苯在350 K下的P-x-y相图"
+                },
+                "calculation": {
+                    "result": {
+                        "run_id": "15e41961-7c55-457d-bfc6-c157931851fa",
+                        "task_id": "benzene-toluene-pxy-350k",
+                        "calculation_type": "isothermal_vle",
+                        "input_snapshot": {
+                            "task_id": "benzene-toluene-pxy-350k",
+                            "equilibrium_type": "VLE",
+                            "calculation_type": "isothermal_vle",
+                            "components": [
+                                {
+                                    "component_id": "benzene",
+                                    "name": "Benzene",
+                                    "cas_number": "71-43-2",
+                                    "aliases": [
+                                        "苯",
+                                        "benzene"
+                                    ]
+                                },
+                                {
+                                    "component_id": "toluene",
+                                    "name": "Toluene",
+                                    "cas_number": "108-88-3",
+                                    "aliases": [
+                                        "甲苯",
+                                        "toluene"
+                                    ]
+                                }
+                            ],
+                            "conditions": {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": null,
+                                "liquid_composition": null,
+                                "vapor_composition": null,
+                                "feed_composition": null
+                            },
+                            "composition_basis": "mole_fraction",
+                            "requested_outputs": [
+                                "P-x-y diagram",
+                                "bubble point pressure",
+                                "dew point pressure"
+                            ],
+                            "validation_requirements": [
+                                "sum of mole fractions equals 1",
+                                "bubble point pressure > dew point pressure"
+                            ],
+                            "assumptions": [
+                                "ideal liquid and vapor phases",
+                                "Raoult's law applicable",
+                                "Ideal/Raoult was selected within its reviewed low-pressure pure-property registry."
+                            ],
+                            "model_name": "Ideal/Raoult",
+                            "points": 21,
+                            "original_question": "计算苯-甲苯在350 K下的P-x-y相图"
+                        },
+                        "model_name": "Ideal/Raoult",
+                        "parameter_set_id": null,
+                        "points": [
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 34.78574546750536,
+                                "liquid_composition": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "vapor_composition": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 37.619352522709825,
+                                "liquid_composition": [
+                                    0.05,
+                                    0.95
+                                ],
+                                "vapor_composition": [
+                                    0.12155696528320618,
+                                    0.8784430347167937
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 40.452959577914285,
+                                "liquid_composition": [
+                                    0.1,
+                                    0.9
+                                ],
+                                "vapor_composition": [
+                                    0.2260845375118785,
+                                    0.7739154624881216
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 43.28656663311875,
+                                "liquid_composition": [
+                                    0.15000000000000002,
+                                    0.85
+                                ],
+                                "vapor_composition": [
+                                    0.31692702962592956,
+                                    0.6830729703740704
+                                ],
+                                "equilibrium_residual": 4.103713871455796e-17
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 46.12017368832322,
+                                "liquid_composition": [
+                                    0.2,
+                                    0.8
+                                ],
+                                "vapor_composition": [
+                                    0.3966068609787136,
+                                    0.6033931390212864
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 48.95378074352768,
+                                "liquid_composition": [
+                                    0.25,
+                                    0.75
+                                ],
+                                "vapor_composition": [
+                                    0.46706242695916067,
+                                    0.5329375730408393
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 51.78738779873215,
+                                "liquid_composition": [
+                                    0.30000000000000004,
+                                    0.7
+                                ],
+                                "vapor_composition": [
+                                    0.5298078767384772,
+                                    0.4701921232615228
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 54.620994853936615,
+                                "liquid_composition": [
+                                    0.35000000000000003,
+                                    0.6499999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.5860431576842857,
+                                    0.4139568423157143
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 57.454601909141076,
+                                "liquid_composition": [
+                                    0.4,
+                                    0.6
+                                ],
+                                "vapor_composition": [
+                                    0.6367314960512754,
+                                    0.3632685039487246
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 60.28820896434554,
+                                "liquid_composition": [
+                                    0.45,
+                                    0.55
+                                ],
+                                "vapor_composition": [
+                                    0.682655027644913,
+                                    0.317344972355087
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 63.12181601955001,
+                                "liquid_composition": [
+                                    0.5,
+                                    0.5
+                                ],
+                                "vapor_composition": [
+                                    0.7244554445587278,
+                                    0.27554455544127215
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 65.95542307475448,
+                                "liquid_composition": [
+                                    0.55,
+                                    0.44999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.7626641642092797,
+                                    0.23733583579072023
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 68.78903012995895,
+                                "liquid_composition": [
+                                    0.6000000000000001,
+                                    0.3999999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.7977250419039968,
+                                    0.2022749580960031
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 71.6226371851634,
+                                "liquid_composition": [
+                                    0.65,
+                                    0.35
+                                ],
+                                "vapor_composition": [
+                                    0.8300116919438297,
+                                    0.1699883080561703
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 74.45624424036788,
+                                "liquid_composition": [
+                                    0.7000000000000001,
+                                    0.29999999999999993
+                                ],
+                                "vapor_composition": [
+                                    0.8598408535547153,
+                                    0.14015914644528465
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 77.28985129557233,
+                                "liquid_composition": [
+                                    0.75,
+                                    0.25
+                                ],
+                                "vapor_composition": [
+                                    0.8874828166815928,
+                                    0.11251718331840714
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 80.1234583507768,
+                                "liquid_composition": [
+                                    0.8,
+                                    0.19999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.9131696355012162,
+                                    0.08683036449878377
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 82.95706540598127,
+                                "liquid_composition": [
+                                    0.8500000000000001,
+                                    0.1499999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.9371016586159328,
+                                    0.06289834138406719
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 85.79067246118574,
+                                "liquid_composition": [
+                                    0.9,
+                                    0.09999999999999998
+                                ],
+                                "vapor_composition": [
+                                    0.9594527651205398,
+                                    0.040547234879460194
+                                ],
+                                "equilibrium_residual": 5.1764276594402714e-18
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 88.6242795163902,
+                                "liquid_composition": [
+                                    0.9500000000000001,
+                                    0.04999999999999993
+                                ],
+                                "vapor_composition": [
+                                    0.9803745961844056,
+                                    0.019625403815594362
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 350.0,
+                                "pressure_kPa": 91.45788657159466,
+                                "liquid_composition": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "vapor_composition": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "equilibrium_residual": 0.0
+                            }
+                        ],
+                        "phases": [],
+                        "temperature_K": 350.0,
+                        "pressure_kPa": null,
+                        "vapor_fraction": null,
+                        "phase_state": "curve",
+                        "converged": true,
+                        "residual": 4.103713871455796e-17,
+                        "iterations": 0,
+                        "warnings": [],
+                        "backend_version": "internal-ideal-raoult/0.1.0",
+                        "solver_name": "scipy.optimize.brentq / analytical Raoult / Rachford-Rice",
+                        "failure": null,
+                        "created_at": "2026-08-04T02:17:58.681025Z"
+                    },
+                    "validation": {
+                        "overall_status": "passed",
+                        "composition_balance": {
+                            "passed": true,
+                            "metric": 1.1102230246251565e-16,
+                            "tolerance": 1e-08,
+                            "message": "All required phase compositions are present, bounded, and normalized."
+                        },
+                        "material_balance": {
+                            "passed": true,
+                            "metric": 0.0,
+                            "tolerance": 1e-07,
+                            "message": "Material balance passed."
+                        },
+                        "equilibrium_residual": {
+                            "passed": true,
+                            "metric": 4.103713871455796e-17,
+                            "tolerance": 2e-06,
+                            "message": "Equilibrium residual passed."
+                        },
+                        "convergence": {
+                            "passed": true,
+                            "metric": 1.0,
+                            "tolerance": 1.0,
+                            "message": "Solver converged."
+                        },
+                        "parameter_applicability": {
+                            "passed": true,
+                            "metric": 0.0,
+                            "tolerance": 0.0,
+                            "message": "Pure-property correlations are within their stated ranges and T/P are positive."
+                        },
+                        "phase_stability": null,
+                        "warnings": [],
+                        "recommended_action": null,
+                        "maximum_equilibrium_residual": 4.103713871455796e-17,
+                        "mean_equilibrium_residual": 2.2006460178094397e-18,
+                        "solver_converged": true
+                    },
+                    "parameter_sources": [
+                        {
+                            "component": "Benzene",
+                            "property": "Antoine vapor pressure",
+                            "source_title": "NIST Chemistry WebBook, SRD 69",
+                            "source_identifier": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C71432&Mask=4",
+                            "temperature_range_K": "333.4-373.5"
+                        },
+                        {
+                            "component": "Toluene",
+                            "property": "Antoine vapor pressure",
+                            "source_title": "NIST Chemistry WebBook, SRD 69",
+                            "source_identifier": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C108883&Mask=4",
+                            "temperature_range_K": "308.52-384.66"
+                        }
+                    ],
+                    "model_recommendations": [
+                        {
+                            "model_name": "Ideal/Raoult",
+                            "score": 82.0,
+                            "executable": true,
+                            "reasons": [
+                                "Phase support: matched.",
+                                "System fit: profile is unknown-pressure; model family is activity_coefficient.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 15.0,
+                                "evidence_quality_score": 10.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "Peng-Robinson",
+                            "score": 47.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is unknown-pressure; model family is cubic_eos.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [
+                                "Rejected: Peng-Robinson requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "Wilson",
+                            "score": 45.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is unknown-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: Wilson requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "NRTL",
+                            "score": 35.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is unknown-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: NRTL requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "UNIQUAC",
+                            "score": 35.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is unknown-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: UNIQUAC requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        }
+                    ]
+                },
+                "request_id": "a704f212-22cc-4511-b631-ab3144e6e073"
+            }
+        }
+    },
+    {
+        "case": "bubble_point_calculation",
+        "time": "2026-08-04T10:18:06.559364",
+        "request": {
+            "message": "计算苯-甲苯混合物泡点，压力101.325 kPa，液相组成苯0.5、甲苯0.5"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:03 GMT",
+                "server": "uvicorn",
+                "content-length": "197",
+                "content-type": "application/json",
+                "x-request-id": "71eb02f6-9e91-4de8-b97a-cac677ae3fa1"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_output_error",
+                    "message": "External provider returned components inconsistent with the user message.",
+                    "details": {},
+                    "request_id": "71eb02f6-9e91-4de8-b97a-cac677ae3fa1"
+                }
+            }
+        }
+    },
+    {
+        "case": "dew_point_calculation",
+        "time": "2026-08-04T10:18:09.504504",
+        "request": {
+            "message": "计算苯-甲苯混合物露点，压力101.325 kPa，气相组成苯0.5、甲苯0.5"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:06 GMT",
+                "server": "uvicorn",
+                "content-length": "197",
+                "content-type": "application/json",
+                "x-request-id": "45afeae1-1640-4b8c-91f7-b1ed31c1c981"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_output_error",
+                    "message": "External provider returned components inconsistent with the user message.",
+                    "details": {},
+                    "request_id": "45afeae1-1640-4b8c-91f7-b1ed31c1c981"
+                }
+            }
+        }
+    },
+    {
+        "case": "tp_flash_peng_robinson",
+        "time": "2026-08-04T10:18:18.982887",
+        "request": {
+            "message": "使用Peng-Robinson计算甲烷、乙烷和氮气的TP Flash，温度110 K，压力100 kPa，摩尔组成为0.965、0.018、0.017"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:09 GMT",
+                "server": "uvicorn",
+                "content-length": "11241",
+                "content-type": "application/json",
+                "x-request-id": "08436478-f0ff-45b9-8773-3a97ed5b4b15"
+            },
+            "body": {
+                "conversation_id": "6c155f7a-4236-445f-a7da-4f2d68fd6ec4",
+                "intent": "EQUILIBRIUM_CALCULATION",
+                "answer": "计算完成。\n模型：Peng-Robinson | T=110.00 K | P=100.0000 kPa | liquid相(91.1%)：(0.9744, 0.0198, 0.0058) | vapor相(8.9%)：(0.8688, 0.0000, 0.1312) | 汽化分率 β=0.0890 | 验证：warning | ⚠ ChemSep PR parameter applicability requires engineering review.",
+                "statements": [
+                    {
+                        "category": "Inference",
+                        "text": "The TP flash calculation at **110 K and 100 kPa** for the methane/ethane/nitrogen mixture converged successfully to a **two-phase (liquid-vapor) equilibrium** state.\n\n**Phase Split:**\n- **Vapor fraction:** 0.0890 (approximately 8.9% of the feed is vapor)\n- **Liquid fraction:** 0.9110 (approximately 91.1% of the feed is liquid)\n\n**Phase Compositions (mole fractions):**\n- **Liquid phase:** Methane 0.9744, Ethane 0.0198, Nitrogen 0.0058. The liquid is almost pure methane, with a small amount of ethane and very little nitrogen.\n- **Vapor phase:** Methane 0.8688, Ethane ~0.00003, Nitrogen 0.1312. The vapor is mostly methane, enriched significantly in nitrogen compared to the liquid, with essentially no ethane.\n\n**Validation Summary:**\n- The material balance was perfect (residual ~1.1e-16).\n- The phase equilibrium residual was small (2.46e-08), confirming the fugacity equality was satisfied.\n- The solver converged quickly (3 iterations).\n- No composition, material balance, or convergence issues were found.\n\n**Warnings:**\n1.  **Engineering Review Required:** The Peng-Robinson (ChemSep) parameter set used is flagged for needing engineering review for this specific application.\n2.  **No Full Stability Analysis:** A complete tangent-plane stability analysis was not performed; the phase state classification is considered basic and should be treated as preliminary.\n\nOverall, the calculation indicates that at these conditions, the mixture separates into a predominantly methane-rich liquid and a nitrogen-enriched vapor phase. However, the warnings indicate that the results should be reviewed by an engineer before use in any formal engineering application."
+                    }
+                ],
+                "execution_steps": [
+                    {
+                        "phase": "plan",
+                        "status": "completed",
+                        "summary": "A structured task manifest was created and an allowlisted tool was selected.",
+                        "tool_name": null
+                    },
+                    {
+                        "phase": "execute",
+                        "status": "completed",
+                        "summary": "The registered deterministic phase-equilibrium tool completed.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "validate",
+                        "status": "completed",
+                        "summary": "Independent physical validation status: warning.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "respond",
+                        "status": "completed",
+                        "summary": "The provider interpreted only the grounded calculation and validation payload.",
+                        "tool_name": null
+                    }
+                ],
+                "task": {
+                    "task_id": "tp_flash_methane_ethane_nitrogen_110K_100kPa",
+                    "equilibrium_type": "FLASH",
+                    "calculation_type": "tp_flash",
+                    "components": [
+                        {
+                            "component_id": "methane",
+                            "name": "Methane",
+                            "cas_number": "74-82-8",
+                            "aliases": [
+                                "甲烷",
+                                "methane"
+                            ]
+                        },
+                        {
+                            "component_id": "ethane",
+                            "name": "Ethane",
+                            "cas_number": "74-84-0",
+                            "aliases": [
+                                "乙烷",
+                                "ethane"
+                            ]
+                        },
+                        {
+                            "component_id": "nitrogen",
+                            "name": "Nitrogen",
+                            "cas_number": "7727-37-9",
+                            "aliases": [
+                                "氮气",
+                                "nitrogen",
+                                "n2"
+                            ]
+                        }
+                    ],
+                    "conditions": {
+                        "temperature_K": 110.0,
+                        "pressure_kPa": 100.0,
+                        "liquid_composition": null,
+                        "vapor_composition": null,
+                        "feed_composition": [
+                            0.965,
+                            0.018,
+                            0.017
+                        ]
+                    },
+                    "composition_basis": "mole_fraction",
+                    "requested_outputs": [
+                        "vapor fraction",
+                        "phase compositions"
+                    ],
+                    "validation_requirements": [
+                        "mass balance",
+                        "phase equilibrium"
+                    ],
+                    "assumptions": [
+                        "Peng-Robinson EOS"
+                    ],
+                    "model_name": null,
+                    "points": 21,
+                    "original_question": "使用Peng-Robinson计算甲烷、乙烷和氮气的TP Flash，温度110 K，压力100 kPa，摩尔组成为0.965、0.018、0.017"
+                },
+                "calculation": {
+                    "result": {
+                        "run_id": "49afd923-641a-4277-9e8c-f024c21465b4",
+                        "task_id": "tp_flash_methane_ethane_nitrogen_110K_100kPa",
+                        "calculation_type": "tp_flash",
+                        "input_snapshot": {
+                            "task_id": "tp_flash_methane_ethane_nitrogen_110K_100kPa",
+                            "equilibrium_type": "FLASH",
+                            "calculation_type": "tp_flash",
+                            "components": [
+                                {
+                                    "component_id": "methane",
+                                    "name": "Methane",
+                                    "cas_number": "74-82-8",
+                                    "aliases": [
+                                        "甲烷",
+                                        "methane"
+                                    ]
+                                },
+                                {
+                                    "component_id": "ethane",
+                                    "name": "Ethane",
+                                    "cas_number": "74-84-0",
+                                    "aliases": [
+                                        "乙烷",
+                                        "ethane"
+                                    ]
+                                },
+                                {
+                                    "component_id": "nitrogen",
+                                    "name": "Nitrogen",
+                                    "cas_number": "7727-37-9",
+                                    "aliases": [
+                                        "氮气",
+                                        "nitrogen",
+                                        "n2"
+                                    ]
+                                }
+                            ],
+                            "conditions": {
+                                "temperature_K": 110.0,
+                                "pressure_kPa": 100.0,
+                                "liquid_composition": null,
+                                "vapor_composition": null,
+                                "feed_composition": [
+                                    0.965,
+                                    0.018,
+                                    0.017
+                                ]
+                            },
+                            "composition_basis": "mole_fraction",
+                            "requested_outputs": [
+                                "vapor fraction",
+                                "phase compositions"
+                            ],
+                            "validation_requirements": [
+                                "mass balance",
+                                "phase equilibrium"
+                            ],
+                            "assumptions": [
+                                "Peng-Robinson EOS",
+                                "Peng-Robinson was selected because the components are outside the local Ideal registry."
+                            ],
+                            "model_name": "Peng-Robinson",
+                            "points": 21,
+                            "original_question": "使用Peng-Robinson计算甲烷、乙烷和氮气的TP Flash，温度110 K，压力100 kPa，摩尔组成为0.965、0.018、0.017"
+                        },
+                        "model_name": "Peng-Robinson",
+                        "parameter_set_id": "chemsep-pr:5ac5ee43971888a88748bb6236cbb74f7d6ffeec95eedda5a0ae56ef135c6e91",
+                        "points": [],
+                        "phases": [
+                            {
+                                "phase": "liquid",
+                                "fraction": 0.9109675176946579,
+                                "composition": [
+                                    0.9743999844066187,
+                                    0.019756693470108957,
+                                    0.005843322123272337
+                                ]
+                            },
+                            {
+                                "phase": "vapor",
+                                "fraction": 0.0890324823053421,
+                                "composition": [
+                                    0.8688207153216468,
+                                    2.576578369136588e-05,
+                                    0.13115351889466176
+                                ]
+                            }
+                        ],
+                        "temperature_K": 110.0,
+                        "pressure_kPa": 100.0,
+                        "vapor_fraction": 0.0890324823053421,
+                        "phase_state": "two_phase",
+                        "converged": true,
+                        "residual": 2.459749967318951e-08,
+                        "iterations": 3,
+                        "warnings": [
+                            "ChemSep PR parameter applicability requires engineering review."
+                        ],
+                        "backend_version": "thermo/0.6.1",
+                        "solver_name": "thermo.FlashVL / PRMIX",
+                        "failure": null,
+                        "created_at": "2026-08-04T02:18:14.665259Z"
+                    },
+                    "validation": {
+                        "overall_status": "warning",
+                        "composition_balance": {
+                            "passed": true,
+                            "metric": 0.0,
+                            "tolerance": 1e-08,
+                            "message": "All required phase compositions are present, bounded, and normalized."
+                        },
+                        "material_balance": {
+                            "passed": true,
+                            "metric": 1.1102230246251565e-16,
+                            "tolerance": 1e-07,
+                            "message": "Material balance passed."
+                        },
+                        "equilibrium_residual": {
+                            "passed": true,
+                            "metric": 2.459749967318951e-08,
+                            "tolerance": 2e-06,
+                            "message": "Equilibrium residual passed."
+                        },
+                        "convergence": {
+                            "passed": true,
+                            "metric": 1.0,
+                            "tolerance": 1.0,
+                            "message": "Solver converged."
+                        },
+                        "parameter_applicability": {
+                            "passed": true,
+                            "metric": 0.0,
+                            "tolerance": 0.0,
+                            "message": "Pure-property correlations are within their stated ranges and T/P are positive."
+                        },
+                        "phase_stability": {
+                            "passed": false,
+                            "metric": null,
+                            "tolerance": null,
+                            "message": "Basic phase-state classification completed; tangent-plane analysis was not performed."
+                        },
+                        "warnings": [
+                            "ChemSep PR parameter applicability requires engineering review.",
+                            "Full tangent-plane stability analysis was not performed."
+                        ],
+                        "recommended_action": "Review warnings and applicability before engineering use.",
+                        "maximum_equilibrium_residual": 2.459749967318951e-08,
+                        "mean_equilibrium_residual": 2.459749967318951e-08,
+                        "solver_converged": true
+                    },
+                    "parameter_sources": [
+                        {
+                            "component": "Methane",
+                            "property": "Pure-component constants and property correlations",
+                            "source_title": "CalebBell/thermo",
+                            "source_identifier": "https://github.com/CalebBell/thermo",
+                            "source_version": "thermo/0.6.1",
+                            "temperature_range_K": "model-dependent"
+                        },
+                        {
+                            "component": "Ethane",
+                            "property": "Pure-component constants and property correlations",
+                            "source_title": "CalebBell/thermo",
+                            "source_identifier": "https://github.com/CalebBell/thermo",
+                            "source_version": "thermo/0.6.1",
+                            "temperature_range_K": "model-dependent"
+                        },
+                        {
+                            "component": "Nitrogen",
+                            "property": "Pure-component constants and property correlations",
+                            "source_title": "CalebBell/thermo",
+                            "source_identifier": "https://github.com/CalebBell/thermo",
+                            "source_version": "thermo/0.6.1",
+                            "temperature_range_K": "model-dependent"
+                        },
+                        {
+                            "component": "Methane / Ethane / Nitrogen",
+                            "component_order": "[\"74-82-8\", \"74-84-0\", \"7727-37-9\"]",
+                            "property": "Peng-Robinson binary interaction parameter kij",
+                            "parameter_form": "symmetric kij matrix",
+                            "parameter_values": "[[0.0, -0.0059, 0.0289], [-0.0059, 0.0, 0.0533], [0.0289, 0.0533, 0.0]]",
+                            "parameter_units": "dimensionless",
+                            "parameter_set_id": "chemsep-pr:5ac5ee43971888a88748bb6236cbb74f7d6ffeec95eedda5a0ae56ef135c6e91",
+                            "quality_level": "upstream database snapshot; engineering review required",
+                            "source_title": "ChemSep PR",
+                            "source_identifier": "https://github.com/CalebBell/thermo/tree/master/thermo/Interaction%20Parameters/ChemSep",
+                            "source_version": "thermo/0.6.1",
+                            "temperature_range_K": "temperature-independent"
+                        }
+                    ],
+                    "model_recommendations": [
+                        {
+                            "model_name": "Ideal/Raoult",
+                            "score": 94.0,
+                            "executable": true,
+                            "reasons": [
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 15.0,
+                                "evidence_quality_score": 10.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "Peng-Robinson",
+                            "score": 68.0,
+                            "executable": true,
+                            "reasons": [
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is cubic_eos.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 15.0,
+                                "evidence_quality_score": 6.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "Wilson",
+                            "score": 27.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: not matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Wilson does not support FLASH.",
+                                "Rejected: Wilson requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 0.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "NRTL",
+                            "score": 17.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: not matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "NRTL does not support FLASH.",
+                                "Rejected: NRTL requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 0.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "UNIQUAC",
+                            "score": 17.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: not matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "UNIQUAC does not support FLASH.",
+                                "Rejected: UNIQUAC requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 0.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        }
+                    ]
+                },
+                "request_id": "08436478-f0ff-45b9-8773-3a97ed5b4b15"
+            }
+        }
+    },
+    {
+        "case": "azeotrope_candidate_search",
+        "time": "2026-08-04T10:18:22.695675",
+        "request": {
+            "message": "搜索乙醇-水体系在101.325 kPa下的共沸候选点"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:17 GMT",
+                "server": "uvicorn",
+                "content-length": "200",
+                "content-type": "application/json",
+                "x-request-id": "924e3f01-0ef6-42f2-a7bd-eba30c32abd9"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_output_error",
+                    "message": "No component identity could be resolved independently from the user message.",
+                    "details": {},
+                    "request_id": "924e3f01-0ef6-42f2-a7bd-eba30c32abd9"
+                }
+            }
+        }
+    },
+    {
+        "case": "phase_classification",
+        "time": "2026-08-04T10:18:30.087291",
+        "request": {
+            "message": "判断甲烷乙烷混合物在300 K、5000 kPa条件下的相态"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:22 GMT",
+                "server": "uvicorn",
+                "content-length": "176",
+                "content-type": "application/json",
+                "x-request-id": "4b21f2d3-cd93-4684-9a96-3257ba83fef4"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_output_error",
+                    "message": "External provider returned an invalid task manifest.",
+                    "details": {},
+                    "request_id": "4b21f2d3-cd93-4684-9a96-3257ba83fef4"
+                }
+            }
+        }
+    },
+    {
+        "case": "peng_robinson_vle",
+        "time": "2026-08-04T10:18:34.214238",
+        "request": {
+            "message": "使用Peng-Robinson模型计算甲烷-乙烷体系VLE"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:29 GMT",
+                "server": "uvicorn",
+                "content-length": "197",
+                "content-type": "application/json",
+                "x-request-id": "a4e0b7b5-11b6-49a3-8c9f-227b0bf64a6b"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_output_error",
+                    "message": "External provider returned components inconsistent with the user message.",
+                    "details": {},
+                    "request_id": "a4e0b7b5-11b6-49a3-8c9f-227b0bf64a6b"
+                }
+            }
+        }
+    },
+    {
+        "case": "thermo_model_question",
+        "time": "2026-08-04T10:18:41.177865",
+        "request": {
+            "message": "Wilson、NRTL、UNIQUAC和Peng-Robinson模型有什么区别？"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:34 GMT",
+                "server": "uvicorn",
+                "content-length": "2276",
+                "content-type": "application/json",
+                "x-request-id": "ad5b4023-80a3-44c3-bed1-b9f09472dda2"
+            },
+            "body": {
+                "conversation_id": "3e2d3a97-e3e1-4398-a96a-9c29cf65d31b",
+                "intent": "CONCEPT_QA",
+                "answer": "⚠️ 当前知识库未包含该问题的完整信息，无法提供 Wilson、NRTL、UNIQUAC 与 Peng-Robinson 模型之间的详细区别。\n\n**补充细节：**\n1. 知识库仅涉及 VLE 基本判据（组分逸度相等）和修正拉乌尔定律 `y_i P = x_i gamma_i P_i^sat`，其中 `gamma_i` 为活度系数，但未展开任何具体活度系数模型 [来源: fundamentals/vle.md]。\n2. 工程演示案例使用的是 Ideal/Raoult 模型（`gamma_i=1`），未涉及 Wilson、NRTL、UNIQUAC 或 Peng-Robinson [来源: engineering_cases/benzene-toluene.md]。\n3. 软件映射文档仅说明外部引擎需做单位、组分顺序等转换，与模型理论区别无关 [来源: software_mappings/README.md]。\n\n根据现有信息可以推断，这些模型分属活度系数法（Wilson/NRTL/UNIQUAC）与状态方程法（Peng-Robinson），但具体差异需补充知识库内容后回答。\n\n[来源: software_mappings\\README.md、engineering_cases\\benzene-toluene.md、fundamentals\\vle.md]",
+                "statements": [
+                    {
+                        "category": "Knowledge",
+                        "text": "⚠️ 当前知识库未包含该问题的完整信息，无法提供 Wilson、NRTL、UNIQUAC 与 Peng-Robinson 模型之间的详细区别。\n\n**补充细节：**\n1. 知识库仅涉及 VLE 基本判据（组分逸度相等）和修正拉乌尔定律 `y_i P = x_i gamma_i P_i^sat`，其中 `gamma_i` 为活度系数，但未展开任何具体活度系数模型 [来源: fundamentals/vle.md]。\n2. 工程演示案例使用的是 Ideal/Raoult 模型（`gamma_i=1`），未涉及 Wilson、NRTL、UNIQUAC 或 Peng-Robinson [来源: engineering_cases/benzene-toluene.md]。\n3. 软件映射文档仅说明外部引擎需做单位、组分顺序等转换，与模型理论区别无关 [来源: software_mappings/README.md]。\n\n根据现有信息可以推断，这些模型分属活度系数法（Wilson/NRTL/UNIQUAC）与状态方程法（Peng-Robinson），但具体差异需补充知识库内容后回答。\n\n[来源: software_mappings\\README.md、engineering_cases\\benzene-toluene.md、fundamentals\\vle.md]"
+                    }
+                ],
+                "execution_steps": [],
+                "task": null,
+                "calculation": null,
+                "request_id": "ad5b4023-80a3-44c3-bed1-b9f09472dda2"
+            }
+        }
+    },
+    {
+        "case": "unsupported_activity_model",
+        "time": "2026-08-04T10:18:46.274602",
+        "request": {
+            "message": "使用NRTL模型计算苯-甲苯T-x-y"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:35 GMT",
+                "server": "uvicorn",
+                "content-length": "213",
+                "content-type": "application/json",
+                "x-request-id": "7ada7a1f-3b1e-43f2-8d92-dbf40ebd1fbc"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_provider_error",
+                    "message": "DeepSeek API request failed with status 503.",
+                    "details": {
+                        "provider": "DeepSeek",
+                        "upstream_status": 503
+                    },
+                    "request_id": "7ada7a1f-3b1e-43f2-8d92-dbf40ebd1fbc"
+                }
+            }
+        }
+    },
+    {
+        "case": "missing_pressure_parameter",
+        "time": "2026-08-04T10:18:50.706011",
+        "request": {
+            "message": "计算苯-甲苯泡点"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:46 GMT",
+                "server": "uvicorn",
+                "content-length": "1098",
+                "content-type": "application/json",
+                "x-request-id": "b0d00ed3-3ebf-4bd3-ab30-b74a223e9e61"
+            },
+            "body": {
+                "conversation_id": "17e419d6-ff0a-4201-a04d-e85d2ce022a2",
+                "intent": "EQUILIBRIUM_CALCULATION",
+                "answer": "已生成结构化任务，但缺少 liquid_composition，尚未执行计算。",
+                "statements": [
+                    {
+                        "category": "Warning",
+                        "text": "缺失必要计算条件。"
+                    }
+                ],
+                "execution_steps": [],
+                "task": {
+                    "task_id": "bubble_point_benzene_toluene",
+                    "equilibrium_type": "VLE",
+                    "calculation_type": "bubble_point",
+                    "components": [
+                        {
+                            "component_id": "benzene",
+                            "name": "Benzene",
+                            "cas_number": "71-43-2",
+                            "aliases": [
+                                "苯",
+                                "benzene"
+                            ]
+                        },
+                        {
+                            "component_id": "toluene",
+                            "name": "Toluene",
+                            "cas_number": "108-88-3",
+                            "aliases": [
+                                "甲苯",
+                                "toluene"
+                            ]
+                        }
+                    ],
+                    "conditions": {
+                        "temperature_K": null,
+                        "pressure_kPa": 101.325,
+                        "liquid_composition": null,
+                        "vapor_composition": null,
+                        "feed_composition": null
+                    },
+                    "composition_basis": "mole_fraction",
+                    "requested_outputs": [
+                        "bubble_temperature",
+                        "vapor_composition"
+                    ],
+                    "validation_requirements": [
+                        "sum_liquid_composition_1",
+                        "positive_temperature"
+                    ],
+                    "assumptions": [
+                        "ideal_liquid",
+                        "ideal_gas"
+                    ],
+                    "model_name": null,
+                    "points": 21,
+                    "original_question": "计算苯-甲苯泡点"
+                },
+                "calculation": null,
+                "request_id": "b0d00ed3-3ebf-4bd3-ab30-b74a223e9e61"
+            }
+        }
+    },
+    {
+        "case": "missing_composition_parameter",
+        "time": "2026-08-04T10:18:52.856042",
+        "request": {
+            "message": "计算苯-甲苯在101.325 kPa下的泡点"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:50 GMT",
+                "server": "uvicorn",
+                "content-length": "1011",
+                "content-type": "application/json",
+                "x-request-id": "334110f6-b3f9-4f03-a6d9-08454a519791"
+            },
+            "body": {
+                "conversation_id": "6525cf3a-2854-4439-9849-19888e3cd23e",
+                "intent": "EQUILIBRIUM_CALCULATION",
+                "answer": "已生成结构化任务，但缺少 liquid_composition，尚未执行计算。",
+                "statements": [
+                    {
+                        "category": "Warning",
+                        "text": "缺失必要计算条件。"
+                    }
+                ],
+                "execution_steps": [],
+                "task": {
+                    "task_id": "77a1b843-b52b-4fcd-b1fd-3213ec1af2ae",
+                    "equilibrium_type": "VLE",
+                    "calculation_type": "bubble_point",
+                    "components": [
+                        {
+                            "component_id": "benzene",
+                            "name": "Benzene",
+                            "cas_number": "71-43-2",
+                            "aliases": [
+                                "苯",
+                                "benzene"
+                            ]
+                        },
+                        {
+                            "component_id": "toluene",
+                            "name": "Toluene",
+                            "cas_number": "108-88-3",
+                            "aliases": [
+                                "甲苯",
+                                "toluene"
+                            ]
+                        }
+                    ],
+                    "conditions": {
+                        "temperature_K": null,
+                        "pressure_kPa": 101.325,
+                        "liquid_composition": null,
+                        "vapor_composition": null,
+                        "feed_composition": null
+                    },
+                    "composition_basis": "mole_fraction",
+                    "requested_outputs": [],
+                    "validation_requirements": [],
+                    "assumptions": [],
+                    "model_name": null,
+                    "points": 21,
+                    "original_question": "计算苯-甲苯在101.325 kPa下的泡点"
+                },
+                "calculation": null,
+                "request_id": "334110f6-b3f9-4f03-a6d9-08454a519791"
+            }
+        }
+    },
+    {
+        "case": "pressure_unit_normalization",
+        "time": "2026-08-04T10:19:03.176692",
+        "request": {
+            "message": "计算苯-甲苯在1 atm下的T-x-y曲线"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:18:52 GMT",
+                "server": "uvicorn",
+                "content-length": "14629",
+                "content-type": "application/json",
+                "x-request-id": "7236f196-94e2-4904-9ba5-cf43e60147b5"
+            },
+            "body": {
+                "conversation_id": "39a40ee6-b406-421f-bf3c-7f92cd6a71ef",
+                "intent": "EQUILIBRIUM_CALCULATION",
+                "answer": "计算完成。\n模型：Ideal/Raoult | P=101.3250 kPa | 数据点：21 个 | 验证：warning | ⚠ Benzene Antoine correlation extrapolated at 383.773 K outside 333.4-373.5 K.",
+                "statements": [
+                    {
+                        "category": "Inference",
+                        "text": "## 苯-甲苯体系在1 atm下的等压汽液平衡（VLE）结果摘要\n\n### 模型与状态\n- **计算任务**：苯-甲苯二元体系在压力101.325 kPa下的T-x-y（温度-液相组成-汽相组成）关系曲线。\n- **物性模型**：理想/拉乌尔定律模型（Raoult's law），假设液相和汽相均为理想状态。\n- **计算点数**：21个液/汽相摩尔分数节点，从纯甲苯（x_Benzene=0）到纯苯（x_Benzene=1）。\n\n### 平衡曲线信息\n- 计算得到的泡点/露点温度范围约为**353.3 K（纯苯沸点）至383.8 K（纯甲苯沸点）**。\n- 典型中间点示例：当液相中苯的摩尔分数为0.5、甲苯为0.5时，平衡温度为365.2 K，汽相中苯的摩尔分数为0.714、甲苯为0.286。这体现了苯（相对更易挥发组分）在汽相中的富集。\n- 温度随液相组成呈单调变化：液相苯含量越高，平衡温度越低。\n- 汽相中苯的摩尔分数始终高于液相中苯的摩尔分数（η），符合理想拉乌尔定律体系的正偏差特征。\n\n### 收敛性与数值精度\n- 求解器（Brentq解析求解 + Rachford-Rice闪蒸）已收敛，迭代次数203次。\n- 最大平衡残差约为1.7×10⁻¹²，平均残差约2.8×10⁻¹³，远低于设定的2×10⁻⁶容差，数值结果高度精确。\n- 物料衡算与组成归一化检查全部通过。\n\n### 重要警告（适用性限制）\n- ⚠️ **苯的Antoine饱和蒸气压关联式在5个温度点（约375.2–383.8 K）被外推使用，超出了其有效温度范围（333.4–373.5 K）。** 这主要影响液相苯含量较低（x_Benzene=0到0.2）的段，即靠近纯甲苯端的高温区间。\n- 因此，虽然曲线整体上在数学上稳健收敛，但**高温端（苯含量≤约0.2的区域）的数值包含外推误差**，在工程应用中需谨慎对待，尤其是在接近纯甲苯沸点处。\n\n### 建议\n- 若需更高可信度的结果（特别是甲苯富集端），建议改用实际状态方程（如Peng-Robinson）或包含活度系数模型的非理想方法，或补充实验数据验证外推段。当前结果适用于初步设计或教学演示，但在要求严格的工艺计算中应审核其适用性。"
+                    }
+                ],
+                "execution_steps": [
+                    {
+                        "phase": "plan",
+                        "status": "completed",
+                        "summary": "A structured task manifest was created and an allowlisted tool was selected.",
+                        "tool_name": null
+                    },
+                    {
+                        "phase": "execute",
+                        "status": "completed",
+                        "summary": "The registered deterministic phase-equilibrium tool completed.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "validate",
+                        "status": "completed",
+                        "summary": "Independent physical validation status: warning.",
+                        "tool_name": "phase_equilibrium"
+                    },
+                    {
+                        "phase": "respond",
+                        "status": "completed",
+                        "summary": "The provider interpreted only the grounded calculation and validation payload.",
+                        "tool_name": null
+                    }
+                ],
+                "task": {
+                    "task_id": "benzene-toluene-txy-1atm",
+                    "equilibrium_type": "VLE",
+                    "calculation_type": "isobaric_vle",
+                    "components": [
+                        {
+                            "component_id": "benzene",
+                            "name": "Benzene",
+                            "cas_number": "71-43-2",
+                            "aliases": [
+                                "苯",
+                                "benzene"
+                            ]
+                        },
+                        {
+                            "component_id": "toluene",
+                            "name": "Toluene",
+                            "cas_number": "108-88-3",
+                            "aliases": [
+                                "甲苯",
+                                "toluene"
+                            ]
+                        }
+                    ],
+                    "conditions": {
+                        "temperature_K": null,
+                        "pressure_kPa": 101.325,
+                        "liquid_composition": null,
+                        "vapor_composition": null,
+                        "feed_composition": null
+                    },
+                    "composition_basis": "mole_fraction",
+                    "requested_outputs": [
+                        "T-x-y curve"
+                    ],
+                    "validation_requirements": [],
+                    "assumptions": [
+                        "Ideal liquid and vapor phases",
+                        "Raoult's law applies"
+                    ],
+                    "model_name": null,
+                    "points": 21,
+                    "original_question": "计算苯-甲苯在1 atm下的T-x-y曲线"
+                },
+                "calculation": {
+                    "result": {
+                        "run_id": "b9088f79-accd-4ddc-b623-7c18f1099006",
+                        "task_id": "benzene-toluene-txy-1atm",
+                        "calculation_type": "isobaric_vle",
+                        "input_snapshot": {
+                            "task_id": "benzene-toluene-txy-1atm",
+                            "equilibrium_type": "VLE",
+                            "calculation_type": "isobaric_vle",
+                            "components": [
+                                {
+                                    "component_id": "benzene",
+                                    "name": "Benzene",
+                                    "cas_number": "71-43-2",
+                                    "aliases": [
+                                        "苯",
+                                        "benzene"
+                                    ]
+                                },
+                                {
+                                    "component_id": "toluene",
+                                    "name": "Toluene",
+                                    "cas_number": "108-88-3",
+                                    "aliases": [
+                                        "甲苯",
+                                        "toluene"
+                                    ]
+                                }
+                            ],
+                            "conditions": {
+                                "temperature_K": null,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": null,
+                                "vapor_composition": null,
+                                "feed_composition": null
+                            },
+                            "composition_basis": "mole_fraction",
+                            "requested_outputs": [
+                                "T-x-y curve"
+                            ],
+                            "validation_requirements": [],
+                            "assumptions": [
+                                "Ideal liquid and vapor phases",
+                                "Raoult's law applies",
+                                "Ideal/Raoult was selected within its reviewed low-pressure pure-property registry."
+                            ],
+                            "model_name": "Ideal/Raoult",
+                            "points": 21,
+                            "original_question": "计算苯-甲苯在1 atm下的T-x-y曲线"
+                        },
+                        "model_name": "Ideal/Raoult",
+                        "parameter_set_id": null,
+                        "points": [
+                            {
+                                "temperature_K": 383.77309382235046,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "vapor_composition": [
+                                    0.0,
+                                    1.0
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 381.42223623327055,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.05,
+                                    0.95
+                                ],
+                                "vapor_composition": [
+                                    0.11181516450072197,
+                                    0.8881848354992781
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 379.2119252548251,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.1,
+                                    0.9
+                                ],
+                                "vapor_composition": [
+                                    0.21084212200600064,
+                                    0.7891578779939993
+                                ],
+                                "equilibrium_residual": 1.4025023158353815e-16
+                            },
+                            {
+                                "temperature_K": 377.1277684129761,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.15000000000000002,
+                                    0.85
+                                ],
+                                "vapor_composition": [
+                                    0.29899178782643243,
+                                    0.7010082121735676
+                                ],
+                                "equilibrium_residual": 1.707827069992744e-12
+                            },
+                            {
+                                "temperature_K": 375.157412140538,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.2,
+                                    0.8
+                                ],
+                                "vapor_composition": [
+                                    0.3778245510801973,
+                                    0.6221754489198027
+                                ],
+                                "equilibrium_residual": 1.583074488999187e-12
+                            },
+                            {
+                                "temperature_K": 373.2901780585441,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.25,
+                                    0.75
+                                ],
+                                "vapor_composition": [
+                                    0.4486258119195355,
+                                    0.5513741880804645
+                                ],
+                                "equilibrium_residual": 2.626185586401752e-13
+                            },
+                            {
+                                "temperature_K": 371.5167766657011,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.30000000000000004,
+                                    0.7
+                                ],
+                                "vapor_composition": [
+                                    0.5124629650584415,
+                                    0.4875370349415585
+                                ],
+                                "equilibrium_residual": 3.8989564380223607e-14
+                            },
+                            {
+                                "temperature_K": 369.82907946237543,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.35000000000000003,
+                                    0.6499999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.5702289118770123,
+                                    0.4297710881229877
+                                ],
+                                "equilibrium_residual": 6.241135305467448e-15
+                            },
+                            {
+                                "temperature_K": 368.2199357646518,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.4,
+                                    0.6
+                                ],
+                                "vapor_composition": [
+                                    0.6226756560930091,
+                                    0.3773243439069909
+                                ],
+                                "equilibrium_residual": 7.7137627370945985e-16
+                            },
+                            {
+                                "temperature_K": 366.68302409421307,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.45,
+                                    0.55
+                                ],
+                                "vapor_composition": [
+                                    0.6704405078462928,
+                                    0.32955949215370717
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 365.21273060736235,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.5,
+                                    0.5
+                                ],
+                                "vapor_composition": [
+                                    0.714066714525705,
+                                    0.28593328547429503
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 363.80404887683994,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.55,
+                                    0.44999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.7540198446746943,
+                                    0.24598015532530565
+                                ],
+                                "equilibrium_residual": 7.012511579176908e-16
+                            },
+                            {
+                                "temperature_K": 362.4524966883536,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.6000000000000001,
+                                    0.3999999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.7907009038791303,
+                                    0.2092990961208698
+                                ],
+                                "equilibrium_residual": 8.415013895012289e-16
+                            },
+                            {
+                                "temperature_K": 361.1540465082021,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.65,
+                                    0.35
+                                ],
+                                "vapor_composition": [
+                                    0.8244569130110632,
+                                    0.17554308698893686
+                                ],
+                                "equilibrium_residual": 0.0
+                            },
+                            {
+                                "temperature_K": 359.9050670202698,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.7000000000000001,
+                                    0.29999999999999993
+                                ],
+                                "vapor_composition": [
+                                    0.8555894992900437,
+                                    0.14441050070995629
+                                ],
+                                "equilibrium_residual": 1.0558037433608753e-12
+                            },
+                            {
+                                "temperature_K": 358.70227369043903,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.75,
+                                    0.25
+                                ],
+                                "vapor_composition": [
+                                    0.8843619189363392,
+                                    0.11563808106366076
+                                ],
+                                "equilibrium_residual": 3.5343058359051615e-14
+                            },
+                            {
+                                "temperature_K": 357.5426867413302,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.8,
+                                    0.19999999999999996
+                                ],
+                                "vapor_composition": [
+                                    0.9110048328055397,
+                                    0.08899516719446043
+                                ],
+                                "equilibrium_residual": 5.610009263341526e-16
+                            },
+                            {
+                                "temperature_K": 356.4235952498583,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.8500000000000001,
+                                    0.1499999999999999
+                                ],
+                                "vapor_composition": [
+                                    0.9357210836802107,
+                                    0.06427891631978924
+                                ],
+                                "equilibrium_residual": 9.269137805356036e-13
+                            },
+                            {
+                                "temperature_K": 355.3425263312944,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.9,
+                                    0.09999999999999998
+                                ],
+                                "vapor_composition": [
+                                    0.9586896691144078,
+                                    0.04131033088559211
+                                ],
+                                "equilibrium_residual": 1.9438682097478387e-13
+                            },
+                            {
+                                "temperature_K": 354.2972185729684,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    0.9500000000000001,
+                                    0.04999999999999993
+                                ],
+                                "vapor_composition": [
+                                    0.9800690621060628,
+                                    0.019930937893937267
+                                ],
+                                "equilibrium_residual": 2.5245041685036866e-15
+                            },
+                            {
+                                "temperature_K": 353.28559903769155,
+                                "pressure_kPa": 101.325,
+                                "liquid_composition": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "vapor_composition": [
+                                    1.0,
+                                    0.0
+                                ],
+                                "equilibrium_residual": 1.3660372556236616e-13
+                            }
+                        ],
+                        "phases": [],
+                        "temperature_K": null,
+                        "pressure_kPa": 101.325,
+                        "vapor_fraction": null,
+                        "phase_state": "curve",
+                        "converged": true,
+                        "residual": 1.707827069992744e-12,
+                        "iterations": 203,
+                        "warnings": [
+                            "Benzene Antoine correlation extrapolated at 383.773 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 381.422 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 379.212 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.128 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.157 K outside 333.4-373.5 K."
+                        ],
+                        "backend_version": "internal-ideal-raoult/0.1.0",
+                        "solver_name": "scipy.optimize.brentq / analytical Raoult / Rachford-Rice",
+                        "failure": null,
+                        "created_at": "2026-08-04T02:18:57.173597Z"
+                    },
+                    "validation": {
+                        "overall_status": "warning",
+                        "composition_balance": {
+                            "passed": true,
+                            "metric": 1.1102230246251565e-16,
+                            "tolerance": 1e-08,
+                            "message": "All required phase compositions are present, bounded, and normalized."
+                        },
+                        "material_balance": {
+                            "passed": true,
+                            "metric": 0.0,
+                            "tolerance": 1e-07,
+                            "message": "Material balance passed."
+                        },
+                        "equilibrium_residual": {
+                            "passed": true,
+                            "metric": 1.707827069992744e-12,
+                            "tolerance": 2e-06,
+                            "message": "Equilibrium residual passed."
+                        },
+                        "convergence": {
+                            "passed": true,
+                            "metric": 1.0,
+                            "tolerance": 1.0,
+                            "message": "Solver converged."
+                        },
+                        "parameter_applicability": {
+                            "passed": false,
+                            "metric": 1.0,
+                            "tolerance": 0.0,
+                            "message": "At least one pure-property correlation was extrapolated."
+                        },
+                        "phase_stability": null,
+                        "warnings": [
+                            "Benzene Antoine correlation extrapolated at 383.773 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 381.422 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 379.212 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 377.128 K outside 333.4-373.5 K.",
+                            "Benzene Antoine correlation extrapolated at 375.157 K outside 333.4-373.5 K."
+                        ],
+                        "recommended_action": "Review warnings and applicability before engineering use.",
+                        "maximum_equilibrium_residual": 1.707827069992744e-12,
+                        "mean_equilibrium_residual": 2.83639396921565e-13,
+                        "solver_converged": true
+                    },
+                    "parameter_sources": [
+                        {
+                            "component": "Benzene",
+                            "property": "Antoine vapor pressure",
+                            "source_title": "NIST Chemistry WebBook, SRD 69",
+                            "source_identifier": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C71432&Mask=4",
+                            "temperature_range_K": "333.4-373.5"
+                        },
+                        {
+                            "component": "Toluene",
+                            "property": "Antoine vapor pressure",
+                            "source_title": "NIST Chemistry WebBook, SRD 69",
+                            "source_identifier": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C108883&Mask=4",
+                            "temperature_range_K": "308.52-384.66"
+                        }
+                    ],
+                    "model_recommendations": [
+                        {
+                            "model_name": "Ideal/Raoult",
+                            "score": 94.0,
+                            "executable": true,
+                            "reasons": [
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 15.0,
+                                "evidence_quality_score": 10.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "Wilson",
+                            "score": 57.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: Wilson requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 24.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "NRTL",
+                            "score": 47.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: NRTL requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        },
+                        {
+                            "model_name": "Peng-Robinson",
+                            "score": 47.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is cubic_eos.",
+                                "Implementation: available."
+                            ],
+                            "exclusions": [
+                                "Rejected: Peng-Robinson requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 3.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 0.0
+                            }
+                        },
+                        {
+                            "model_name": "UNIQUAC",
+                            "score": 47.0,
+                            "executable": false,
+                            "reasons": [
+                                "Required binary parameters are unavailable; execution is blocked.",
+                                "Phase support: matched.",
+                                "System fit: profile is low-pressure; model family is activity_coefficient.",
+                                "Implementation: contract_only."
+                            ],
+                            "exclusions": [
+                                "Rejected: UNIQUAC requires reviewed binary interaction parameters, but none are available."
+                            ],
+                            "breakdown": {
+                                "phase_support_score": 30.0,
+                                "system_match_score": 14.0,
+                                "condition_match_score": 15.0,
+                                "parameter_availability_score": 0.0,
+                                "evidence_quality_score": 0.0,
+                                "extrapolation_penalty": 0.0,
+                                "numerical_risk_penalty": 12.0
+                            }
+                        }
+                    ]
+                },
+                "request_id": "7236f196-94e2-4904-9ba5-cf43e60147b5"
+            }
+        }
+    },
+    {
+        "case": "temperature_unit_normalization",
+        "time": "2026-08-04T10:19:05.404168",
+        "request": {
+            "message": "计算甲烷乙烷混合物在-163摄氏度、100 kPa下TP Flash"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:19:02 GMT",
+                "server": "uvicorn",
+                "content-length": "197",
+                "content-type": "application/json",
+                "x-request-id": "c91c45b7-726a-4ba6-851e-95c1a603e098"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_output_error",
+                    "message": "External provider returned components inconsistent with the user message.",
+                    "details": {},
+                    "request_id": "c91c45b7-726a-4ba6-851e-95c1a603e098"
+                }
+            }
+        }
+    },
+    {
+        "case": "out_of_scope_task",
+        "time": "2026-08-04T10:19:06.563555",
+        "request": {
+            "message": "帮我设计一个核电站控制系统"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:19:04 GMT",
+                "server": "uvicorn",
+                "content-length": "460",
+                "content-type": "application/json",
+                "x-request-id": "631adb46-227f-4ceb-a500-2ec9040b1185"
+            },
+            "body": {
+                "conversation_id": "954fb6f0-58e7-4cda-9706-740bbeaa0f02",
+                "intent": "UNSUPPORTED_TASK",
+                "answer": "当前版本不支持电解质、聚合物、水合物、假组分、多晶型、SLE、VLLE、反应相平衡或完整精馏塔设计；未执行不适用的普通分子模型。",
+                "statements": [
+                    {
+                        "category": "Warning",
+                        "text": "任务超出 0.1 支持边界。"
+                    }
+                ],
+                "execution_steps": [],
+                "task": null,
+                "calculation": null,
+                "request_id": "631adb46-227f-4ceb-a500-2ec9040b1185"
+            }
+        }
+    },
+    {
+        "case": "non_thermo_question",
+        "time": "2026-08-04T10:19:07.289758",
+        "request": {
+            "message": "今天天气怎么样"
+        },
+        "response": {
+            "status_code": 200,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:19:05 GMT",
+                "server": "uvicorn",
+                "content-length": "460",
+                "content-type": "application/json",
+                "x-request-id": "7fa9c7d3-4eb9-402e-af17-ee1f12cde4da"
+            },
+            "body": {
+                "conversation_id": "8aa1cf37-48e7-4c7d-9153-7f7c7ff1da3f",
+                "intent": "UNSUPPORTED_TASK",
+                "answer": "当前版本不支持电解质、聚合物、水合物、假组分、多晶型、SLE、VLLE、反应相平衡或完整精馏塔设计；未执行不适用的普通分子模型。",
+                "statements": [
+                    {
+                        "category": "Warning",
+                        "text": "任务超出 0.1 支持边界。"
+                    }
+                ],
+                "execution_steps": [],
+                "task": null,
+                "calculation": null,
+                "request_id": "7fa9c7d3-4eb9-402e-af17-ee1f12cde4da"
+            }
+        }
+    },
+    {
+        "case": "export_result_request",
+        "time": "2026-08-04T10:19:09.759912",
+        "request": {
+            "message": "计算苯-甲苯T-x-y并导出CSV结果"
+        },
+        "response": {
+            "status_code": 502,
+            "response_headers": {
+                "date": "Tue, 04 Aug 2026 02:19:06 GMT",
+                "server": "uvicorn",
+                "content-length": "197",
+                "content-type": "application/json",
+                "x-request-id": "57c2129f-1c76-4afe-afa1-92c11f8186bb"
+            },
+            "body": {
+                "error": {
+                    "code": "external_llm_output_error",
+                    "message": "External provider returned components inconsistent with the user message.",
+                    "details": {},
+                    "request_id": "57c2129f-1c76-4afe-afa1-92c11f8186bb"
+                }
+            }
+        }
+    }
+]

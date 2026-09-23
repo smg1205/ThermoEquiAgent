@@ -1,0 +1,60 @@
+# ── Local-only launchers and environment config ──────────────────────────
+# run_server.py / start_server.py contain machine-specific launch settings and
+# are intentionally kept out of the published repository, as is .env.
+.env
+.env.*
+run_server.py
+start_server.py
+
+# ── Python ───────────────────────────────────────────────────────────────
+.venv/
+.venv312/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+thermoequi_agent.egg-info/
+*.db
+*.sqlite3
+
+# ── Node / frontend build output ─────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.next/
+*.tsbuildinfo
+out/
+coverage/
+*.log
+pytest-cache-files-*/
+
+# ── Editor / IDE (workspace.xml leaks local absolute paths) ──────────────
+.idea/
+.vscode/
+*.iml
+
+# ── Runtime scratch directories (auto-created by tests and the agent) ────
+.tmp/
+.tmp-*/
+tmp*/
+tfchat_*/
+e2e_tf_*/
+
+# ── Private ML weights: third-party/private checkpoints ──────────────────
+# Members place their own .pth here or point PGSSI_CHECKPOINT elsewhere.
+weights/
+.pgssi-cache/
+*.pth
+*.ckpt
+
+# ── Explicit re-includes (negations MUST come last to take effect) ───────
+# Safe, credential-free configuration template: required for onboarding.
+!.env.example
+# Research weights that ship with the repository (see *.pt note above).
+!lab_models/**/*.pt
+!.thermoformer-cache/
+lab_models/

@@ -1,0 +1,80 @@
+{
+  "case1_binary_ipa_water": {
+    "x_ipa=0.3": {
+      "unifac": {
+        "alpha": 2.7134,
+        "N": 19,
+        "N_min": 10.069,
+        "R": 2.694,
+        "R_min": 1.924,
+        "feed_stage": 9,
+        "T_cond_K": 355.26,
+        "T_reb_K": 367.46
+      },
+      "thermoformer": {
+        "alpha": 1.9097,
+        "N": 28,
+        "N_min": 15.535,
+        "R": 5.083,
+        "R_min": 3.631,
+        "feed_stage": 13,
+        "T_cond_K": 387.22,
+        "T_reb_K": 400.22
+      }
+    },
+    "x_ipa=0.5": {
+      "unifac": {
+        "alpha": 1.4623,
+        "N": 42,
+        "N_min": 24.213,
+        "R": 5.983,
+        "R_min": 4.273,
+        "feed_stage": 19,
+        "T_cond_K": 355.26,
+        "T_reb_K": 362.99
+      },
+      "thermoformer": {
+        "alpha": 1.2244,
+        "N": 77,
+        "N_min": 45.453,
+        "R": 12.341,
+        "R_min": 8.815,
+        "feed_stage": 35,
+        "T_cond_K": 387.22,
+        "T_reb_K": 396.95
+      }
+    }
+  },
+  "case2_extractive_eac_npac_dmso": {
+    "unifac": {
+      "alpha_base": 2.1872,
+      "alpha_ext": 1.7611,
+      "selectivity": 0.8052,
+      "alpha_avg": 1.9626,
+      "N": 20,
+      "N_min": 10.154,
+      "R": 2.478,
+      "R_min": 1.77,
+      "feed_stage": 9,
+      "entrainer_stage": 2,
+      "T_cond_K": 351.08,
+      "T_reb_K": 396.5,
+      "T_feed_K": 360.13
+    },
+    "thermoformer": {
+      "alpha_base": 1.3446,
+      "alpha_ext": 0.8223,
+      "selectivity": 0.6116,
+      "alpha_avg": 1.0515,
+      "N": 223,
+      "N_min": 136.345,
+      "R": 48.792,
+      "R_min": 34.852,
+      "feed_stage": 100,
+      "entrainer_stage": 2,
+      "T_cond_K": 361.62,
+      "T_reb_K": 374.12,
+      "T_feed_K": 366.49
+    }
+  }
+}

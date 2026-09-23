@@ -1,0 +1,13 @@
+case,light,heavy,entrainer,alpha_source,alpha,alpha_base,alpha_ext,selectivity,alpha_avg,N,N_min,R,R_min,feed_stage,entrainer_stage,T_cond_K,T_reb_K,T_feed_K,note
+binary,water,toluene,,unifac,1.9237,,,,,16,7.945,2.588,1.849,7,,282.47,324.27,,萃取: 1-丁醇(最高沸)
+binary,water,toluene,,thermoformer,2.3501,,,,,13,6.084,1.726,1.233,6,,325.63,327.78,,萃取: 1-丁醇(最高沸)
+extractive,water,toluene,1-butanol,unifac,,1.9237,1.4364,0.7467,1.6623,25,13.473,3.665,2.618,11,2,282.47,378.73,338.97,萃取: 1-丁醇(最高沸)
+extractive,water,toluene,1-butanol,thermoformer,,2.3501,1.9256,0.8193,2.1273,18,9.071,2.095,1.497,8,2,325.63,381.28,327.09,萃取: 1-丁醇(最高沸)
+binary,water,1-butanol,,unifac,2.9567,,,,,11,4.795,1.148,0.82,5,,365.43,379.65,,"萃取: 甲苯(中间沸, 仅参考)"
+binary,water,1-butanol,,thermoformer,4.118,,,,,9,3.673,0.668,0.477,4,,351.76,387.07,,"萃取: 甲苯(中间沸, 仅参考)"
+extractive,water,1-butanol,toluene,unifac,,2.9567,39.5793,13.3864,10.8177,10,2.875,0.117,0.083,4,2,365.43,356.9,366.56,"萃取: 甲苯(中间沸, 仅参考)"
+extractive,water,1-butanol,toluene,thermoformer,,4.118,18.1443,4.4061,8.644,10,3.174,0.19,0.135,4,2,351.76,362.75,354.48,"萃取: 甲苯(中间沸, 仅参考)"
+binary,toluene,1-butanol,,unifac,1.4875,,,,,24,13.091,5.029,3.592,11,,381.06,385.98,,"萃取: 水(最低沸, 不物理)"
+binary,toluene,1-butanol,,thermoformer,1.547,,,,,22,11.915,4.467,3.191,10,,379.34,391.49,,"萃取: 水(最低沸, 不物理)"
+extractive,toluene,1-butanol,water,unifac,,1.4875,32.1566,21.6177,6.9162,11,3.541,0.286,0.204,5,2,381.06,348.67,378.49,"萃取: 水(最低沸, 不物理)"
+extractive,toluene,1-butanol,water,thermoformer,,1.547,6.8929,4.4558,3.2654,13,5.786,0.972,0.695,6,2,379.34,342.36,379.46,"萃取: 水(最低沸, 不物理)"

@@ -1,0 +1,18 @@
+﻿=== normal boiling points (UNIFAC, ~pure) ===
+  acetonitrile      354.56 K ( 81.41 C)
+  tetrahydrofuran   339.13 K ( 65.98 C)
+  toluene           374.15 K (101.00 C)
+  literature: acetonitrile 354.75 K, THF 339.1 K, toluene 383.78 K
+
+=== binary key pair: tetrahydrofuran (light) / toluene (heavy) ===
+  [unifac      ] alpha=4.1610 N=9 Nmin=3.646 R=0.6570 Rmin=0.4690 feed=4 Tcond=340.18 Treb=374.26
+  [thermoformer] alpha=2.6910 N=12 Nmin=5.252 R=1.3500 Rmin=0.9640 feed=5 Tcond=368.25 Treb=401.17
+
+=== extractive: THF/toluene + acetonitrile as entrainer ===
+  [unifac      ] a_base=4.161 a_ext=2.8011 sel=0.6732 a_avg=3.414 N=13 Nmin=5.576 R=0.904 Rmin=0.646 feed=6 ent=2 Tcond=340.18 Treb=352.8 Tfeed=352.06
+  [thermoformer] a_base=2.691 a_ext=1.1483 sel=0.4267 a_avg=1.7578 N=23 Nmin=12.138 R=3.185 Rmin=2.275 feed=10 ent=2 Tcond=368.25 Treb=365.24 Tfeed=381.35
+
+=== sensitivity: does the design agreement hold at other purity/recovery? ===
+  purity=0.95 recovery=0.9:  UNIFAC N=9 R=0.657 a=4.161 | TF N=12 R=1.350 a=2.691 | Nratio=1.33
+  purity=0.99 recovery=0.95:  UNIFAC N=12 R=0.840 a=4.161 | TF N=16 R=1.595 a=2.691 | Nratio=1.33
+  purity=0.995 recovery=0.98:  UNIFAC N=15 R=0.863 a=4.161 | TF N=19 R=1.625 a=2.691 | Nratio=1.27

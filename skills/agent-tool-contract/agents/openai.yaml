@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Tool Contract"
+  short_description: "Keep LLM and solver responsibilities separate"
+  default_prompt: "Use $agent-tool-contract to design or review agent-to-solver tool boundaries."

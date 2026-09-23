@@ -1,0 +1,57 @@
+{
+  "system": "n-heptane / n-nonane",
+  "experimental_source": "NIST ThermoML DOI 10.1016/j.fluid.2013.05.016",
+  "mode": "direct binary VLE distillation; no extraction solvent",
+  "property_package": "DWSIM UNIQUAC",
+  "pressure_kPa": 101.325,
+  "feed": {
+    "flow_mol_s": 1.0,
+    "x_heptane": 0.466
+  },
+  "product_targets": {
+    "distillate_heptane_mole_fraction": 0.995,
+    "heptane_recovery_to_distillate": 0.98
+  },
+  "dwsim_bubble_vle": {
+    "feed": {
+      "temperature_K": 390.8102789509595,
+      "vapor_composition": [
+        0.7890212108114167,
+        0.2109787891885833
+      ],
+      "relative_volatility": 4.285536743475193
+    },
+    "distillate_target": {
+      "x_heptane": 0.995,
+      "temperature_K": 371.42937011592437,
+      "vapor_composition": [
+        0.9989326603790724,
+        0.0010673396209277025
+      ]
+    },
+    "bottoms_target": {
+      "x_heptane": 0.017226556694902653,
+      "temperature_K": 422.40630066066433,
+      "vapor_composition": [
+        0.06169379691321898,
+        0.938306203086781
+      ]
+    }
+  },
+  "shortcut_column_design": {
+    "theoretical_stages": 15,
+    "minimum_stages": 6.416,
+    "feed_stage": 7,
+    "minimum_reflux_ratio": 0.638,
+    "reflux_ratio": 0.893,
+    "distillate_flow_mol_s": 0.458975,
+    "bottoms_flow_mol_s": 0.541025,
+    "assumptions": [
+      "non-extractive binary distillation (Fenske/Underwood/Gilliland-Eduljee)",
+      "feed component ordering: heptane overhead-concentrated, nonane bottoms-concentrated",
+      "operating reflux ratio = 1.4 x minimum reflux ratio",
+      "total condenser",
+      "relative volatility supplied by an external VLE calculation"
+    ]
+  }
+}

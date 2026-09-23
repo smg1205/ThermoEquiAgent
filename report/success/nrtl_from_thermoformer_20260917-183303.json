@@ -1,0 +1,32 @@
+{
+  "system": "1-butanol / water",
+  "temperature_K": 298.15,
+  "pressure_kPa": 101.325,
+  "thermoformer": {
+    "lle_light_x1": 0.5089730952867386,
+    "lle_heavy_x1": 0.038830330963267726,
+    "gamma_infinity": {
+      "0->1": 9.45527458190918,
+      "1->0": 2.151214838027954
+    },
+    "curve_points_used": 9,
+    "curve_points_excluded_in_two_phase_window": 10
+  },
+  "fit": {
+    "A12_cal_per_mol": 11950.286806883363,
+    "A21_cal_per_mol": 1390.2158480637643,
+    "alpha12": 0.20061581846796286,
+    "rms": 1.1913687595084181,
+    "equations": 22,
+    "unique": true,
+    "spread_A12_cal": 0.0,
+    "spread_A21_cal": 2.2260909396583147e-05,
+    "spread_alpha": 3.0531025110283922e-09
+  },
+  "cross_validation": {
+    "nrtl_light_x1": NaN,
+    "nrtl_heavy_x1": NaN,
+    "max_relative_gamma_error": 0.7994013845233608
+  },
+  "generated_at": "2026-09-17T18:33:03.577923"
+}

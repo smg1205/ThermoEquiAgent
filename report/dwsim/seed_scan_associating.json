@@ -1,0 +1,32 @@
+{
+  "seed_0": {
+    "n_assoc": 249,
+    "mae_assoc": 0.1338,
+    "n_other": 45,
+    "mae_other": 0.195
+  },
+  "seed_1": {
+    "n_assoc": 249,
+    "mae_assoc": 0.1428,
+    "n_other": 45,
+    "mae_other": 0.1993
+  },
+  "seed_2": {
+    "n_assoc": 249,
+    "mae_assoc": 0.1642,
+    "n_other": 45,
+    "mae_other": 0.2065
+  },
+  "seed_3": {
+    "n_assoc": 249,
+    "mae_assoc": 0.1608,
+    "n_other": 45,
+    "mae_other": 0.2147
+  },
+  "seed_4": {
+    "n_assoc": 249,
+    "mae_assoc": 0.1296,
+    "n_other": 45,
+    "mae_other": 0.1861
+  }
+}

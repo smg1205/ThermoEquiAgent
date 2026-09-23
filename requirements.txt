@@ -1,0 +1,43 @@
+# ThermoEqui Agent / ThermoFormer integration (Python >= 3.11)
+#
+# Install with:
+#   python -m pip install -r requirements.txt
+#
+# This file mirrors the runtime dependencies and optional feature groups declared
+# in pyproject.toml. DWSIM itself and a compatible .NET runtime must be installed
+# separately on Windows; pythonnet is only the Python bridge.
+
+# Core API and thermodynamic engine
+python-dotenv==1.0.1
+fastapi==0.115.6
+httpx==0.28.1
+langgraph==1.2.9
+numpy==2.1.3
+pydantic==2.10.3
+PyYAML==6.0.2
+scipy==1.15.3
+SQLAlchemy==2.0.39
+thermo==0.6.1
+uvicorn[standard]==0.34.0
+sentence-transformers>=2.2.0
+
+# Optional phase-equilibrium engines
+phasepy==0.0.56
+pyclapeyron==0.1.1
+
+# DWSIM automation bridge (Windows/.NET)
+pythonnet>=3.0.3
+
+# ThermoFormer integration
+torch>=2.1,<3
+rdkit>=2024.3,<2026
+unimol-tools>=0.1.4.post1
+scikit-learn>=1.6,<2
+openpyxl>=3.1
+
+# Development and test tooling
+mypy==1.14.1
+pytest==8.3.4
+pytest-asyncio==0.25.2
+pytest-cov==6.0.0
+ruff==0.9.3

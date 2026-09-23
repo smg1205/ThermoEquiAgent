@@ -1,0 +1,9 @@
+quantity,unifac,thermoformer
+alpha,1.4623,1.2244
+N,42,77
+N_min,24.213,45.453
+R,5.983,12.341
+R_min,4.273,8.815
+feed_stage,19,35
+condenser_T_K,355.26,387.22
+reboiler_T_K,362.99,396.95

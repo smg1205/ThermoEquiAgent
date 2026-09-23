@@ -1,0 +1,8 @@
+unsupported_systems: [electrolyte, reactive, SLE, polymer, hydrate, petroleum_pseudocomponent, VLLE]
+hard_rules:
+  - if: equilibrium_type == LLE
+    exclude: Wilson
+  - if: is_electrolyte
+    reject: electrolyte_not_supported
+  - if: requires_binary_parameters and not parameters_available
+    executable: false

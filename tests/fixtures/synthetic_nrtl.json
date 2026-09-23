@@ -1,0 +1,16 @@
+{
+  "parameter_set_id": "synthetic-nrtl-a-b",
+  "model_name": "NRTL",
+  "component_order": ["synthetic-a", "synthetic-b"],
+  "parameters": {"tau12": 1.2, "tau21": -0.4, "alpha": 0.3},
+  "parameter_form": "dimensionless synthetic algorithm fixture",
+  "units": {"tau12": "dimensionless", "tau21": "dimensionless", "alpha": "dimensionless"},
+  "temperature_range_K": [280.0, 380.0],
+  "pressure_range_kPa": [50.0, 200.0],
+  "equilibrium_types": ["VLE"],
+  "source_title": null,
+  "source_identifier": null,
+  "source_type": "test_fixture",
+  "quality_level": "synthetic",
+  "notes": "Synthetic values for software tests only; not engineering evidence."
+}

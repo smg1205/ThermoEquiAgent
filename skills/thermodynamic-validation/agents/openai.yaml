@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thermodynamic Validation"
+  short_description: "Validate equilibrium results physically"
+  default_prompt: "Use $thermodynamic-validation to audit a calculation result for physical validity."

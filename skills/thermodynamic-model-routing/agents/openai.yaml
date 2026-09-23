@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thermodynamic Model Routing"
+  short_description: "Route phase-equilibrium models with evidence"
+  default_prompt: "Use $thermodynamic-model-routing to select and justify an equilibrium model."

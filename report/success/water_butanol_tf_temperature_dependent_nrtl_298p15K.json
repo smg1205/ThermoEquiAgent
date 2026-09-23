@@ -1,0 +1,136 @@
+{
+  "status": "generated_flash_validation_failed",
+  "method": "ThermoFormer binary RK gE/RT -> temperature-dependent NRTL -> DWSIM Vessel LLE flash",
+  "scope": {
+    "components": [
+      "1-butanol",
+      "Water"
+    ],
+    "pressure_kPa": 101.325,
+    "sampled_temperature_K": [
+      298.15,
+      313.15,
+      343.15,
+      353.15
+    ],
+    "do_not_extrapolate_outside_sampled_temperature_range": true
+  },
+  "fit_coordinates": {
+    "E12_at_Tref_cal_per_mol": -5437.587041904374,
+    "E21_at_Tref_cal_per_mol": 10198.226575403103,
+    "Tref_K": 326.9,
+    "dE12_dT_cal_per_mol_K": -31.10278939454313,
+    "dE21_dT_cal_per_mol_K": 57.26438077012498,
+    "alpha12": 0.05000000000000001
+  },
+  "validation": [
+    {
+      "temperature_K": 298.15,
+      "tf_endpoints": [
+        0.038830330963267636,
+        0.5089730952867382
+      ],
+      "nrtl_endpoints": [
+        0.018570264812420217,
+        0.37916898391725906
+      ],
+      "ln_gamma_rmse": 0.30283513843503385
+    },
+    {
+      "temperature_K": 313.15,
+      "tf_endpoints": [
+        0.042337138638672236,
+        0.48332590295920863
+      ],
+      "nrtl_endpoints": [
+        0.016892755221407717,
+        0.35591524436078015
+      ],
+      "ln_gamma_rmse": 0.32075799028165963
+    },
+    {
+      "temperature_K": 343.15,
+      "tf_endpoints": [
+        0.05023627216512594,
+        0.43295345171025434
+      ],
+      "nrtl_endpoints": [
+        0.014516641006319494,
+        0.3180252835032151
+      ],
+      "ln_gamma_rmse": 0.3692064354151775
+    },
+    {
+      "temperature_K": 353.15,
+      "tf_endpoints": [
+        0.053147719229946905,
+        0.4165820106905788
+      ],
+      "nrtl_endpoints": [
+        0.013919016772980037,
+        0.30748593429750576
+      ],
+      "ln_gamma_rmse": 0.3878081630362653
+    }
+  ],
+  "dwsim_export": {
+    "file": "water_butanol_tf_temperature_dependent_nrtl_298p15K.dwxmz",
+    "temperature_K": 298.15,
+    "feed": [
+      0.3,
+      0.7
+    ],
+    "bips": {
+      "A12_cal_per_mol": 4729.914811171774,
+      "A21_cal_per_mol": -8521.499498350753,
+      "B12_cal_per_mol_K": -31.10278939454313,
+      "B21_cal_per_mol_K": 57.26438077012498,
+      "C12_cal_per_mol_K2": 0.0,
+      "C21_cal_per_mol_K2": 0.0,
+      "alpha12": 0.05000000000000001
+    },
+    "dwsim_gamma_readback_at_feed": [
+      0.8473707870476097,
+      1.4880477768181843
+    ],
+    "direct_tp_flash_raw": [
+      "0.4575565414120033",
+      "0.0",
+      "[0.3011323, 0.6988677]",
+      "[0, 0]",
+      "0",
+      "0.5424434585879967",
+      "[0.29904489, 0.70095511]",
+      "0.0",
+      "[0, 0]",
+      "[0.15553589, 0.031422846]",
+      "[0.0091680424, 0.020356571]"
+    ],
+    "flash_algorithm": "NestedLoops3PV3 / VLLE with phase-stability switches",
+    "dwsim": {
+      "light": {
+        "flow_mol_s": 0.4575564986883757,
+        "composition": [
+          0.30113230220329207,
+          0.6988676977967079
+        ]
+      },
+      "heavy": {
+        "flow_mol_s": 0.5424435013116241,
+        "composition": [
+          0.29904489180837696,
+          0.700955108191623
+        ]
+      },
+      "composition_L1_distance": 0.004174820789830225,
+      "separated": false,
+      "errors": []
+    },
+    "expected_nrtl_gamma_at_feed": [
+      0.8454996630868514,
+      1.4879764951294097
+    ]
+  },
+  "checkpoint": "models\\lle\\prediction\\binary-system\\seed_0\\best.pt",
+  "generated_at": "2026-09-17T20:18:12.379672"
+}

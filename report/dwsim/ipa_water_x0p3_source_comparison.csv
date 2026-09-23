@@ -1,0 +1,11 @@
+quantity,unifac,thermoformer
+relative_volatility,2.7134,1.9097
+theoretical_stages,19,28
+minimum_stages,10.069,15.535
+reflux_ratio,2.694,5.083
+minimum_reflux_ratio,1.924,3.631
+feed_stage,9,13
+condenser_temperature_K,355.26,387.22
+reboiler_temperature_K,367.46,400.22
+distillate_flow_mol_s,0.295477,0.295477
+bottoms_flow_mol_s,0.704523,0.704523

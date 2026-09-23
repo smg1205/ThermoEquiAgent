@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Equilibrium Architecture"
+  short_description: "Design safe phase-equilibrium service boundaries"
+  default_prompt: "Use $phase-equilibrium-architecture to design or review the ThermoEqui-Agent architecture."

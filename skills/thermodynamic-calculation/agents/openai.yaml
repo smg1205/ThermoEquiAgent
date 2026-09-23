@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thermodynamic Calculation"
+  short_description: "Implement deterministic equilibrium calculations"
+  default_prompt: "Use $thermodynamic-calculation to implement or run a deterministic equilibrium calculation."

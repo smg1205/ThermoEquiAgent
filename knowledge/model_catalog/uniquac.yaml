@@ -1,0 +1,53 @@
+name: UNIQUAC
+aliases:
+  - uniquac
+family: activity_coefficient
+backend: internal
+implementation_status: available
+production_ready: true
+supported_equilibrium_types:
+  - VLE
+  - FLASH
+supported_calculation_types:
+  - bubble_point
+  - dew_point
+  - isobaric_vle
+  - isothermal_vle
+  - tp_flash
+  - phase_stability
+  - azeotrope
+excluded_systems:
+  - electrolyte_without_extension
+  - LLE
+  - reactive
+  - SLE
+  - polymer
+  - hydrate
+  - petroleum_pseudocomponent
+  - VLLE
+pressure_regime:
+  - low
+  - moderate
+requires_binary_parameters: true
+parameter_requirements:
+  - Reviewed UNIQUAC binary interaction parameters are required
+  - Parameters must be supplied on the request or seeded from knowledge/parameters
+validation_requirements:
+  - composition_balance
+  - equilibrium_residual
+  - phase_stability
+  - parameter_applicability
+scope_notes:
+  - Applicable to low- to moderate-pressure non-ideal VLE and flash-style calculations when reviewed UNIQUAC parameters are available.
+  - The current shared activity-coefficient backend does not provide executable LLE support in this codebase.
+  - ChemSep-reviewed binary parameters for ethanol/water and ethanol/benzene are benchmarked against experimental isobaric VLE data in knowledge/benchmarks.
+  - The UNIQUAC benchmark excludes pure endpoints because combinatorial terms are undefined at x=0/1 in the current backend.
+  - Additional legacy DECHEMA parameter sets remain available but are not yet production-validated.
+optional_dependency:
+source_refs:
+  - knowledge/model_cards/uniquac.yaml
+  - thermo_engine/registry.py
+  - thermo_engine/uniquac_backend.py
+  - thermo_engine/_actcoeff_base.py
+  - thermo_engine/parameter_store.py
+  - knowledge/parameters/uniquac.yaml

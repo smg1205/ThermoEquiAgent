@@ -1,0 +1,305 @@
+﻿{
+  "isothermal_ternary_equimolar": [
+    {
+      "T": 330.0,
+      "P_TF": 5.8562,
+      "y_TF": [
+        0.2892,
+        0.4251,
+        0.2858
+      ],
+      "P_UNIFAC": 26.929,
+      "y_UNIFAC": [
+        0.3035,
+        0.6837,
+        0.0128
+      ],
+      "residual_kpa": 0.0117,
+      "err": null
+    },
+    {
+      "T": 340.0,
+      "P_TF": 9.6141,
+      "y_TF": [
+        0.2887,
+        0.4203,
+        0.2911
+      ],
+      "P_UNIFAC": 39.2644,
+      "y_UNIFAC": [
+        0.3105,
+        0.6746,
+        0.015
+      ],
+      "residual_kpa": 0.0124,
+      "err": null
+    },
+    {
+      "T": 350.0,
+      "P_TF": 15.1505,
+      "y_TF": [
+        0.2877,
+        0.4165,
+        0.2957
+      ],
+      "P_UNIFAC": 55.8091,
+      "y_UNIFAC": [
+        0.3167,
+        0.6659,
+        0.0174
+      ],
+      "residual_kpa": 0.011,
+      "err": null
+    },
+    {
+      "T": 360.0,
+      "P_TF": 22.8611,
+      "y_TF": [
+        0.2868,
+        0.4137,
+        0.2995
+      ],
+      "P_UNIFAC": 77.521,
+      "y_UNIFAC": [
+        0.3223,
+        0.6576,
+        0.02
+      ],
+      "residual_kpa": 0.0083,
+      "err": null
+    },
+    {
+      "T": 370.0,
+      "P_TF": 33.1176,
+      "y_TF": [
+        0.2861,
+        0.4114,
+        0.3025
+      ],
+      "P_UNIFAC": 105.4635,
+      "y_UNIFAC": [
+        0.3274,
+        0.6498,
+        0.0229
+      ],
+      "residual_kpa": 0.0056,
+      "err": null
+    }
+  ],
+  "isobaric_ternary": [
+    {
+      "x": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "T_TF": 407.9483,
+      "y_TF": [
+        0.2721,
+        0.3866,
+        0.3413
+      ],
+      "T_UNIFAC": 370.2632,
+      "residual_kpa": 0.0004,
+      "err": null
+    },
+    {
+      "x": [
+        0.3333,
+        0.3333,
+        0.3333
+      ],
+      "T_TF": 407.6139,
+      "y_TF": [
+        0.2857,
+        0.4048,
+        0.3095
+      ],
+      "T_UNIFAC": 368.6627,
+      "residual_kpa": 0.0003,
+      "err": null
+    },
+    {
+      "x": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "T_TF": 408.9469,
+      "y_TF": [
+        0.2512,
+        0.3593,
+        0.3895
+      ],
+      "T_UNIFAC": 372.889,
+      "residual_kpa": 0.0005,
+      "err": null
+    },
+    {
+      "x": [
+        0.2,
+        0.2,
+        0.6
+      ],
+      "T_TF": 410.6923,
+      "y_TF": [
+        0.2267,
+        0.3279,
+        0.4454
+      ],
+      "T_UNIFAC": 376.1739,
+      "residual_kpa": 0.0007,
+      "err": null
+    },
+    {
+      "x": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "T_TF": 417.8955,
+      "y_TF": [
+        0.1522,
+        0.2272,
+        0.6206
+      ],
+      "T_UNIFAC": 389.0181,
+      "residual_kpa": 0.0,
+      "err": null
+    }
+  ],
+  "isothermal_binary_ea_nproac": [
+    {
+      "T": 340.0,
+      "P_TF": 11.4272,
+      "y_TF": [
+        0.5968,
+        0.4032
+      ],
+      "P_UNIFAC": 51.137,
+      "y_UNIFAC": [
+        0.7003,
+        0.2997
+      ],
+      "err": null
+    },
+    {
+      "T": 350.0,
+      "P_TF": 16.2721,
+      "y_TF": [
+        0.595,
+        0.405
+      ],
+      "P_UNIFAC": 72.6791,
+      "y_UNIFAC": [
+        0.6931,
+        0.3069
+      ],
+      "err": null
+    },
+    {
+      "T": 360.0,
+      "P_TF": 22.6202,
+      "y_TF": [
+        0.5935,
+        0.4065
+      ],
+      "P_UNIFAC": 100.9173,
+      "y_UNIFAC": [
+        0.6863,
+        0.3137
+      ],
+      "err": null
+    },
+    {
+      "T": 370.0,
+      "P_TF": 30.7427,
+      "y_TF": [
+        0.5922,
+        0.4078
+      ],
+      "P_UNIFAC": 137.2038,
+      "y_UNIFAC": [
+        0.68,
+        0.32
+      ],
+      "err": null
+    }
+  ],
+  "binary_column": {
+    "unifac": {
+      "relative_volatility": 2.1872,
+      "minimum_stages": 11.756,
+      "minimum_reflux_ratio": 1.658,
+      "reflux_ratio": 2.321,
+      "theoretical_stages": 23,
+      "feed_stage": 10,
+      "condenser_temperature_K": 350.31,
+      "reboiler_temperature_K": 373.93
+    },
+    "thermoformer": {
+      "relative_volatility": 1.4204,
+      "minimum_stages": 26.217,
+      "minimum_reflux_ratio": 4.7,
+      "reflux_ratio": 6.58,
+      "theoretical_stages": 46,
+      "feed_stage": 21,
+      "condenser_temperature_K": 403.22,
+      "reboiler_temperature_K": 426.38
+    }
+  },
+  "extractive_column": {
+    "unifac": {
+      "light": "ethyl acetate",
+      "heavy": "propyl acetate",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 360.13,
+      "alpha_source": "unifac",
+      "alpha_base": 2.1872,
+      "alpha_ext": 1.7611,
+      "selectivity": 0.8052,
+      "alpha_avg": 1.9626,
+      "minimum_stages": 16.037,
+      "minimum_reflux_ratio": 2.047,
+      "reflux_ratio": 2.866,
+      "theoretical_stages": 30,
+      "feed_stage": 13,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 350.31,
+      "reboiler_temperature_K": 398.75,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.995,
+      "distillate_flow_mol_s": 0.492462,
+      "bottoms_flow_mol_s": 2.507538,
+      "warnings": [
+        "activity coefficients from UNIFAC temperature-dependent prediction"
+      ]
+    },
+    "thermoformer": {
+      "light": "ethyl acetate",
+      "heavy": "propyl acetate",
+      "entrainer": "dimethyl sulfoxide",
+      "feed_temperature_K": 416.99,
+      "alpha_source": "thermoformer",
+      "alpha_base": 1.4204,
+      "alpha_ext": 1.4942,
+      "selectivity": 1.052,
+      "alpha_avg": 1.4568,
+      "minimum_stages": 28.739,
+      "minimum_reflux_ratio": 4.324,
+      "reflux_ratio": 6.054,
+      "theoretical_stages": 50,
+      "feed_stage": 22,
+      "entrainer_stage": 2,
+      "condenser_temperature_K": 403.22,
+      "reboiler_temperature_K": 421.73,
+      "operating_pressure_kPa": 101.325,
+      "distillate_purity_mole_fraction": 0.995,
+      "distillate_flow_mol_s": 0.492462,
+      "bottoms_flow_mol_s": 2.507538,
+      "warnings": [
+        "ThermoFormer is a predictive ML backend; results are approximate and unvalidated for this system."
+      ]
+    }
+  }
+}

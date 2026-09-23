@@ -1,0 +1,13 @@
+﻿=== binary relative volatility at equimolar feed (alpha_ij = i over j) ===
+       water / 1-butanol  T_feed= 366.56 K   UNIFAC=2.956773706342963   TF=0.941041940984614
+   1-butanol / water      T_feed= 366.56 K   UNIFAC=0.3382064707403103   TF=1.0626518930215778
+     toluene / 1-butanol  T_feed= 378.48 K   UNIFAC=1.4876229500547724   TF=0.7140544113575459
+   1-butanol / toluene    T_feed= 378.48 K   UNIFAC=0.6722133454335176   TF=1.4004535005936314
+     toluene / water      T_feed= 338.96 K   UNIFAC=0.5198402079837426   TF=0.845321333893841
+       water / toluene    T_feed= 338.96 K   UNIFAC=1.9236680515318536   TF=1.1829819380965976
+
+=== ternary relative volatility of the key pair at solvent-rich points ===
+  key=1-butanol/toluene    ent=water    xs=[0.1, 0.1, 0.8]  UNIFAC=0.031094878804133853  TF=0.42908595293854884
+  key=1-butanol/toluene    ent=water    xs=[0.25, 0.25, 0.5]  UNIFAC=0.1288260198812351  TF=0.5135053357372305
+  key=1-butanol/water      ent=toluene  xs=[0.1, 0.1, 0.8]  UNIFAC=0.0252647199445772  TF=0.16043754004093047
+  key=1-butanol/water      ent=toluene  xs=[0.25, 0.25, 0.5]  UNIFAC=0.06436417314252488  TF=0.2446847222620968

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Equilibrium Evals"
+  short_description: "Evaluate agent and thermodynamic behavior"
+  default_prompt: "Use $phase-equilibrium-evals to add or run behavioral evaluations for ThermoEqui-Agent."

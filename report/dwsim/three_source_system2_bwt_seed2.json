@@ -1,0 +1,27 @@
+{
+  "checkpoint": "seed_2",
+  "n_points": 43,
+  "tf_max_err": [
+    0.0388,
+    0.0376,
+    0.0688
+  ],
+  "dwsim_max_err": [
+    0.1183,
+    0.1089,
+    0.3145
+  ],
+  "per_species_mae_tf": {
+    "1-butanol": 0.0255,
+    "water": 0.0272,
+    "toluene": 0.025
+  },
+  "per_species_mae_dwsim": {
+    "1-butanol": 0.1066,
+    "water": 0.0853,
+    "toluene": 0.0448
+  },
+  "dT_mean": 5.2,
+  "dT_min": -0.45,
+  "dT_max": 12.45
+}
