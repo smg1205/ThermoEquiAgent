@@ -124,6 +124,10 @@ three-source bubble-point comparison against NIST ThermoML data, the column desi
 DWSIM export, and the exact prompts to reproduce it from the workbench. It is the
 recommended first case to run, because it needs no entrainer selection.
 
+A screen recording of the full run is in
+[`demo_video/heptane-nonane-dwsim-demo.mp4`](demo_video/heptane-nonane-dwsim-demo.mp4)
+(3.8 MB).
+
 ## Layout
 
 | Path | Contents |
@@ -139,6 +143,7 @@ recommended first case to run, because it needs no entrainer selection.
 | `database/` | Persistence models and sessions |
 | `lab_models/` | ThermoFormer source, configs, datasets, weights |
 | `scripts/` | Reproduction entry points |
+| `demo_video/` | Screen recordings of the workbench |
 | `tests/`, `evals/` | Behavioural tests and agent evaluations |
 | `docs/` | Architecture, DWSIM and methodology documentation |
 

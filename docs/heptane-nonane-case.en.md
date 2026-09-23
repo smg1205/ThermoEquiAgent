@@ -103,6 +103,13 @@ heptane 0.466, nonane 0.534, export the DWSIM distillation file
 Both prompts produce the same result: a short-cut design plus a downloadable `.dwxmz`
 file.
 
+### Recorded walkthrough
+
+A screen recording of the whole run — typing the prompt, the agent response, the design
+output and opening the exported file in DWSIM — is at
+[`demo_video/heptane-nonane-dwsim-demo.mp4`](../demo_video/heptane-nonane-dwsim-demo.mp4)
+(3.8 MB, MP4).
+
 ### Why both parts matter
 
 The router requires **two independent things** to fire the DWSIM export path:

@@ -104,6 +104,10 @@ LLM 解释：**图谱提供事实，LLM 只负责措辞**。
 塔设计、DWSIM 导出，以及从工作台复现该案例的准确输入语句。它是**推荐的首次运行对象**，
 因为无需萃取剂筛选。
 
+完整操作录屏见
+[`demo_video/heptane-nonane-dwsim-demo.mp4`](demo_video/heptane-nonane-dwsim-demo.mp4)
+（3.8 MB）。
+
 ## 目录结构
 
 | 路径 | 内容 |
@@ -119,6 +123,7 @@ LLM 解释：**图谱提供事实，LLM 只负责措辞**。
 | `database/` | 持久化模型与会话 |
 | `lab_models/` | ThermoFormer 源码、配置、数据集与权值 |
 | `scripts/` | 复现入口脚本 |
+| `demo_video/` | 工作台操作录屏 |
 | `tests/`、`evals/` | 行为测试与 Agent 评测 |
 | `docs/` | 中英双语的架构、DWSIM 与方法学文档 |
 
